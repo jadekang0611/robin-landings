@@ -1,0 +1,52 @@
+#student-body {
+  background-image: url('../../../assets/Polygon4.svg');
+  background-repeat: no-repeat;
+}
+
+#screen-one {
+  padding-top: 44px;
+  background-image: url('../../../assets/screen-one.svg');
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.middle {
+  position: relative;
+  z-index: 0;
+  /* height: 50px; */
+}
+
+.middle img {
+  /* left: -487px; */
+  max-width: 715.75px;
+  max-height: 889.23px;
+}
+
+#screen-two {
+  margin-top: 144px;
+}
+
+.feature-container-title {
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+
+  /* Primal brand color */
+
+  color: #5cd9d8;
+}
+
+.feature-container-description p {
+  text-align: left;
+}
+
+.feature-container {
+  display: flex;
+}
+
+.feature1 {
+  left: 222px;
+}

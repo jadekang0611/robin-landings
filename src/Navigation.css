@@ -3,7 +3,7 @@
   flex-direction: row;
   justify-content: space-between;
   background-color: #24b3b1;
-  padding: 0px 124px;
+  padding: 0px 120px;
 }
 
 .nav-main {
@@ -11,6 +11,7 @@
   display: flex;
   flex-direction: row;
   margin: 0px;
+  padding: 0px;
 }
 
 .nav-item {

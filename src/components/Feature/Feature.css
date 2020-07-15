@@ -1,0 +1,35 @@
+.feature-card {
+  background: #ffffff;
+  box-shadow: 0px 8px 16px rgba(8, 35, 48, 0.08);
+  border-radius: 5px;
+  padding: 32px;
+  width: 352px;
+  height: auto;
+}
+
+.feature-title {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.01em;
+
+  /* Text primal */
+
+  color: #2e384d;
+}
+
+.feature-description {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.01em;
+
+  /* Text primal */
+
+  color: #2e384d;
+  opacity: 0.5;
+}

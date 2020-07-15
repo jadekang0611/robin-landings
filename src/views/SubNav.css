@@ -2,17 +2,19 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0px 120px;
+  padding: 24px 120px 0px 120px;
 }
 .sub-nav-main {
   list-style: none;
   display: flex;
   flex-direction: row;
+  padding: 0px;
 }
 
 .sub-nav-logo {
   width: 127px;
   height: 63px;
+  margin-left: -6px;
 }
 
 .sub-nav-item {
