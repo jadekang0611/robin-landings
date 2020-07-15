@@ -1,12 +1,13 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import * as ROUTES from '../../Routes';
-import Overview from './Overview';
+import OutcomesOverview from './OutcomesOverview';
 import RequestDemo from './RequestDemo';
 import '../SubNav.css';
 import robinLogo from '../../assets/robin-logo.png';
 
 const OutcomesMain = () => {
+    console.log('hello')
     return (
         <div>
             <Router>
@@ -14,7 +15,7 @@ const OutcomesMain = () => {
                     <div id="sub-nav-container">
                         <ul className="sub-nav-main">
                             <li className="logo-item">
-                                <Link to="/">
+                                <Link to="/outcomes">
                                     <img
                                         src={robinLogo}
                                         className="sub-nav-logo"
@@ -36,7 +37,7 @@ const OutcomesMain = () => {
                         </ul>
                     </div>
                     <Switch>
-                        <Route exact path={ROUTES.OUTCOMES} component={Overview} />
+                        <Route exact path={ROUTES.OUTCOMES} component={OutcomesOverview} />
                         <Route exact path={ROUTES.REQUEST_DEMO} component={RequestDemo} />
                     </Switch>
                 </div>

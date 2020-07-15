@@ -25,8 +25,8 @@ function App() {
           </ul>
         </div>
         <Switch>
-          <Route path={ROUTES.HOME} component={StudentMain} />
-          <Route path={ROUTES.OUTCOMES} component={OutcomesMain} />
+          <Route exact path={ROUTES.HOME} component={StudentMain} />
+          <Route exact path={ROUTES.OUTCOMES} component={OutcomesMain} />
         </Switch>
       </Router>
     </div>
