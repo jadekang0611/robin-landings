@@ -1,8 +1,2 @@
-import React from 'react';
-import { Switch, Redirect } from 'react-router-dom';
-
-const Routes = () => {
-  return <div></div>;
-};
-
-export default Routes;
+export const HOME = '/';
+export const STUDENTS_HOW = '/how-it-works';

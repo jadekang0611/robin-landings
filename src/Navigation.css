@@ -1,0 +1,29 @@
+#nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #24b3b1;
+  padding: 0px 124px;
+}
+
+.nav-main {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+}
+
+.nav-item {
+  padding: 20px 0px;
+  margin-right: 32px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 17px;
+  color: #ffffff;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-item:hover {
+  border-bottom: 2px solid #ffffff;
+}
