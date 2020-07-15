@@ -6,8 +6,8 @@ import RequestDemo from './RequestDemo';
 import '../SubNav.css';
 import robinLogo from '../../assets/robin-logo.png';
 
+
 const OutcomesMain = () => {
-    console.log('hello')
     return (
         <div>
             <Router>
