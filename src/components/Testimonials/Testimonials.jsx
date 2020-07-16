@@ -1,16 +1,15 @@
 import React, { useState } from 'react';
+import John from '../../assets/avatars/John.png';
 import REVIEW from '../../assets/Review.svg';
-import JOHN from '../../assets/avatars/John.png';
-import GOLEFT from '../../assets/GoLeft.svg';
-import GORIGHT from '../../assets/GoRight.svg';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './Testimonials.css';
+import { css, cx } from 'emotion';
 
 const Feedback = [
   {
     id: 1,
-    img: '../../assets/avatars/John.png',
+    img: { John },
     name: 'John Doe',
     message:
       'Thanks to Robin, their challenges and tasks, I increased my level of coding, replenished the portfolio, pumped up interviewing skills and got a job in Google.',
@@ -19,8 +18,7 @@ const Feedback = [
     id: 2,
     img: '../../assets/avatars/John.png',
     name: 'Jade Kang',
-    message:
-      'Thanks to Robin, their challenges and tasks, I increased my level of coding, replenished the portfolio, pumped up interviewing skills and got a job in Google.',
+    message: 'I have lots of fun with Robin!',
   },
   {
     id: 3,
@@ -36,8 +34,9 @@ const Testimonials = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   console.log(current);
 
-  const handleSetClick = () => {
-    console.log('hello');
+  const handleSetClick = (e) => {
+    setCurrent(Feedback[e.target.getAttribute('data-message')]);
+    setActiveIndex(e.target.getAttribute('data-message'));
   };
 
   return (
@@ -45,11 +44,51 @@ const Testimonials = () => {
       <Col className="testimonial-col1" lg={6}>
         <h3>TESTIMONIALS</h3>
         <h2>What people say about us</h2>
-        <div>
+        <div
+          className={css`
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+          `}
+        >
           <p>{current.message}</p>
-          <img src={current.img} alt={current.name} />
-          <p>{current.name}</p>
-          <div>
+          <div className="testimonial-user">
+            <img src={John} alt={current.name} />
+            <p>{current.name}</p>
+          </div>
+          <div
+            className={css`
+              display: flex;
+
+              span {
+                  
+                  height: 40px;
+                  width: 40px;
+                  margin: 16px 3px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: left;
+                  cursor: pointer;
+              }
+
+              span::before {
+                  content: "";
+                  height: 20px;
+                  width: 20px;
+                  background-color: #ffffff;
+                  border-radius: 50%;
+                  transition: background-color 0.3s ease;
+              }
+
+              span:hover::before {
+                  background-color: #2e384e;
+              }
+
+              span[data-message="${activeIndex}"]::before{
+                background-color: #2e384e;
+              }
+            `}
+          >
             {Object.keys(Feedback).map((index) => (
               <span
                 onClick={(e) => handleSetClick(e)}
@@ -58,25 +97,6 @@ const Testimonials = () => {
               ></span>
             ))}
           </div>
-        </div>
-        {/* {Feedback.map((item, index) => (
-          <div key={index}>
-            <p>{item.message}</p>
-            <div className="testimonial-user">
-              <img src={item.img} alt={item.name} />
-              <p>{item.name}</p>
-            </div>
-          </div>
-        ))} */}
-
-        <div className="testimonial-navigator">
-          {/* <span className="arrow-span1" onClick={goToPrevSlide}>
-            <img src={GOLEFT} alt="go-left" />
-          </span>
-          <span className="index">1 / {Feedback.length}</span>
-          <span className="arrow-span2" onClick={goToNextSlide}>
-            <img src={GORIGHT} alt="go-right" />
-          </span> */}
         </div>
       </Col>
       <Col lg={6} className="tesgimonials-bg">

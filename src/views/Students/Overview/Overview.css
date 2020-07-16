@@ -89,7 +89,8 @@
 
 #screen-three {
   max-height: 551px;
-  background-color: #24b2b1;
+  /* background-color: #24b2b1; */
+  background-image: url('../../../assets/screen-three.svg');
   margin-bottom: 120px;
 }
 

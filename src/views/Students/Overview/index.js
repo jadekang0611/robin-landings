@@ -1,8 +1,6 @@
 import React from 'react';
 import './Overview.css';
 import STUDENTOVERVIEW from '../../../assets/student-overview.png';
-import REVIEW from '../../../assets/Review.svg';
-import POLYGON from '../../../assets/Polygon4.svg';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
