@@ -150,6 +150,57 @@
 /* BENEFITS */
 /* /////////////////// */
 
+.benefitRow {
+    color: #2E384D;
+    justify-content: space-between;
+    letter-spacing: 0.01em;
+}
+
+.benefitLeft {
+    align-content: center;
+    font-weight: 500;
+}
+
+.benefitCol h3 {
+    color: #5CD9D8;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.benefitCol h1 {
+    font-size: 32px;
+    line-height: 42px;
+    margin-top: 16px;
+}
+
+.benefitRight {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.benefitRight img {
+    display: inline-block;
+    margin-right: 7px;
+    width: 30px;
+}
+
+.benefitRight h5 {
+    display: inline;
+    font-size: 20px;
+    font-weight: 500;
+    line-height:24px;
+}
+
+.benefitRight p {
+    font-size: 16px;
+    line-height: 24px;
+    opacity: 0.5;
+}
+
+.benefitCol {
+    margin-bottom: 44px;
+}
 
 /* /////////////////// */ 
 /* DEMO BOX */
