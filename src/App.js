@@ -5,6 +5,7 @@ import StudentMain from './views/Students/StudentMain';
 import OutcomesMain from './views/Outcomes/OutcomesMain';
 import './Navigation.css';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (

@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import * as ROUTES from '../../Routes';
-import OutcomesOverview from './OutcomesOverview';
-import RequestDemo from './RequestDemo';
+import OutcomesOverview from './components/OutcomesOverview';
+import RequestDemo from './components/RequestDemo';
 import '../SubNav.css';
 import robinLogo from '../../assets/robin-logo.png';
 
