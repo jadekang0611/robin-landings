@@ -1,12 +1,13 @@
 import React from 'react';
 import './Overview.css';
 import STUDENTOVERVIEW from '../../../assets/student-overview.png';
+import REVIEW from '../../../assets/Review.svg';
 import POLYGON from '../../../assets/Polygon4.svg';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
-import { Feature } from '../../../components';
+import { Feature, Testimonials } from '../../../components';
 
 const Overview = () => {
   return (
@@ -47,27 +48,38 @@ const Overview = () => {
         <section>
           <div>
             <h2 className="feature-container-title">OUR FEATURES</h2>
-            <h3>
-              Id in et excepteur ullamco in amet eiusmod duis cupidatat. Id
-            </h3>
           </div>
-          <Row>
-            <Col>
+          <Row className="screen-two-row1">
+            <Col lg={5}>
               <div className="feature-container">
                 <Feature className="feature1" />
               </div>
-            </Col>
 
-            <Col>
+              <div className="feature-container2">
+                <Feature className="feature2" />
+              </div>
+            </Col>
+            <Col lg={7}>
               <div className="feature-container-description">
-                <h3>
-                  Id in et excepteur ullamco in amet eiusmod duis cupidatat. Id
-                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Varius vitae enim vestibulum tincidunt.
+                </p>
+              </div>
+
+              <div className="feature-container3">
+                <Feature className="feature3" />
               </div>
             </Col>
           </Row>
         </section>
       </Container>
+
+      <div id="screen-three">
+        <section>
+          <Testimonials />
+        </section>
+      </div>
     </div>
   );
 };

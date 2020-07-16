@@ -39,8 +39,26 @@
   color: #5cd9d8;
 }
 
+.screen-two-row1 {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 84px;
+  margin-top: 16px;
+}
+
+.feature-container-description {
+  display: flex;
+}
+
 .feature-container-description p {
   text-align: left;
+  max-width: 588px;
+  word-wrap: break-word;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 42px;
+  letter-spacing: 0.01em;
+  color: #2e384d;
 }
 
 .feature-container {
@@ -49,4 +67,78 @@
 
 .feature1 {
   left: 222px;
+}
+
+.screen-two-row2 {
+  display: flex;
+  flex-direction: row;
+  padding-left: 58px;
+}
+
+.feature-container2 {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 84px;
+}
+
+.feature-container3 {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 36px;
+}
+
+#screen-three {
+  max-height: 551px;
+  background-color: #24b2b1;
+  margin-bottom: 120px;
+}
+
+.screen-three-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.testimonial-row h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height */
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+
+  /* White Base */
+
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.testimonial-row h2 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 42px;
+  /* identical to box height, or 131% */
+  letter-spacing: 0.01em;
+
+  /* White Base */
+
+  color: #ffffff;
+}
+
+.testimonial-row p {
+  margin-top: 24px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  /* or 133% */
+  letter-spacing: 0.01em;
+  max-width: 486px;
+
+  /* White Base */
+
+  color: #ffffff;
+}
+
+.testimonial-col1 {
+  padding-top: 64px;
+  padding-left: 120px;
 }

@@ -4,6 +4,7 @@ import './Feature.css';
 const Feature = () => {
   return (
     <div className="feature-card">
+      <div className="feature-icon-box"></div>
       <h2 className="feature-title">Aliquip esse incididunt </h2>
       <p className="feature-description">
         {' '}
