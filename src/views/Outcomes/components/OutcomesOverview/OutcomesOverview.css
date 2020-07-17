@@ -5,11 +5,12 @@
 .messageContainer {
     align-items: center;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding: 0 120px;
 }
 
 .message {
+    align-self: center;
     max-width: 615px;
 }
 
@@ -70,7 +71,7 @@
 /* /////////////////// */
 
 .featuresContainer {
-    margin-top: 70px;
+    margin-top: 100px;
 }
 
 .featuresContainer h3 {

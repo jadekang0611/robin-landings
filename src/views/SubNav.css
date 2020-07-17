@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 26px;
   padding: 0px 120px;
 }
 .sub-nav-main {
@@ -27,8 +28,8 @@
 }
 
 .sub-nav-item a {
-  color: #2e384d;
-  text-decoration: none;
+  color: #2e384d !important;
+  text-decoration: none !important;
 }
 
 .sub-nav-item a:hover {
@@ -53,6 +54,6 @@
 }
 
 .sign-up-button a, .request-demo-button a {
-  color: #ffffff;
-  text-decoration: none;
+  color: #ffffff !important;
+  text-decoration: none !important;
 }

@@ -1,0 +1,85 @@
+.requestContainer {
+    align-self: center;
+    color: #2E384D;
+}
+
+.requestLeft {
+    align-self: center;
+}
+
+.requestForm h1 {
+    font-size: 56px;
+    font-weight: 500;
+    line-height: 64px;
+}
+
+.requestImage {
+    height: 617px;
+    width: 683px;
+}
+
+.form-label {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    margin-top: 24px;
+    margin-bottom: 14px;
+}
+
+.formInput {
+    border: none !important;
+    border-radius: 0 !important;
+    border-bottom: 1px solid #2E384D !important ;
+    /* color: #2E384D !important; */
+    font-size: 16px !important;
+    line-height: 19px !important;
+    margin-bottom: 25px;
+    /* opacity: 0.5 !important; */
+    padding-left: 0 !important;
+    width: 384px !important;
+}
+
+.formInput:focus {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+::placeholder {
+    color: #8798AD !important;
+}
+
+/* To remove the autofill input background color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.submit-button {
+    align-self: center;
+    background-color: #5cd9d8;
+    box-shadow: 0px 4px 16px rgba(36, 178, 177, 0.16);
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 28px;
+    margin-top: 25px;
+    outline: none !important;
+    padding: 18px 30px;
+    width: 240px;
+    }
+
+.submit-button a {
+  color: #ffffff;
+  text-decoration: none;
+}
