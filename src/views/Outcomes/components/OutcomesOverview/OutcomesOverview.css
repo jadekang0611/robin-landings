@@ -1,12 +1,20 @@
+.outcomes-body {
+  background-image: url('../../../../assets/Polygon4.svg');
+  background-repeat: no-repeat;
+  background-position-y: 300px;
+}
+
 /* /////////////////// */
 /* MAIN MESSAGE */
 /* /////////////////// */
 
 .messageContainer {
     align-items: center;
+    background-image: url('../../../../assets/screen-one.svg');
     display: flex;
     justify-content: space-around;
-    padding: 0 120px;
+    padding: 44px 80px 0;
+    margin-left: 20px; 
 }
 
 .message {
@@ -71,10 +79,13 @@
 /* /////////////////// */
 
 .featuresContainer {
+    background-image: url('../../../../assets/screen-one.svg');
+    background-position-y: 100px;
+    background-position-x: -50px;
     margin-top: 100px;
 }
 
-.featuresContainer h3 {
+.featuresContainer h2 {
     color: #5cd9d8;
     font-size: 20px;
     font-weight: 500;
@@ -84,68 +95,46 @@
     text-align: center;
 }
 
-.col1 {
-    display: absolute;
-    height: 298px;
-    left: 70px;
+.row1 {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 84px;
+  margin-top: 16px;
 }
 
-.featureBody {
-    color: #2E384D;
-    letter-spacing: 0.01em;
-    margin: 0 auto;
-    max-width: 320px;
+.feature-container-description {
+  display: flex;
 }
 
-.featureCard {
-    background-color: white;
-    border: none !important;
-    border-radius: 5px;
-    box-shadow: 0px 8px 16px rgba(8, 35, 48, 0.08);
-    height: 100%;
-    width: 100%;
+.feature-container-description p {
+  text-align: left;
+  max-width: 588px;
+  word-wrap: break-word;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 42px;
+  letter-spacing: 0.01em;
+  color: #2e384d;
 }
 
-.featureImage {
-    margin: 32px 0 12px 35px;
-    width: 90px;
+.feature-container {
+  display: flex;
 }
 
-.featureTitle {
-    font-size: 24px;
-    line-height: 28px;
-    padding-bottom: 15px;
+.feature1 {
+  left: 222px;
 }
 
-.featureText {
-    font-size: 16px;
-    line-height: 19px;
-    opacity: 0.5;
+.feature-container2 {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 84px;
 }
 
-.col2 {
-    color: #2E384D;
-    font-size: 32px;
-    font-weight: 500;
-    height: 126px;
-    line-height: 42px;
-}
-
-.col2 p {
-    padding-left: 10px;
-}
-
-.col3 {
-    display: absolute;
-    height: 298px;
-    top: -100px;
-    left: -50px;
-}
-
-.col4 {
-    display: absolute;
-    height: 298px;
-    top: -200px;
+.feature-container3 {
+  display: flex;
+  justify-content: center;
+  margin-top: 36px;
 }
 
 /* /////////////////// */

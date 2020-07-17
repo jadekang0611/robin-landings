@@ -1,3 +1,8 @@
+.requestSection {
+    background-image: url('../../../../assets/screen-one.svg');
+    margin-left: 50px;
+}
+
 .requestContainer {
     align-self: center;
     color: #2E384D;

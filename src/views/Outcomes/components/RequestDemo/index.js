@@ -30,7 +30,7 @@ const RequestDemo = () => {
     };
 
     return (
-        <div>
+        <div className="requestSection">
             <Container className="requestContainer">
                 <Row xs={1} md={2} className="requestForm">
                     <Col className="requestLeft">
