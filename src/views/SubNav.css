@@ -29,8 +29,8 @@
 }
 
 .sub-nav-item a {
-  color: #2e384d;
-  text-decoration: none;
+  color: #2e384d !important;
+  text-decoration: none !important;
 }
 
 .sub-nav-item a:hover {
@@ -41,7 +41,7 @@
   border-bottom: none;
 }
 
-.sign-up-button {
+.sign-up-button, .request-demo-button {
   color: #ffffff;
   margin: 0px 40px 0px 0px;
   font-size: 14px;
@@ -54,7 +54,7 @@
   box-shadow: 0px 4px 16px rgba(36, 178, 177, 0.16);
 }
 
-.sign-up-button a {
-  color: #ffffff;
-  text-decoration: none;
+.sign-up-button a, .request-demo-button a {
+  color: #ffffff !important;
+  text-decoration: none !important;
 }
