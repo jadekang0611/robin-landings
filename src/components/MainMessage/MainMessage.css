@@ -62,11 +62,11 @@
   /* Shadow green */
 
   box-shadow: 0px 4px 16px rgba(36, 178, 177, 0.16);
-  border-radius: 10px;
+  border-radius: 10px !important;
 
   font-style: normal;
-  font-weight: bold;
-  font-size: 2.153vh;
+  font-weight: bold !important;
+  font-size: 20px !important;
   line-height: 28px;
   /* identical to box height, or 140% */
 
@@ -74,10 +74,23 @@
   align-items: center;
   letter-spacing: 0.01em;
   margin-bottom: 16px;
+  padding: 18px 62px !important;
 
   /* White Base */
 
-  color: #ffffff;
+  color: #ffffff !important;
+  outline: none !important;
+  background-image: linear-gradient(#ff725e, #ff725e) !important;
+  background-position: 50% 50% !important;
+  background-repeat: no-repeat !important;
+  background-size: 0% 100% !important;
+  transition: background-size 0.3s, color 0.5s !important;
+  position: relative;
+}
+
+.action-button:hover {
+  color: #fff !important;
+  background-size: 100% 100% !important;
 }
 
 .overview-message-img {
