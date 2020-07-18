@@ -16,7 +16,7 @@ const Overview = () => {
       {/* StudentOverview Main Message */}
       <MainMessage />
 
-      {/* <FeatureMessage /> */}
+      <FeatureMessage />
 
       <div id="screen-three">
         <section>{/* <Testimonials /> */}</section>
