@@ -1,0 +1,71 @@
+#screen-four {
+  padding: 120px;
+}
+
+.screen-four-col {
+  align-self: center;
+}
+
+.sneak-peek-container {
+  padding: 5.4897vh 5.4897vw;
+}
+
+.sneak-peek-container h2 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+
+  /* Primal brand color */
+
+  color: #5cd9d8;
+}
+
+.sneak-peek-container h3 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.01em;
+
+  /* Text primal */
+
+  color: #2e384d;
+}
+
+.sneak-peek-container p {
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.01em;
+
+  /* Text primal */
+
+  color: #2e384d;
+  opacity: 0.5;
+}
+
+.demo-container {
+  align-self: center;
+}
+
+.demo-container img {
+  border: 3px solid #8798ad;
+  /* big shadow */
+
+  box-shadow: 5.14419px 5.14419px 10.2884px rgba(144, 146, 152, 0.2);
+  border-radius: 10px;
+}
+
+.vertical-gap {
+  height: 200px;
+}

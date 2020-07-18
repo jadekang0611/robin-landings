@@ -1,5 +1,5 @@
 #screen-one {
-  padding: 3.8751vh 12.9171vh;
+  padding: 44px 120px 140px 120px;
 }
 
 #screen-one .screen-one-section h4 {
@@ -23,7 +23,7 @@
 #screen-one .screen-one-section h2 {
   font-style: normal;
   font-weight: 500;
-  font-size: 6.0279vh;
+  font-size: 56px;
   /* equivalent to 56px */
   line-height: 64px;
   /* or 114% */

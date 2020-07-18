@@ -9,6 +9,10 @@ const Type1 = '/images/background/SectionBackground1.svg';
 
 const bgStyle = {
   backgroundImage: 'url(' + Type1 + ')',
+  backgroundRepeat: 'no-repeat',
+  width: '100%',
+  backgroundSize: 'cover',
+  height: 'auto',
 };
 
 const MainMessage = () => {

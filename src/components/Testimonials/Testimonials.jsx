@@ -3,29 +3,41 @@ import John from '../../assets/avatars/John.png';
 import REVIEW from '../../assets/Review.svg';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { Jumbotron } from 'react-bootstrap';
 import './Testimonials.css';
-import { css, cx } from 'emotion';
+import { css } from 'emotion';
+
+const Type3 = '/images/background/SectionBackground3.svg';
+
+const bgStyle3 = {
+  backgroundImage: 'url(' + Type3 + ')',
+  backgroundRepeat: 'no-repeat',
+  width: '100%',
+  backgroundSize: 'cover',
+  height: 'auto',
+};
 
 const Feedback = [
   {
     id: 1,
-    img: { John },
-    name: 'John Doe',
+    img: '/images/avatar/Myshawne.png',
+    name: 'MyShawne S.',
     message:
-      'Thanks to Robin, their challenges and tasks, I increased my level of coding, replenished the portfolio, pumped up interviewing skills and got a job in Google.',
+      'I love how personal Robin is. Robin backs up my confidence as a new engineer and keeps motivating me to be on top of everything during my outcome after bootcamp at General Assembly.',
   },
   {
     id: 2,
-    img: '../../assets/avatars/John.png',
-    name: 'Jade Kang',
-    message: 'I have lots of fun with Robin!',
+    img: '/images/avatar/Daphne.png',
+    name: 'Daphne M.',
+    message:
+      'Robin is frustration-free, unlike other similar platoforms where I would practice coding. I feel more confident every time I do a challenge.',
   },
   {
     id: 3,
-    img: '../../assets/avatars/John.png',
-    name: 'James Oh',
+    img: '/images/avatar/John.png',
+    name: 'John C.',
     message:
-      'Thanks to Robin, their challenges and tasks, I increased my level of coding, replenished the portfolio, pumped up interviewing skills and got a job in Google.',
+      'I have been really enjoying Robin for about a month now, and It really helps me grow confidence in interview questions. I am excited to see updates on new features.',
   },
 ];
 
@@ -40,9 +52,9 @@ const Testimonials = () => {
   };
 
   return (
-    <Row className="testimonial-row">
-      <Col className="testimonial-col1" lg={6}>
-        <h3>TESTIMONIALS</h3>
+    <Jumbotron id="screen-three" style={bgStyle3}>
+      <div className="testimonial-section">
+        <h3>Testimonials</h3>
         <h2>What people say about us</h2>
         <div
           className={css`
@@ -51,20 +63,21 @@ const Testimonials = () => {
             align-items: left;
           `}
         >
-          <p>{current.message}</p>
+          <p>"{current.message}"</p>
           <div className="testimonial-user">
-            <img src={John} alt={current.name} />
+            <img src={current.img} alt={current.name} />
             <p>{current.name}</p>
           </div>
-          <div
-            className={css`
+        </div>
+        <div
+          className={css`
               display: flex;
 
               span {
                   
                   height: 40px;
                   width: 40px;
-                  margin: 16px 3px;
+                  margin: 40px 3px;
                   display: flex;
                   align-items: center;
                   justify-content: left;
@@ -88,21 +101,17 @@ const Testimonials = () => {
                 background-color: #2e384e;
               }
             `}
-          >
-            {Object.keys(Feedback).map((index) => (
-              <span
-                onClick={(e) => handleSetClick(e)}
-                data-message={index}
-                key={index}
-              ></span>
-            ))}
-          </div>
+        >
+          {Object.keys(Feedback).map((index) => (
+            <span
+              onClick={(e) => handleSetClick(e)}
+              data-message={index}
+              key={index}
+            ></span>
+          ))}
         </div>
-      </Col>
-      <Col lg={6} className="tesgimonials-bg">
-        <img src={REVIEW} alt="testimonials" />
-      </Col>
-    </Row>
+      </div>
+    </Jumbotron>
   );
 };
 

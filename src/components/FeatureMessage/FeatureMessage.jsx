@@ -9,6 +9,9 @@ const Type2 = '/images/background/SectionBackground2.svg';
 const bgStyle2 = {
   backgroundImage: 'url(' + Type2 + ')',
   backgroundRepeat: 'no-repeat',
+  width: '100%',
+  backgroundSize: 'cover',
+  height: 'auto',
 };
 
 const FeatureMessage = () => {

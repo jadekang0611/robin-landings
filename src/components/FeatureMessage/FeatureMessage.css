@@ -2,6 +2,7 @@
   /* padding: 3.8751vh 23.896vh; */
   display: flex;
   justify-content: center;
+  margin-bottom: 142px;
 }
 
 .feature-message-title {
@@ -30,7 +31,6 @@
 .screen-two-row {
   display: flex;
   flex-direction: row;
-  margin-bottom: 84px;
 }
 
 .feature-message p {
@@ -57,4 +57,9 @@
   display: flex;
   justify-content: flex-end;
   margin-top: 84px;
+}
+
+.feature-container3 {
+  display: flex;
+  justify-content: flex-end;
 }
