@@ -1,7 +1,7 @@
 import React from 'react';
-import './Feature.css';
+import './FeatureCard.css';
 
-const Feature = () => {
+const FeatureCard = () => {
   return (
     <div className="feature-card">
       <div className="feature-icon-box"></div>
@@ -14,4 +14,4 @@ const Feature = () => {
   );
 };
 
-export default Feature;
+export default FeatureCard;

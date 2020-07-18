@@ -7,7 +7,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
-import { Feature, Testimonials, MainMessage } from '../../../components';
+import { FeatureMessage, Testimonials, MainMessage } from '../../../components';
 import image2 from './image2.png';
 
 const Overview = () => {
@@ -16,36 +16,7 @@ const Overview = () => {
       {/* StudentOverview Main Message */}
       <MainMessage />
 
-      <Container id="screen-two">
-        <section>
-          <div>
-            <h2 className="feature-container-title">OUR FEATURES</h2>
-          </div>
-          <Row className="screen-two-row1">
-            <Col lg={5}>
-              <div className="feature-container">
-                <Feature className="feature1" />
-              </div>
-
-              <div className="feature-container2">
-                <Feature className="feature2" />
-              </div>
-            </Col>
-            <Col lg={7}>
-              <div className="feature-container-description">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Varius vitae enim vestibulum tincidunt.
-                </p>
-              </div>
-
-              <div className="feature-container3">
-                <Feature className="feature3" />
-              </div>
-            </Col>
-          </Row>
-        </section>
-      </Container>
+      {/* <FeatureMessage /> */}
 
       <div id="screen-three">
         <section>{/* <Testimonials /> */}</section>

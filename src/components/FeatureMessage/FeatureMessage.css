@@ -1,0 +1,41 @@
+.screen-two-row1 {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 84px;
+  margin-top: 16px;
+}
+
+.feature-container-description {
+  display: flex;
+}
+
+.feature-container-description p {
+  text-align: left;
+  max-width: 588px;
+  word-wrap: break-word;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 42px;
+  letter-spacing: 0.01em;
+  color: #2e384d;
+}
+
+.feature-container {
+  display: flex;
+}
+
+.feature1 {
+  left: 222px;
+}
+
+.screen-two-row2 {
+  display: flex;
+  flex-direction: row;
+  padding-left: 58px;
+}
+
+.feature-container2 {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 84px;
+}

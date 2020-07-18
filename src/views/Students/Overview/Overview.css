@@ -20,7 +20,7 @@
   color: #5cd9d8;
 }
 
-.screen-two-row1 {
+/* .screen-two-row1 {
   display: flex;
   flex-direction: row;
   margin-bottom: 84px;
@@ -60,7 +60,7 @@
   display: flex;
   justify-content: flex-end;
   margin-top: 84px;
-}
+} */
 
 .feature-container3 {
   display: flex;
