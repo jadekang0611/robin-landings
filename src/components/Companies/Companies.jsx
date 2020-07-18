@@ -34,7 +34,14 @@ const Companies = () => {
               <div className="companies-section-logos">
                 <Row>
                   {Hiring.map((company, index) => (
-                    <Col xs={6} sm={4} md={4} lg={4} className="logo-container">
+                    <Col
+                      key={index}
+                      xs={6}
+                      sm={4}
+                      md={4}
+                      lg={4}
+                      className="logo-container"
+                    >
                       <img src={company.logo} alt={company.name} />
                     </Col>
                   ))}

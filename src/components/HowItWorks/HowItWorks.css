@@ -1,0 +1,124 @@
+#HowItWorks-Screen {
+  padding: 0px 120px;
+  margin-top: 63px;
+}
+
+#HowItWorks-Screen .main-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 64px;
+  /* identical to box height, or 114% */
+
+  text-align: center;
+  letter-spacing: 0.01em;
+
+  /* Text primal */
+
+  color: #2e384d;
+  margin-bottom: 16px;
+}
+
+.horizontal-gap {
+  width: 16px;
+}
+
+#HowItWorks-Screen h3 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 38px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.01em;
+
+  /* Text secondary */
+
+  color: #8798ad;
+}
+
+.HowItWorks-contents {
+  margin-top: 87px;
+  margin-bottom: 122px;
+}
+
+.step-contents-col {
+  align-self: center;
+}
+
+.step-button {
+  /* border-radius: 50%; */
+  min-width: 50px;
+  min-height: auto;
+  border-radius: 50%;
+  background: #ff725e;
+}
+
+.step-button p {
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 48px;
+  align-items: center;
+  text-align: center;
+  margin: 2px;
+
+  /* White Base */
+
+  color: #ffffff;
+}
+
+.step-title {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  margin-bottom: 16px;
+}
+
+.step-title .title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 57px;
+  letter-spacing: 0.01em;
+
+  /* Text primal */
+
+  color: #2e384d;
+}
+
+.step-contents .description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+  letter-spacing: 0.01em;
+
+  /* Text primal */
+
+  color: #2e384d;
+  opacity: 0.5;
+  /* max-width: 524px; */
+  margin-left: 64px;
+}
+
+.step-image {
+  width: 100%;
+}
+
+.no-flip {
+  transform: rotateY(0);
+}
+
+.flip {
+  flex-direction: row-reverse;
+}
+
+.step-image-col {
+  padding: 40px !important;
+}
+
+.step-contents-col {
+  padding: 40px !important;
+}

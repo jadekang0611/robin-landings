@@ -5,6 +5,7 @@ import StudentMain from './views/Students/StudentMain';
 import OutcomesMain from './views/Outcomes/OutcomesMain';
 import './Navigation.css';
 import './App.css';
+import HowWorks from './views/Students/HowWorks';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -29,6 +30,7 @@ function App() {
         <Switch>
           <Route exact path={ROUTES.HOME} component={StudentMain} />
           <Route exact path={ROUTES.OUTCOMES} component={OutcomesMain} />
+          {/* <Route exact path={ROUTES.STUDENTS_HOW} component={HowWorks} /> */}
         </Switch>
       </Router>
     </div>

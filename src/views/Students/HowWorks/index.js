@@ -1,8 +1,13 @@
 import React from 'react';
 import './HowWorks.css';
+import { HowItWorks } from '../../../components';
 
 const HowWorks = () => {
-  return <div>Student How It Works</div>;
+  return (
+    <>
+      <HowItWorks />
+    </>
+  );
 };
 
 export default HowWorks;

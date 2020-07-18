@@ -40,7 +40,7 @@ const StudentMain = () => {
           </div>
           <Switch>
             <Route exact path={ROUTES.HOME} component={Overview} />
-            <Route exact path={ROUTES.STUDENTS_HOW} component={HowWorks} />
+            <Route path={ROUTES.STUDENTS_HOW} component={HowWorks} />
           </Switch>
         </div>
       </Router>
