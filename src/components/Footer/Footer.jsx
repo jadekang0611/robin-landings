@@ -42,7 +42,9 @@ const Footer = () => {
                     <a href='/help-center'>Help Center</a>
                   </li>
                   <li>
-                    <a href='/request-demo'>Request for Demo</a>
+                    <a href='/request-demo'>
+                      Request for Demo
+                    </a>
                   </li>
                 </ul>
               </Col>
@@ -93,12 +95,12 @@ const Footer = () => {
                   rel='noopener noreferrer'>
                   <img src={twitter} alt='twitter' />
                 </a>
-                <a
+                {/* <a
                   href='https://www.youtube.com/channel/UCZYNPt1qBnx8BrPytLc8E7w/featured'
                   target='_blank'
                   rel='noopener noreferrer'>
                   <img src={youtube} alt='youtube' />
-                </a>
+                </a> */}
               </Col>
             </Row>
           </Container>

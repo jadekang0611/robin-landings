@@ -3,31 +3,35 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import * as ROUTES from './Routes';
 import StudentMain from './views/Students/StudentMain';
 import OutcomesMain from './views/Outcomes/OutcomesMain';
+import RequestDemo from './views/Outcomes/components/RequestDemo';
+import { Help } from './components';
 import './Navigation.css';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className='App'>
       <Router>
-        <div id="nav-container">
-          <ul className="nav-main">
-            <li className="nav-item">
-              <Link to="/">Students</Link>
+        <div id='nav-container'>
+          <ul className='nav-main'>
+            <li className='nav-item'>
+              <Link to='/'>Students</Link>
             </li>
-            <li className="nav-item">
-              <Link to="/outcomes">Outcomes</Link>
+            <li className='nav-item'>
+              <Link to='/outcomes'>Outcomes</Link>
             </li>
-            <li className="nav-item">Employers</li>
+            <li className='nav-item'>Employers</li>
           </ul>
-          <ul className="nav-main">
-            <li className="nav-item nav-sign-in">Sign In</li>
+          <ul className='nav-main'>
+            <li className='nav-item nav-sign-in'>Sign In</li>
           </ul>
         </div>
         <Switch>
           <Route exact path={ROUTES.HOME} component={StudentMain} />
           <Route exact path={ROUTES.OUTCOMES} component={OutcomesMain} />
+          <Route exact path={ROUTES.REQUEST_DEMO} component={RequestDemo} />
+          <Route exact path={ROUTES.HELP_CENTER} component={Help} />
         </Switch>
       </Router>
     </div>

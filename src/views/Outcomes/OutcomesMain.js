@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import * as ROUTES from '../../Routes';
 import OutcomesOverview from './components/OutcomesOverview';
 import RequestDemo from './components/RequestDemo';
+import { Help } from '../../components';
 import '../SubNav.css';
 import robinLogo from '../../assets/robin-logo.png';
 
@@ -39,6 +40,7 @@ const OutcomesMain = () => {
                     <Switch>
                         <Route exact path={ROUTES.OUTCOMES} component={OutcomesOverview} />
                         <Route exact path={ROUTES.REQUEST_DEMO} component={RequestDemo} />
+                        <Route exact path={ROUTES.HELP_CENTER} component={Help} />
                     </Switch>
                 </div>
             </Router>
