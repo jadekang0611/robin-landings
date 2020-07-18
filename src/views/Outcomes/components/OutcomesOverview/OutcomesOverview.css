@@ -199,6 +199,7 @@
 
 .demoMessage {
     background-image: url('../../../../assets/rectangle.png');
+    border-radius: 0 !important;
     height: 461px;
     margin-top: 100px;
     text-align: center;

@@ -3,7 +3,7 @@ body {
   font-family: 'Rubik', sans-serif;
 }
 
-.nav-item a {
+.nav-item a, .nav-item a:hover {
   color: #ffffff;
-  text-decoration: none;
+  text-decoration: none !important;
 }

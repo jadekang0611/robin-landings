@@ -4,7 +4,7 @@ import MainMessage from './components/MainMessage';
 import Features from './components/Features';
 import Benefit from './components/Benefits';
 import DemoBox from './components/DemoBox';
-import Footer from './components/Footer';
+import { Footer } from '../../../../components';
 
 const OutcomesOverview = () => {
     return (
