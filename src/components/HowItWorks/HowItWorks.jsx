@@ -31,6 +31,16 @@ const Steps = [
   },
 ];
 
+const Type6 = '/images/background/SectionBackground6.svg';
+
+const bgStyle6 = {
+  backgroundImage: 'url(' + Type6 + ')',
+  backgroundRepeat: 'no-repeat',
+  width: '100%',
+  backgroundSize: 'cover',
+  height: 'auto',
+};
+
 const HowItWorks = () => {
   return (
     <div>
@@ -42,6 +52,7 @@ const HowItWorks = () => {
           {Steps.map((step, index) => {
             return (
               <Row
+                style={bgStyle6}
                 key={index}
                 className={Steps.indexOf(step) % 2 === 0 ? 'no-flip' : 'flip'}
               >
