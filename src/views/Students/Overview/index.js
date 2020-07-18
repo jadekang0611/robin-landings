@@ -1,6 +1,5 @@
 import React from 'react';
 import './Overview.css';
-import STUDENTOVERVIEW from '../../../assets/student-overview.png';
 import DEMO1 from '../../../assets/StudentApp1.png';
 import DEMO2 from '../../../assets/StudentApp2.png';
 import DEMO3 from '../../../assets/StudentApp3.png';
@@ -8,43 +7,14 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
-import { Feature, Testimonials } from '../../../components';
+import { Feature, Testimonials, MainMessage } from '../../../components';
 import image2 from './image2.png';
 
 const Overview = () => {
   return (
     <div id="student-body">
-      <Container id="screen-one">
-        <section>
-          <Row>
-            <Col md={6}>
-              <div>
-                <p>Proident sunt mollit Lorem</p>
-                <h2>
-                  The main message should be like this in three lines 65 symbol
-                </h2>
-                <p>
-                  Culpa incididunt magna et tempor sit minim laborum voluptate.
-                  Aliquip aliquip occaecat esse amet consectetur.
-                </p>
-              </div>
-              <Button>Get started</Button>
-            </Col>
-            <Col md={6}>
-              {' '}
-              <div className="img-container">
-                <img
-                  role="presentation"
-                  src={STUDENTOVERVIEW}
-                  alt="student-main-bg"
-                  className="img-bottom"
-                  width="100%"
-                />
-              </div>
-            </Col>
-          </Row>
-        </section>
-      </Container>
+      {/* StudentOverview Main Message */}
+      <MainMessage />
 
       <Container id="screen-two">
         <section>
@@ -78,9 +48,7 @@ const Overview = () => {
       </Container>
 
       <div id="screen-three">
-        <section>
-          <Testimonials />
-        </section>
+        <section>{/* <Testimonials /> */}</section>
       </div>
 
       <Container id="screen-four">

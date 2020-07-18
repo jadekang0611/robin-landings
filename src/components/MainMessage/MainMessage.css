@@ -1,0 +1,94 @@
+#screen-one {
+  padding: 3.8751vh 12.9171vh;
+}
+
+#screen-one .screen-one-section h4 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height, or 114% */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+
+  /* Primal brand color */
+
+  color: #5cd9d8;
+  margin-bottom: 16px;
+}
+
+#screen-one .screen-one-section h2 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 6.0279vh;
+  /* equivalent to 56px */
+  line-height: 64px;
+  /* or 114% */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.01em;
+
+  /* Text primal */
+
+  color: #2e384d;
+  margin-bottom: 16px;
+}
+
+#screen-one .screen-one-section p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.01em;
+
+  /* Text primal */
+
+  color: #2e384d;
+  opacity: 0.8;
+  margin-bottom: 32px;
+}
+
+.action-button {
+  background: #5cd9d8 !important;
+  border: #5cd9d8 !important;
+  /* Shadow green */
+
+  box-shadow: 0px 4px 16px rgba(36, 178, 177, 0.16);
+  border-radius: 10px;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.153vh;
+  line-height: 28px;
+  /* identical to box height, or 140% */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.01em;
+  margin-bottom: 16px;
+
+  /* White Base */
+
+  color: #ffffff;
+}
+
+.overview-message-img {
+  width: 100%;
+}
+
+.screen-one-message {
+  max-width: 612px;
+}
+
+.screen-one-section .screen-one-message {
+  display: flex;
+  align-items: center;
+}
