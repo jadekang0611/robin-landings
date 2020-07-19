@@ -2,14 +2,14 @@
 /* HELP CENTER MAIN PAGE */
 /* /////////////////////////// */
 
-.helpContainer {
+.helpRoot {
     background-image: url('../../assets/screen-one.svg');
     background-position-x: 50px;
     /* margin-left: 50px; */
     margin: 0 auto;
 }
 
-.helpParent {
+.helpContainer {
     margin-bottom: 180px;
 }
 
@@ -82,9 +82,55 @@
 }
 
 .questionList a {
+    color: #2E384D !important;
     text-decoration: none !important;
 }
+
+.questionList a:hover {
+    color: #5CD9D8 !important;
+}
+
+.noResults {
+    font-size: 25px !important;
+    width: 500px !important;
+}
+
 
 /* /////////////////////////// */
 /* HELP RESULTS*/
 /* /////////////////////////// */
+
+.resultsRoots {
+    background-image: url('../../assets/screen-one.svg');
+    background-position-x: 50px;
+    background-position-y: 250px;
+    margin: 50px auto 0;
+}
+
+.backButton {
+    color: #FF725E !important;
+    font-size: 16px !important;
+    font-weight: normal !important;
+    text-decoration: none !important;
+}
+
+.backButton i {
+    margin-right: 6px;
+}
+
+.resultsCol h1 {
+    color: #2E384D;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 57px;
+    margin: 30px 0;
+}
+
+.resultsCol h6 {
+    background-color: white;
+    color: #2E384D;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 30px auto 400px;
+}
+

@@ -50,9 +50,9 @@ const Help = (props) => {
   }
 
   return (
-    <div className='helpContainer'>
+    <div className='helpRoot'>
       <Router>
-        <Container className='helpParent'>
+        <Container className='helpContainer'>
           <Row className='helpRow'>
             {searchQuestion.length >= 0 && question && (
               <Col md={6}>
@@ -75,9 +75,9 @@ const Help = (props) => {
                     </Button>
                   </InputGroup.Append>
                 </InputGroup>
-                <ul className="questionList">
+                <ul className='questionList'>
                   {searchQuestion.map((search, index) => (
-                    <li key={index} onClick={handleClick} >
+                    <li key={index} onClick={handleClick}>
                       <Link to='/help-results' data={index}>
                         {search.question}
                       </Link>
@@ -87,16 +87,20 @@ const Help = (props) => {
               </Col>
             )}
 
-            <ul>
+            <ul className='questionList'>
               {searchQuestion.length >= 0 &&
                 !question &&
                 searchQuestion.map((search, index) => (
-                  <li key={index}>{search.question}</li>
+                  <li key={index} onClick={handleClick}>
+                    <Link to='/help-results' data={index}>
+                      {search.question}
+                    </Link>
+                  </li>
                 ))}
             </ul>
 
             {searchQuestion.length === 0 && !question && (
-              <h4>Sorry, there are no search results.</h4>
+              <h4 className="noResults">No results were found for your search, please try changing the search request</h4>
             )}
 
             <Col md={5}>

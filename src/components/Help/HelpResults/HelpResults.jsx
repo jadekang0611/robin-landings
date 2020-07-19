@@ -18,17 +18,30 @@ const HelpResults = (props) => {
   const searchQuestion = location.props;
 
   const goBack = () => {
-    history.goBack();
+    history.push('/help-center');
   };
 
 
   return (
-    <div>
-      {searchQuestion &&
-          <div>
-            <h1>{searchQuestion.question}</h1> 
-            <h6>{searchQuestion.answer}</h6>
-          </div>}
+    <div className="resultsRoots">
+      <Container className="resultsContainer">
+        <Row xs={12} className="resultsBack">
+          <Button onClick={goBack} className="backButton" variant="link">
+            <i class='fas fa-long-arrow-alt-left'></i>
+            Back
+          </Button>
+        </Row>
+        <Row className="resultsRow">
+          <Col className="resultsCol">
+            {searchQuestion && (
+              <div>
+                <h1>{searchQuestion.question}</h1>
+                <h6>{searchQuestion.answer}</h6>
+              </div>
+            )}
+          </Col>
+        </Row>
+      </Container>
       <Footer />
     </div>
   );
