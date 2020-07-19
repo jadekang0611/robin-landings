@@ -71,6 +71,20 @@
     outline: none !important;
 }
 
+.questionList {
+    list-style: none !important;
+    margin: 50px 0;
+    padding: 0;
+}
+
+.questionList li {
+    margin: 25px;
+}
+
+.questionList a {
+    text-decoration: none !important;
+}
+
 /* /////////////////////////// */
 /* HELP RESULTS*/
 /* /////////////////////////// */

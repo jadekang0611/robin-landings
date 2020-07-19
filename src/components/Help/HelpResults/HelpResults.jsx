@@ -1,7 +1,6 @@
 import React from 'react';
 import { useHistory, useLocation } from 'react-router-dom';
 import '../Help.css';
-import data from '../data';
 import {
   Container,
   Row,
@@ -12,6 +11,7 @@ import {
 } from 'react-bootstrap';
 import { Footer } from '../..';
 
+
 const HelpResults = (props) => {
   const history = useHistory();
   const location = useLocation();
@@ -21,11 +21,14 @@ const HelpResults = (props) => {
     history.goBack();
   };
 
+
   return (
     <div>
-      Help results
       {searchQuestion &&
-        searchQuestion.map((search, index) => <div>{search.question} {search.answer}</div>)}
+          <div>
+            <h1>{searchQuestion.question}</h1> 
+            <h6>{searchQuestion.answer}</h6>
+          </div>}
       <Footer />
     </div>
   );
