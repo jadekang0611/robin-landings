@@ -44,7 +44,7 @@
     font-size: 18px;
     font-weight: 500;
     line-height: 28px;
-    margin: 0;
+    margin: 15px 0;
     opacity: 0.8;
 }
 
@@ -77,11 +77,12 @@
 }
 
 .demo-button a {
-  color: #ffffff;
-  text-decoration: none;
+    color: #ffffff;
+    text-decoration: none;
 }
 
 .demo-button:hover {
+    border: none !important;
     color: #fff !important;
     background-size: 100% 100% !important;
 }
@@ -226,4 +227,43 @@
     margin-top: 60px;
     margin-bottom: 20px;
     padding: 0 200px;
+}
+
+
+/* ///////////////////// */
+/* RESPONSIVE */
+/* ///////////////////// */
+
+
+@media screen and (max-width: 600px) {
+
+    .messageContainer {
+        padding: 0;
+    }
+
+    .message h1 {
+        font-size: 40px;
+    }
+
+    .messageImage {
+        height: 405px;
+        width: 440px;
+    }
+
+    .demo-button{
+        font-size: 18px;
+        padding: 20px;
+        margin: 20px 100px 30px !important;
+        width: 200px;
+    }
+
+    .benefitRow {
+        margin: 20px 0 20px 30px !important;
+    }
+
+    .demoMessage h1 {
+        font-size: 30px;
+        margin: 40px auto;
+        padding: 0;
+    }
 }

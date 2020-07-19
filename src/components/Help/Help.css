@@ -100,7 +100,7 @@
 /* HELP RESULTS*/
 /* /////////////////////////// */
 
-.resultsRoots {
+.resultsRoot {
     background-image: url('../../assets/screen-one.svg');
     background-position-x: 50px;
     background-position-y: 250px;
@@ -134,3 +134,33 @@
     margin: 30px auto 400px;
 }
 
+
+/* ///////////////////// */
+/* RESPONSIVE */
+/* ///////////////////// */
+
+
+@media screen and (max-width: 600px) {
+
+    .helpRoot, .resultsRoot {
+        margin: 50px 20px 0;
+    }
+
+    .helpContainer h1, .resultsContainer h1 {
+        font-size: 40px;
+    }
+
+    .searchInput {
+        width: 100% !important;
+    }
+
+    .helpImage {
+        height: 405px;
+        width: 440px;
+    }
+
+    .noResults {
+        margin: 50px auto 100px !important;
+    }
+
+}

@@ -71,8 +71,16 @@
 
 @media screen and (max-width: 1200px) {
 
-.footerCol:nth-child(1n+3) {
-    margin: 0 !important;
-}
+    .footerCol {
+        margin-top: 20px;
+    }
+
+    .footerCol:nth-child(1n+3) {
+        margin: 20px 0 0 !important;
+    }
+
+    #privacy, #terms, #social {
+        margin-top: 15px;
+    }
 
 }

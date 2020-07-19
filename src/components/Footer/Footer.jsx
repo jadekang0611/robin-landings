@@ -73,16 +73,16 @@ const Footer = () => {
             </Row>
             <hr></hr>
             <Row className='footerTerms'>
-              <Col md={3} id='copyright'>
+              <Col xs={12} md={3} id='copyright'>
                 ©2020 Robin. All rights reserved
               </Col>
-              <Col md={2} id='privacy'>
+              <Col xs={3} md={2} id='privacy'>
                 Privacy policy
               </Col>
-              <Col md={2} id='terms'>
+              <Col xs={4} md={2} id='terms'>
                 Terms of service
               </Col>
-              <Col md={5} id='social'>
+              <Col xs={5} md={5} id='social'>
                 <a
                   href='https://www.linkedin.com/company/joinrobin'
                   target='_blank'

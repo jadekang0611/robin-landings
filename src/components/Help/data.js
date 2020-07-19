@@ -2,7 +2,7 @@ export const questions = [
          {
            question: 'What is Robin?',
            answer:
-             'Robin is a platform where you can practice your coding skills by solving one question per day. You don`t need to worry about where to find questions - Robin brings you fun challenges and rewards you for your activity.',
+             `Robin is a platform where you can practice your coding skills by solving one question per day. You don't need to worry about where to find questions - Robin brings you fun challenges and rewards you for your activity.`,
          },
          {
            question: 'Who should use Robin?',
@@ -22,7 +22,7 @@ export const questions = [
          {
            question: 'What can I do with my points?',
            answer:
-             'Great question! The more questions you solve, the more appealing you will appear to your employers. Additionally, we`re currently working on creating tangible benefits you will be able to redeem for your hard earned points.',
+             `Great question! The more questions you solve, the more appealing you will appear to your employers. Additionally, we're currently working on creating tangible benefits you will be able to redeem for your hard earned points.`,
          },
          {
            question: 'What does my level represent?',

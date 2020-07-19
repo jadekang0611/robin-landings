@@ -23,7 +23,7 @@ const HelpResults = (props) => {
 
 
   return (
-    <div className="resultsRoots">
+    <div className="resultsRoot">
       <Container className="resultsContainer">
         <Row xs={12} className="resultsBack">
           <Button onClick={goBack} className="backButton" variant="link">
