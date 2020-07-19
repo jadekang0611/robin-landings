@@ -18,7 +18,7 @@ const HelpResults = (props) => {
   const searchQuestion = location.props;
 
   const goBack = () => {
-    history.push('/help-center');
+    history.push('/outcomes/help-center');
   };
 
 

@@ -8,7 +8,7 @@ const MainMessage = () => {
     let history = useHistory()
 
     function handleClick() {
-        history.push('/request-demo')
+        history.push('/outcomes/request-demo')
     }
 
     return (

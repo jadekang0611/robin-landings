@@ -41,7 +41,7 @@ const Help = (props) => {
   
   const handleClick = function(e){
     let currIndex = e.target.getAttribute('data');
-    let path = '/help-results';
+    let path = '/outcomes/help-results';
     history.push({
       pathname: path,
       props: searchQuestion[currIndex],
@@ -78,7 +78,7 @@ const Help = (props) => {
                 <ul className='questionList'>
                   {searchQuestion.map((search, index) => (
                     <li key={index} onClick={handleClick}>
-                      <Link to='/help-results' data={index}>
+                      <Link to='/outcomes/help-results' data={index}>
                         {search.question}
                       </Link>
                     </li>
@@ -92,7 +92,7 @@ const Help = (props) => {
                 !question &&
                 searchQuestion.map((search, index) => (
                   <li key={index} onClick={handleClick}>
-                    <Link to='/help-results' data={index}>
+                    <Link to='/outcomes/help-results' data={index}>
                       {search.question}
                     </Link>
                   </li>

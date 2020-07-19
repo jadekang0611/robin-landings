@@ -39,12 +39,10 @@ const Footer = () => {
                     <a href='/outcomes'>Overview</a>
                   </li>
                   <li>
-                    <a href='/help-center'>Help Center</a>
+                    <a href='/outcomes/help-center'>Help Center</a>
                   </li>
                   <li>
-                    <a href='/request-demo'>
-                      Request for Demo
-                    </a>
+                    <a href='/outcomes/request-demo'>Request for Demo</a>
                   </li>
                 </ul>
               </Col>
