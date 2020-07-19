@@ -1,4 +1,76 @@
+/* /////////////////////////// */
+/* HELP CENTER MAIN PAGE */
+/* /////////////////////////// */
+
 .helpContainer {
     background-image: url('../../assets/screen-one.svg');
-    margin-left: 50px;
+    background-position-x: 50px;
+    /* margin-left: 50px; */
+    margin: 0 auto;
 }
+
+.helpParent {
+    margin-bottom: 180px;
+}
+
+.helpRow {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.helpRow h5 {
+    color: #5CD9D8;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+.helpRow h1 {
+    color: #2E384D;
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    line-height: 64px;
+    margin: 16px 0 20px;
+}
+
+.searchInput {
+    width: 500px !important;
+}
+
+.searchForm {
+    background-color: #f7f8fa !important;
+    border: none !important;
+    border-radius: 5px !important;
+    height: 48px !important;
+}
+
+.searchForm::placeholder {
+    color: black !important;
+    font-size: 16px !important;
+    opacity: 0.5 !important;
+}
+
+.searchForm:focus {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.searchButton {
+    background-color: #5CD9D8 !important;
+    border: none !important;
+    height: 48px;
+    outline: none !important;
+    width: 48px;
+}
+
+.searchButton:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/* /////////////////////////// */
+/* HELP RESULTS*/
+/* /////////////////////////// */

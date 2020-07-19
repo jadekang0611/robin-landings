@@ -4,7 +4,8 @@ import * as ROUTES from './Routes';
 import StudentMain from './views/Students/StudentMain';
 import OutcomesMain from './views/Outcomes/OutcomesMain';
 import RequestDemo from './views/Outcomes/components/RequestDemo';
-import { Help } from './components';
+import { Help } from './components/Help';
+import { HelpResults } from './components/Help';
 import './Navigation.css';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -32,6 +33,7 @@ function App() {
           <Route exact path={ROUTES.OUTCOMES} component={OutcomesMain} />
           <Route exact path={ROUTES.REQUEST_DEMO} component={RequestDemo} />
           <Route exact path={ROUTES.HELP_CENTER} component={Help} />
+          <Route exact path={ROUTES.HELP_RESULTS} component={HelpResults} />
         </Switch>
       </Router>
     </div>
