@@ -67,11 +67,23 @@
     outline: none !important;
     padding: 18px 30px;
     width: 240px;
-    }
+    /* transition setting */
+    background-image: linear-gradient(#ff725e, #ff725e) !important;
+    background-position: 50% 50% !important;
+    background-repeat: no-repeat !important;
+    background-size: 0% 100% !important;
+    transition: background-size 0.3s, color 0.5s !important;
+    position: relative;
+}
 
 .demo-button a {
   color: #ffffff;
   text-decoration: none;
+}
+
+.demo-button:hover {
+    color: #fff !important;
+    background-size: 100% 100% !important;
 }
 
 /* /////////////////// */
@@ -215,7 +227,3 @@
     margin-bottom: 20px;
     padding: 0 200px;
 }
-
-/* /////////////////// */
-/* FOOTER */
-/* /////////////////// */
