@@ -2,54 +2,46 @@ import React from 'react';
 import '../OutcomesOverview.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
+import { Feature } from '../../../../../components';
 import featureImage from '../../../../../assets/feature_dot.png';
 
 
-const Feature = () => {
+const Features = () => {
 
     return (
-        <div>
-        <Container className="featuresContainer" >
-            <h3>Our Features</h3>
-            <Row className="row row1" >
-                <Col className="col col1" md={4}>
-                    <Card className="featureCard">
-                        <img className="featureImage" src={featureImage} alt="feature"/>
-                        <Card.Body className="featureBody">
-                            <Card.Title className="featureTitle">Box 1</Card.Title>
-                            <Card.Text className="featureText">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.Tincidunt.
-                            </Card.Text>
-                        </Card.Body>
-                    </Card>
-                </Col>
-                <Col className="col col2" md={{ span: 6, offset: 1}}><p>Lorum Ipsum dolor sit amet, consectetur adipiscing elit. Varius vitae enim vestibulum tincidunt.</p></Col>
-                <Col className="col col3" md={{ span: 4, offset: 7 }}>
-                    <Card className="featureCard">
-                        <img className="featureImage" src={featureImage} alt="feature"/>
-                        <Card.Body className="featureBody">
-                            <Card.Title className="featureTitle">Box 2</Card.Title>
-                            <Card.Text className="featureText">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.Tincidunt.
-                            </Card.Text>
-                        </Card.Body>
-                    </Card>
-                </Col>
-                <Col className="col col4" md={{ span: 4, offset: 2 }}>
-                    <Card className="featureCard">
-                        <img className="featureImage" src={featureImage} alt="feature"/>
-                        <Card.Body className="featureBody">
-                            <Card.Title className="featureTitle">Box 3</Card.Title>
-                            <Card.Text className="featureText">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.Tincidunt.
-                            </Card.Text>
-                        </Card.Body>
-                    </Card>
-                </Col>
+      <div>
+        <Container className='featuresContainer'>
+          <section>
+            <div>
+              <h2>OUR FEATURES</h2>
+            </div>
+            <Row className='row1'>
+              <Col lg={5}>
+                <div className='feature-container'>
+                  <Feature className='feature1' />
+                </div>
+
+                <div className='feature-container2'>
+                  <Feature className='feature2' />
+                </div>
+              </Col>
+              <Col lg={7}>
+                <div className='feature-container-description'>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Varius vitae enim vestibulum tincidunt.
+                  </p>
+                </div>
+
+                <div className='feature-container3'>
+                  <Feature className='feature3' />
+                </div>
+              </Col>
             </Row>
+          </section>
         </Container>
-        </div>
+      </div>
     );
 };
 
-export default Feature;
+export default Features;

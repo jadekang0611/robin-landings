@@ -1,0 +1,86 @@
+.footerContainer {
+    background-color: white;
+    margin: 85px 0 35px;
+}
+
+.robinLogo {
+    width: 180px;
+}
+
+.footerLogo, .footerCol:nth-child(1n+3), #copyright {
+    margin-right: 23px !important;
+}
+
+.footerCol h6 {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.footerCol ul {
+    list-style: none !important;
+    padding: 0 !important;
+}
+
+.footerCol li {
+    margin-bottom: 20px;
+}
+
+.footerCol a {
+    color: #2E384D;
+    font-size: 14px;
+    line-height: 17px;
+    opacity: .8;
+    text-decoration: none !important;
+}
+
+.footerCol a:hover {
+    color: #5CD9D8;
+    text-decoration: none !important;
+}
+
+.footerContainer hr {
+    margin: 65px 0 36px;
+    width: 1200px;
+}
+
+.footerTerms {
+    font-size: 14px;
+    line-height: 17px;
+}
+
+#privacy, #terms {
+    max-width: 140px !important;
+}
+
+#social {
+    text-align: right !important;
+}
+
+#social a {
+    margin: 0 8px;
+}
+
+#social a:nth-child(3) img {
+    width: 24px !important;
+}
+
+/* ///////////////////// */
+/* RESPONSIVE */
+/* ///////////////////// */
+
+
+@media screen and (max-width: 1200px) {
+
+    .footerCol {
+        margin-top: 20px;
+    }
+
+    .footerCol:nth-child(1n+3) {
+        margin: 20px 0 0 !important;
+    }
+
+    #privacy, #terms, #social {
+        margin-top: 15px;
+    }
+
+}

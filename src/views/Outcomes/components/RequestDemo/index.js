@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import './RequestDemo.css';
 import requestImage from '../../../../assets/outcome-request.png';
 import { Container, Row, Col, Form } from 'react-bootstrap';
-import Footer from '../OutcomesOverview/components/Footer';
+import { Footer } from '../../../../components';
 
-const initialFormData = Object.freeze({
+const initialFormData = {
     username: "",
     name: "",
     phone: "",
-});
+};
 
 const RequestDemo = () => {
     const [formData, updateFormData] = useState(initialFormData);
@@ -30,7 +30,7 @@ const RequestDemo = () => {
     };
 
     return (
-        <div>
+        <div className="requestRoot">
             <Container className="requestContainer">
                 <Row xs={1} md={2} className="requestForm">
                     <Col className="requestLeft">

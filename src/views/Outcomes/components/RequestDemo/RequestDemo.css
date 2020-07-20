@@ -1,3 +1,8 @@
+.requestRoot {
+    background-image: url('../../../../assets/screen-one.svg');
+    margin-left: 50px;
+}
+
 .requestContainer {
     align-self: center;
     color: #2E384D;
@@ -77,9 +82,62 @@ select:-webkit-autofill:focus {
     outline: none !important;
     padding: 18px 30px;
     width: 240px;
-    }
+    /* transition setting */
+    background-image: linear-gradient(#ff725e, #ff725e) !important;
+    background-position: 50% 50% !important;
+    background-repeat: no-repeat !important;
+    background-size: 0% 100% !important;
+    transition: background-size 0.3s, color 0.5s !important;
+    position: relative;
+}
 
 .submit-button a {
-  color: #ffffff;
-  text-decoration: none;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.submit-button:hover {
+    border: none !important;
+    color: #fff !important;
+    background-size: 100% 100% !important;
+}
+
+/* ///////////////////// */
+/* RESPONSIVE */
+/* ///////////////////// */
+
+
+@media screen and (max-width: 600px) {
+
+    .requestRoot {
+        margin: 50px auto 0;
+    }
+
+    .requestLeft {
+        margin-left: 25px;
+    }
+
+    .requestForm h1 {
+        font-size: 40px;
+    }
+
+    .requestImage {
+        height: 405px;
+        margin: 80px auto 0;
+        width: 440px;
+    }
+
+    .requestLeft button {
+        font-size: 18px;
+        padding: 15px !important;
+        margin: 20px 100px 30px !important;
+        width: 200px;
+    }
+
+    .requestLeft h2 {
+        font-size: 30px;
+        margin: 80px 10px 0 !important;
+    }
+
+
 }

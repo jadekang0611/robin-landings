@@ -5,3 +5,6 @@ export { default as DemoMessage } from './DemoMessage';
 export { default as Companies } from './Companies';
 export { default as LastMessage } from './LastMessage';
 export { default as HowItWorks } from './HowItWorks';
+export { default as Footer } from './Footer';
+export { default as Help } from './Help/HelpMain';
+export { default as HelpResults } from './Help/HelpResults';
