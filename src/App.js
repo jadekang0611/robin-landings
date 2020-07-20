@@ -1,8 +1,9 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link, useParams, useRouteMatch } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Link, Redirect, useParams, useRouteMatch } from 'react-router-dom';
 import * as ROUTES from './Routes';
 // import StudentMain from './views/Students/StudentMain';
 // import OutcomesMain from './views/Outcomes/OutcomesMain';
+import Overview from './views/Students/Overview';
 import RequestDemo from './views/Outcomes/components/RequestDemo';
 import { Help, HelpResults } from './components/Help';
 import OutcomesOverview from './views/Outcomes/components/OutcomesOverview';
@@ -23,7 +24,7 @@ export default function App() {
         <div id='nav-container'>
           <ul className='nav-main'>
             <li className='nav-item'>
-              <Link to='/'>Students</Link>
+              <Link to='/students'>Students</Link>
             </li>
             <li className='nav-item'>
               <Link to='/outcomes'>Outcomes</Link>
@@ -38,6 +39,10 @@ export default function App() {
 
         <Switch>
           <Route exact path='/'>
+            <Redirect to='/students' />
+            <StudentPage />
+          </Route>
+          <Route path='/students'>
             <StudentPage />
           </Route>
           <Route path='/outcomes'>
@@ -49,12 +54,56 @@ export default function App() {
   );
 }
 
+
 function StudentPage() {
   let { path, url } = useRouteMatch();
-  
+
   return (
     <div>
-      <h2>Students Main Page</h2>
+      <div id='sub-nav-container'>
+        <ul className='sub-nav-main'>
+          <li className='logo-item'>
+            <Link to='/students'>
+              <img src={robinLogo} className='sub-nav-logo' alt='robin-logo' />
+            </Link>
+          </li>
+        </ul>
+        <ul className='sub-nav-main'>
+          <li className='sub-nav-item'>
+            <Link to={`${url}/overview`}>Overview</Link>
+          </li>
+          <li className='sub-nav-item'>
+            <Link to={`${url}/how-it-works`}>How It Works</Link>
+          </li>
+          <li className='sub-nav-item'>
+            <Link to={`${url}/help-center`}>Help Center</Link>
+          </li>
+          <li className='sign-up-button'>
+            <Link to={`${url}/signup`}>Sign Up</Link>
+          </li>
+        </ul>
+      </div>
+
+      <Switch>
+        <Route exact path={path}>
+          <Overview />
+        </Route>
+        <Route path={`${path}/overview`}>
+          <Overview />
+        </Route>
+        <Route path={`${path}/how-it-works`}>
+          <HowWorks />
+        </Route>
+        <Route path={`${path}/help-center`}>
+          <Help />
+        </Route>
+        <Route path={`${path}/help-results`}>
+          <HelpResults />
+        </Route>
+        <Route path={`${path}/signup`}>
+          
+        </Route>
+      </Switch>
     </div>
   );
 }
@@ -106,6 +155,7 @@ function OutcomesPage() {
     </div>
   );
 }
+
 
 // ///////////////////////////////
     // ORIGINAL
