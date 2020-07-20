@@ -22,3 +22,21 @@
 }
 
 
+/* ///////////////////// */
+/* RESPONSIVE */
+/* ///////////////////// */
+
+
+@media screen and (max-width: 600px) {
+
+  .screen-six-section {
+    padding: 30px;
+  }
+
+  .screen-six-section h2 {
+      font-size: 30px;
+      margin: 40px auto;
+      padding: 0;
+  }
+
+}

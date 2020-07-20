@@ -69,3 +69,27 @@
 .vertical-gap {
   height: 200px;
 }
+
+
+/* ///////////////////// */
+/* RESPONSIVE */
+/* ///////////////////// */
+
+
+@media screen and (max-width: 600px) {
+
+    #screen-four {
+      margin: 0 auto;
+      padding: 0 10px;
+    }
+
+    .demo-container img {
+      margin: 0 auto !important;
+      width: 100%;
+    }
+
+    .vertical-gap {
+      height: 100px;
+    }
+
+}

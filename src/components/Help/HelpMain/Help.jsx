@@ -46,7 +46,6 @@ const Help = (props) => {
       pathname: path,
       props: searchQuestion[currIndex],
     });
-    console.log(searchQuestion[currIndex]);
   }
 
   return (

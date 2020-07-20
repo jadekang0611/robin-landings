@@ -122,3 +122,29 @@
 .step-contents-col {
   padding: 40px !important;
 }
+
+/* ///////////////////// */
+/* RESPONSIVE */
+/* ///////////////////// */
+
+
+@media screen and (max-width: 600px) {
+
+    /* #nav-container {
+      margin: 80px auto;
+      padding: 0 25px;
+    }
+
+    .screen-two-row {
+        flex-direction: column-reverse;
+    }
+
+    .feature-message p {
+        font-size: 30px;
+        margin: 40px auto;
+    }
+
+    .feature-container, .feature-container2, .feature-container3 {
+      margin: 40px;;
+    } */
+}

@@ -16,22 +16,22 @@ const Benefit = () => {
                     </Col>
                 </Row>
                 <Row className="benefitRight" md={12}>
-                    <Col className="benefitCol" md={5}>
+                    <Col className="benefitCol" md={6}>
                         <img className="benefitImage" src={benefitIcon} alt="benefit" />
                         <h5>1 - Diam placerat.</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt.</p>
                     </Col >
-                    <Col className="benefitCol" md={5}>
+                    <Col className="benefitCol" md={6}>
                         <img className="benefitImage" src={benefitIcon} alt="benefit" />
                         <h5>2 - Diam placerat.</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt.</p>
                     </Col>
-                    <Col className="benefitCol" md={5}>
+                    <Col className="benefitCol" md={6}>
                         <img className="benefitImage" src={benefitIcon} alt="benefit" />
                         <h5>3 - Diam placerat.</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt.</p>
                     </Col>
-                    <Col className="benefitCol" md={5}>
+                    <Col className="benefitCol" md={6}>
                         <img className="benefitImage" src={benefitIcon} alt="benefit" />
                         <h5>4 - Diam placerat.</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt.</p>
