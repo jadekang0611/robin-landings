@@ -11,6 +11,7 @@ import robinLogo from './assets/robin-logo.png';
 import './Navigation.css';
 import './App.css';
 import HowWorks from './views/Students/HowWorks';
+import AboutUs from './views/Company/AboutUs';
 
 import './views/SubNav.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -30,6 +31,9 @@ export default function App() {
               <Link to='/outcomes'>Outcomes</Link>
             </li>
             <li className='nav-item'>Employers</li>
+            <li className='nav-item'>
+              <Link to='/about-us'>Company</Link>
+            </li>
           </ul>
 
           <ul className='nav-main'>
@@ -47,6 +51,9 @@ export default function App() {
           </Route>
           <Route path='/outcomes'>
             <OutcomesPage />
+          </Route>
+          <Route path='/about-us'>
+            <AboutUsPage />
           </Route>
         </Switch>
       </div>
@@ -150,6 +157,41 @@ function OutcomesPage() {
         </Route>
         <Route path={`${path}/request-demo`}>
           <RequestDemo />
+        </Route>
+      </Switch>
+    </div>
+  );
+}
+
+function AboutUsPage() {
+  let { path, url } = useRouteMatch();
+
+  return (
+    <div>
+      <div id='sub-nav-container'>
+        <ul className='sub-nav-main'>
+          <li className='logo-item'>
+            <Link to='/outcomes'>
+              <img src={robinLogo} className='sub-nav-logo' alt='robin-logo' />
+            </Link>
+          </li>
+        </ul>
+        <ul className='sub-nav-main'>
+          <li className='sub-nav-item'>
+            <Link to={`${url}`}>About Us</Link>
+          </li>
+          <li className='sub-nav-item'>
+            <Link to={`${url}/blog`}>Blog</Link>
+          </li>
+        </ul>
+      </div>
+
+      <Switch>
+        <Route exact path={path}>
+          <AboutUs />
+        </Route>
+        <Route path={`${path}/about-us`}>
+          <AboutUs />
         </Route>
       </Switch>
     </div>
