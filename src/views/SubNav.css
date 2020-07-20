@@ -52,9 +52,22 @@
   padding: 12px 16px;
   background-color: #5cd9d8;
   box-shadow: 0px 4px 16px rgba(36, 178, 177, 0.16);
+  /* transition setting */
+  background-image: linear-gradient(#ff725e, #ff725e) !important;
+  background-position: 50% 50% !important;
+  background-repeat: no-repeat !important;
+  background-size: 0% 100% !important;
+  transition: background-size 0.3s, color 0.5s !important;
+  position: relative;
 }
 
 .sign-up-button a, .request-demo-button a {
   color: #ffffff !important;
   text-decoration: none !important;
+}
+
+.sign-up-button:hover, .request-demo-button:hover {
+    border: none !important;
+    color: #fff !important;
+    background-size: 100% 100% !important;
 }

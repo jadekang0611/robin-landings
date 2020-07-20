@@ -1,11 +1,12 @@
 import React from 'react';
 import './HowWorks.css';
-import { HowItWorks } from '../../../components';
+import { HowItWorks, Footer } from '../../../components';
 
 const HowWorks = () => {
   return (
     <>
       <HowItWorks />
+      <Footer />
     </>
   );
 };

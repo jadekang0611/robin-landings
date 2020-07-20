@@ -87,7 +87,8 @@
 }
 
 .questionList a:hover {
-    color: #5CD9D8 !important;
+    color: #2E384D !important;
+    border-bottom: 2px solid #ff725e;
 }
 
 .noResults {

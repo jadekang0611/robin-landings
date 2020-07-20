@@ -34,8 +34,8 @@
 }
 
 .footerCol a:hover {
-    color: #5CD9D8;
-    text-decoration: none !important;
+    color: #2E384D;
+    border-bottom: 2px solid #ff725e;
 }
 
 .footerContainer hr {

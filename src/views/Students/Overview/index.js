@@ -7,6 +7,7 @@ import {
   DemoMessage,
   Companies,
   LastMessage,
+  Footer,
 } from '../../../components';
 
 const Overview = () => {
@@ -24,6 +25,8 @@ const Overview = () => {
       <Companies />
       {/* StudentOverview Last Message */}
       <LastMessage />
+      {/* Footer Component */}
+      <Footer />
     </div>
   );
 };

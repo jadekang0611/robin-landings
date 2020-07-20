@@ -19,13 +19,13 @@ const Footer = () => {
                 <h6>Student</h6>
                 <ul>
                   <li>
-                    <a href='/'>Overview</a>
+                    <a href='/students'>Overview</a>
                   </li>
                   <li>
-                    <a href='/how-it-works'>How it works</a>
+                    <a href='/students/how-it-works'>How it works</a>
                   </li>
                   <li>
-                    <a href='/help-center'>Help Center</a>
+                    <a href='/students/help-center'>Help Center</a>
                   </li>
                   <li>
                     <a href='/signup'>Sign Up</a>
