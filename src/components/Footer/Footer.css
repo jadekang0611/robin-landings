@@ -79,6 +79,11 @@
         margin: 20px 0 0 !important;
     }
 
+    .footerContainer hr {
+    margin: 65px 0 36px;
+    width: 100%;
+    }
+
     #privacy, #terms, #social {
         margin-top: 15px;
     }

@@ -130,13 +130,17 @@
 
 @media screen and (max-width: 600px) {
 
-    /* #nav-container {
+    #HowItWorks-Screen {
       margin: 80px auto;
       padding: 0 25px;
     }
 
-    .screen-two-row {
-        flex-direction: column-reverse;
+    .main-title {
+      font-size: 40px !important;
+    }
+
+    #HowItWorks-Screen h3 {
+        font-size: 25px !important;
     }
 
     .feature-message p {
@@ -146,5 +150,13 @@
 
     .feature-container, .feature-container2, .feature-container3 {
       margin: 40px;;
-    } */
+    }
+
+    .flip, .no-flip {
+      margin: 0 auto !important;
+    }
+
+    #HowItWorks-Screen h2 {
+      font-size: 30px;
+    }
 }

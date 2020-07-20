@@ -89,7 +89,10 @@
     }
 
     .vertical-gap {
-      height: 100px;
+      height: 50px;
     }
 
+    .screen-four-row2 {
+      flex-direction: column-reverse;
+    }
 }

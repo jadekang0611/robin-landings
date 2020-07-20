@@ -70,7 +70,7 @@ const HowItWorks = () => {
                         <p>{Steps.indexOf(step) + 1}</p>
                       </div>
                       <div className="horizontal-gap"></div>
-                      <h2 classNamne="title">{step.title}</h2>
+                      <h2 className="title">{step.title}</h2>
                     </div>
                     <p className="description">{step.description}</p>
                   </div>
