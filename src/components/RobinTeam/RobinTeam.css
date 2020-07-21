@@ -1,3 +1,29 @@
+.teamContainer {
+    margin: 120px;
+    text-align: center;
+}
+
+.teamRow {
+    margin-top: 40px;
+}
+
 .team-img {
-    width: 80%;
+    width: 90%;
+}
+
+.teamRow h4 {
+    font-size: 24px;
+    letter-spacing: 0.01em;
+    line-height: 28px;
+}
+
+.teamTitle {
+    margin: 16px;
+    text-align: left;
+}
+
+.teamRow p {
+    font-size: 18px;
+    letter-spacing: 0.01em;
+    line-height: 21px;
 }

@@ -1,14 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './NewsCard.css';
 
-const NewsCard = () => {
+const NewsCard = (props) => {
+    const data = props;
+
+    console.log(data)
     return (
-        <div className="feature-card">
-            <div className="feature-icon-box"></div>
-            <h2 className="feature-title">Example Title </h2>
-            <p className="feature-description">Example description these are the first words from blog content should be in 3 lines</p>
-            <p>Read More -></p>
-        </div>
+      // <div className="news-card" >
+      //     <h2 className="news-title">{data.data.title} </h2>
+      //     <p className="news-description">{data.data.description}</p>
+      //     <a href={data.data.url} alt='example title'>Read More -></a>
+      //     <img src={data.data.image} alt='article-img'></img>
+      // </div>
+      <div className='news-card'>
+        <h2 className='news-title'>Article Title </h2>
+        <p className='news-description'>Article Description</p>
+        <a href={data.data.url} alt='example title'>
+          Read More ->
+        </a>
+        <img src={data.data.image} alt='article-img'></img>
+      </div>
     );
 };
 
