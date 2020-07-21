@@ -1,6 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link, Redirect, useParams, useRouteMatch } from 'react-router-dom';
 import * as ROUTES from './Routes';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Nav, NavDropdown, Navbar } from 'react-bootstrap';
 // import StudentMain from './views/Students/StudentMain';
 // import OutcomesMain from './views/Outcomes/OutcomesMain';
 import Overview from './views/Students/Overview';
@@ -14,7 +16,7 @@ import HowWorks from './views/Students/HowWorks';
 import About from './views/Company/About';
 
 import './views/SubNav.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 
@@ -23,24 +25,59 @@ export default function App() {
     //Top Nav//
     <Router>
       <div>
-        <div id='nav-container'>
-          <ul className='nav-main'>
-            <li className='nav-item'>
+        {/* MOBILE NAV BAR */}
+        <Navbar bg="light" expand="md" className="mobile-nav">
+          <Navbar.Brand as={Link} to='/'>
+            <img src={robinLogo} className='mobile-nav-logo' alt='robin-logo' />
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="mr-auto">
+              <NavDropdown title="Students" id="students-nav-dropdown">
+                <NavDropdown.Item as={Link} to='/students/overview'>Overview</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to='/students/how-it-works'>How It Works</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to='/students/help-center'>Help Center</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item as={Link} to='/students/signup'>Sign Up</NavDropdown.Item>
+              </NavDropdown>
+              <NavDropdown title="Outcomes" id="outcomes-nav-dropdown">
+                <NavDropdown.Item as={Link} to='/outcomes/overview'>Overview</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to='/outcomes/help-center'>Help Center</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item as={Link} to='/outcomes/request-demo'>Request for Demo</NavDropdown.Item>
+              </NavDropdown>
+              {/* <NavDropdown title="Employers" id="employer-nav-dropdown">
+                <NavDropdown.Item as={Link} to='/employers/overview'>Overview</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to='/employers/search-candidates'>Search Candidates</NavDropdown.Item>
+              </NavDropdown> */}
+              <NavDropdown title="Company" id="company-nav-dropdown">
+                <NavDropdown.Item as={Link} to='/about-us'>About Us</NavDropdown.Item>
+                {/* <NavDropdown.Item as={Link} to='/about-us/blog'>Blog</NavDropdown.Item> */}
+              </NavDropdown>
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
+        
+
+        {/* DESKTOP NAV BAR */}
+        <div id='desktop-nav-container'>
+          <ul className='desktop-nav-main'>
+            <li className='desktop-nav-item'>
               <Link to='/students'>Students</Link>
             </li>
-            <li className='nav-item'>
+            <li className='desktop-nav-item'>
               <Link to='/outcomes'>Outcomes</Link>
             </li>
-            <li className='nav-item'>
+            {/* <li className='desktop-nav-item'>
               <Link to='/employers'>Employers</Link>
-            </li>
-            <li className='nav-item'>
+            </li> */}
+            <li className='desktop-nav-item'>
               <Link to='/about-us'>Company</Link>
             </li>
           </ul>
 
-          <ul className='nav-main'>
-            <li className='nav-item nav-sign-in'>
+          <ul className='desktop-nav-main'>
+            <li className='desktop-nav-item desktop-nav-sign-in'>
               <Link to='/sign-in'>Sign In</Link>
             </li>
           </ul>
@@ -71,6 +108,8 @@ export default function App() {
     </Router>
   );
 }
+
+
 
 /////////////////////////////
 //Student section Sub Nav//

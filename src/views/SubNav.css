@@ -71,3 +71,16 @@
     color: #fff !important;
     background-size: 100% 100% !important;
 }
+
+/* ///////////////////// */
+/* RESPONSIVE */
+/* ///////////////////// */
+
+
+@media screen and (max-width: 767px) {
+
+  #sub-nav-container {
+    display: none;
+}
+
+}

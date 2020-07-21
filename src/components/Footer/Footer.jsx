@@ -46,17 +46,17 @@ const Footer = () => {
                   </li>
                 </ul>
               </Col>
-              <Col xs={6} sm={6} md={2} className='footerCol'>
+              {/* <Col xs={6} sm={6} md={2} className='footerCol'>
                 <h6>Employers</h6>
                 <ul>
                   <li>
                     <a href='/employers'>Overview</a>
                   </li>
-                  {/* <li>
+                  <li>
                     <a href='/'>Search Candidates</a>
-                  </li> */}
+                  </li>
                 </ul>
-              </Col>
+              </Col> */}
               <Col xs={6} sm={6} md={2} className='footerCol'>
                 <h6>Company</h6>
                 <ul>
