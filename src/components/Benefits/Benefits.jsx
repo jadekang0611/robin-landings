@@ -1,11 +1,11 @@
 import React from 'react';
-import '../OutcomesOverview.css';
+import './Benefits.css';
 import { Container, Row, Col } from 'react-bootstrap';
-import benefitIcon from '../../../../../assets/vector.png';
+import benefitIcon from '../../assets/vector.png';
 
 
-const Benefit = () => {
 
+const Benefits = () => {
     return (
         <Container className="benefitContainer">
             <Row xs={1} md={2} className="benefitRow">
@@ -42,4 +42,4 @@ const Benefit = () => {
     );
 };
 
-export default Benefit;
+export default Benefits;

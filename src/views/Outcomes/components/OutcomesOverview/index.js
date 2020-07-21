@@ -1,18 +1,14 @@
 import React from 'react';
 import './OutcomesOverview.css';
-import MainMessage from './components/MainMessage';
-import Features from './components/Features';
-import Benefit from './components/Benefits';
-import DemoBox from './components/DemoBox';
-import { Footer } from '../../../../components';
+import { MainMessage, FeatureMessage, Benefits, LastMessage, Footer } from '../../../../components';
 
 const OutcomesOverview = () => {
     return (
         <div className="outcomes-body">
         <MainMessage/>
-        <Features />
-        <Benefit />
-        <DemoBox />
+        <FeatureMessage />
+        <Benefits />
+        <LastMessage />
         <Footer />
         </div>
     );

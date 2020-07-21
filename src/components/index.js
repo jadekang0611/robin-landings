@@ -8,3 +8,8 @@ export { default as HowItWorks } from './HowItWorks';
 export { default as Footer } from './Footer';
 export { default as Help } from './Help/HelpMain';
 export { default as HelpResults } from './Help/HelpResults';
+export { default as AboutUs } from './AboutUs';
+export { default as RobinTeam } from './RobinTeam';
+export { default as Benefits } from './Benefits';
+export { default as NewsBlog } from './NewsBlog';
+export { default as NewsCard} from './NewsBlog/NewsCard';
