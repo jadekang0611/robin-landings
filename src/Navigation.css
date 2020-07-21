@@ -72,10 +72,13 @@
   color: #2E384D !important;
 }
 
-.dropdown-item:hover{
-  /* background-color: #FF725E !important;
-  opacity: 0.5 !important; */
-  /* width: 150px; */
+.dropdown-item:active {
+  background-color: #5cd9d8 !important;
+  color: white !important;
+}
+
+.dropdown-menu {
+  border-color: #24b3b1 !important;
 }
 
 /* ///////////////////// */
