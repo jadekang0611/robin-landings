@@ -1,63 +1,63 @@
 .requestRoot {
-    background-image: url('../../../../assets/screen-one.svg');
-    margin-left: 50px;
+  background-image: url('../../../../assets/screen-one.svg');
+  margin-left: 50px;
 }
 
 .requestContainer {
-    align-self: center;
-    color: #2E384D;
+  align-self: center;
+  color: #2e384d;
 }
 
 .requestLeft {
-    align-self: center;
+  align-self: center;
 }
 
 .requestForm h1 {
-    font-size: 56px;
-    font-weight: 500;
-    line-height: 64px;
+  font-size: 56px;
+  font-weight: 500;
+  line-height: 64px;
 }
 
 .requestImage {
-    height: 617px;
-    width: 683px;
+  height: 617px;
+  width: 683px;
 }
 
 .form-label {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 19px;
-    letter-spacing: 0.01em;
-    margin-top: 24px;
-    margin-bottom: 14px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+  margin-top: 24px;
+  margin-bottom: 14px;
 }
 
 .formInput {
-    border: none !important;
-    border-radius: 0 !important;
-    border-bottom: 1px solid #2E384D !important ;
-    /* color: #2E384D !important; */
-    font-size: 16px !important;
-    line-height: 19px !important;
-    margin-bottom: 25px;
-    /* opacity: 0.5 !important; */
-    padding-left: 0 !important;
-    width: 384px !important;
+  border: none !important;
+  border-radius: 0 !important;
+  border-bottom: 1px solid #2e384d !important ;
+  /* color: #2E384D !important; */
+  font-size: 16px !important;
+  line-height: 19px !important;
+  margin-bottom: 25px;
+  /* opacity: 0.5 !important; */
+  padding-left: 0 !important;
+  width: 384px !important;
 }
 
 .formInput:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-    outline: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  outline: none !important;
 }
 
 ::placeholder {
-    color: #8798AD !important;
+  color: #8798ad !important;
 }
 
 /* To remove the autofill input background color */
 input:-webkit-autofill,
-input:-webkit-autofill:hover, 
+input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 textarea:-webkit-autofill,
 textarea:-webkit-autofill:hover,
@@ -69,75 +69,151 @@ select:-webkit-autofill:focus {
 }
 
 .submit-button {
-    align-self: center;
-    background-color: #5cd9d8;
-    box-shadow: 0px 4px 16px rgba(36, 178, 177, 0.16);
-    border: none;
-    border-radius: 10px;
-    color: #ffffff;
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 28px;
-    margin-top: 25px;
-    outline: none !important;
-    padding: 18px 30px;
-    width: 240px;
-    /* transition setting */
-    background-image: linear-gradient(#ff725e, #ff725e) !important;
-    background-position: 50% 50% !important;
-    background-repeat: no-repeat !important;
-    background-size: 0% 100% !important;
-    transition: background-size 0.3s, color 0.5s !important;
-    position: relative;
+  align-self: center;
+  background-color: #5cd9d8;
+  box-shadow: 0px 4px 16px rgba(36, 178, 177, 0.16);
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 28px;
+  margin-top: 25px;
+  outline: none !important;
+  padding: 18px 30px;
+  width: 240px;
+  /* transition setting */
+  background-image: linear-gradient(#ff725e, #ff725e) !important;
+  background-position: 50% 50% !important;
+  background-repeat: no-repeat !important;
+  background-size: 0% 100% !important;
+  transition: background-size 0.3s, color 0.5s !important;
+  position: relative;
 }
 
 .submit-button a {
-    color: #ffffff;
-    text-decoration: none;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .submit-button:hover {
-    border: none !important;
-    color: #fff !important;
-    background-size: 100% 100% !important;
+  border: none !important;
+  color: #fff !important;
+  background-size: 100% 100% !important;
+}
+
+/* ///////////////////// */
+/* LOADER */
+/* ///////////////////// */
+.loader {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}
+.lds-grid {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-grid div {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #cef;
+  animation: lds-grid 1.2s linear infinite;
+}
+.lds-grid div:nth-child(1) {
+  top: 8px;
+  left: 8px;
+  animation-delay: 0s;
+}
+.lds-grid div:nth-child(2) {
+  top: 8px;
+  left: 32px;
+  animation-delay: -0.4s;
+}
+.lds-grid div:nth-child(3) {
+  top: 8px;
+  left: 56px;
+  animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(4) {
+  top: 32px;
+  left: 8px;
+  animation-delay: -0.4s;
+}
+.lds-grid div:nth-child(5) {
+  top: 32px;
+  left: 32px;
+  animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(6) {
+  top: 32px;
+  left: 56px;
+  animation-delay: -1.2s;
+}
+.lds-grid div:nth-child(7) {
+  top: 56px;
+  left: 8px;
+  animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(8) {
+  top: 56px;
+  left: 32px;
+  animation-delay: -1.2s;
+}
+.lds-grid div:nth-child(9) {
+  top: 56px;
+  left: 56px;
+  animation-delay: -1.6s;
+}
+@keyframes lds-grid {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
 }
 
 /* ///////////////////// */
 /* RESPONSIVE */
 /* ///////////////////// */
 
-
 @media screen and (max-width: 600px) {
+  .requestRoot {
+    margin: 50px auto 0;
+  }
 
-    .requestRoot {
-        margin: 50px auto 0;
-    }
+  .requestLeft {
+    margin-left: 25px;
+  }
 
-    .requestLeft {
-        margin-left: 25px;
-    }
+  .requestForm h1 {
+    font-size: 40px;
+  }
 
-    .requestForm h1 {
-        font-size: 40px;
-    }
+  .requestImage {
+    height: 405px;
+    margin: 80px auto 0;
+    width: 440px;
+  }
 
-    .requestImage {
-        height: 405px;
-        margin: 80px auto 0;
-        width: 440px;
-    }
+  .requestLeft button {
+    font-size: 18px;
+    padding: 15px !important;
+    margin: 20px 100px 30px !important;
+    width: 200px;
+  }
 
-    .requestLeft button {
-        font-size: 18px;
-        padding: 15px !important;
-        margin: 20px 100px 30px !important;
-        width: 200px;
-    }
-
-    .requestLeft h2 {
-        font-size: 30px;
-        margin: 80px 10px 0 !important;
-    }
-
-
+  .requestLeft h2 {
+    font-size: 30px;
+    margin: 80px 10px 0 !important;
+  }
 }
