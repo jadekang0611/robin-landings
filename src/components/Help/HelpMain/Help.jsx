@@ -17,7 +17,7 @@ import { questions } from '../data';
 import { HelpResults } from '../../Help';
 
 const Help = (props) => {
-  const [searchQuestion, setSearchQuestion] = useState([]);
+  const [searchQuestion, setSearchQuestion] = useState(questions);
   const [question, setQuestion] = useState([true]);
 
   const handleChange = (e) => {
@@ -51,6 +51,8 @@ const Help = (props) => {
     });
   };
 
+  console.log(questions)
+  console.log(searchQuestion);
   return (
     <div className='helpRoot'>
       <Router>
@@ -72,20 +74,20 @@ const Help = (props) => {
                     <Button
                       className='searchButton'
                       type='button'
-                      onClick={handleSubmit}
-                    >
+                      onClick={handleSubmit}>
                       <i class='fas fa-search'></i>
                     </Button>
                   </InputGroup.Append>
                 </InputGroup>
                 <ul className='questionList'>
-                  {searchQuestion.map((search, index) => (
-                    <li key={index} onClick={handleClick}>
-                      <Link to='/outcomes/help-results' data={index}>
-                        {search.question}
-                      </Link>
-                    </li>
-                  ))}
+                  {searchQuestion &&
+                    searchQuestion.map((search, index) => (
+                      <li key={index} onClick={handleClick}>
+                        <Link to='/outcomes/help-results' data={index}>
+                          {search.question}
+                        </Link>
+                      </li>
+                    ))}
                 </ul>
               </Col>
             )}
