@@ -14,71 +14,47 @@ const bgStyle4 = {
   backgroundRepeat: 'no-repeat',
 };
 
-const DemoMessage = () => {
+const DemoMessage = (props) => {
   return (
     <>
-      <div id="screen-four" style={bgStyle4}>
+      <div id='screen-four' style={bgStyle4}>
         <section>
-          <Row className="screen-four-row1">
-            <Col lg={6} className="screen-four-col">
-              <div className="sneak-peek-container">
-                <h2>Nostrud proident</h2>
-                <h3>
-                  Detailed analytics allows to track your progress by tasks, and
-                  submitted applications.
-                </h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Ullamcorper leo volutpat eu sit tellus integer cursus enim
-                  condimentum. Mi venenatis eget et tellus, condimentum. Id
-                  pulvinar sed ultricies eget.
-                </p>
+          <Row className='screen-four-row1'>
+            <Col lg={6} className='screen-four-col'>
+              <div className='sneak-peek-container'>
+                <h2>{props.content.app_1_title}</h2>
+                <h3>{props.content.app_1_sub}</h3>
+                <p>{props.content.app_1_desc}</p>
               </div>
             </Col>
-            <Col lg={6} className="demo-container">
-              <img src={DEMO1} alt="robin-application-img" width="100%" />
+            <Col lg={6} className='demo-container'>
+              <img src={DEMO1} alt='robin-application-img' width='100%' />
             </Col>
           </Row>
-          <div className="vertical-gap"></div>
-          <Row className="screen-four-row2">
-            <Col lg={6} className="demo-container">
-              <img src={DEMO2} alt="robin-application-img" width="100%" />
+          <div className='vertical-gap'></div>
+          <Row className='screen-four-row2'>
+            <Col lg={6} className='demo-container'>
+              <img src={DEMO2} alt='robin-application-img' width='100%' />
             </Col>
-            <Col lg={6} className="screen-four-col">
-              <div className="sneak-peek-container">
-                <h2>Nostrud proident</h2>
-                <h3>
-                  Detailed analytics allows to track your progress by tasks, and
-                  submitted applications.
-                </h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Ullamcorper leo volutpat eu sit tellus integer cursus enim
-                  condimentum. Mi venenatis eget et tellus, condimentum. Id
-                  pulvinar sed ultricies eget.
-                </p>
+            <Col lg={6} className='screen-four-col'>
+              <div className='sneak-peek-container'>
+                <h2>{props.content.app_2_title}</h2>
+                <h3>{props.content.app_2_sub}</h3>
+                <p>{props.content.app_2_desc}</p>
               </div>
             </Col>
           </Row>
-          <div className="vertical-gap"></div>
+          <div className='vertical-gap'></div>
           <Row>
-            <Col lg={6} className="screen-four-col">
-              <div className="sneak-peek-container">
-                <h2>Nostrud proident</h2>
-                <h3>
-                  Detailed analytics allows to track your progress by tasks, and
-                  submitted applications.
-                </h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Ullamcorper leo volutpat eu sit tellus integer cursus enim
-                  condimentum. Mi venenatis eget et tellus, condimentum. Id
-                  pulvinar sed ultricies eget.
-                </p>
+            <Col lg={6} className='screen-four-col'>
+              <div className='sneak-peek-container'>
+                <h2>{props.content.app_3_title}</h2>
+                <h3>{props.content.app_3_sub}</h3>
+                <p>{props.content.app_3_desc}</p>
               </div>
             </Col>
-            <Col lg={6} className="demo-container unique-img">
-              <img src={DEMO3} alt="robin-application-img" width="100%" />
+            <Col lg={6} className='demo-container unique-img'>
+              <img src={DEMO3} alt='robin-application-img' width='100%' />
             </Col>
           </Row>
         </section>

@@ -149,15 +149,19 @@
     display: none;
   }
 
-  .helpRow {
+  /* .helpRow {
     margin-left: 0px;
-  }
+  } */
 }
 
 @media screen and (max-width: 767px) {
   .helpRoot,
   .resultsRoot {
     margin: 50px 20px 0;
+  }
+
+  .helpRow {
+    margin-left: 0px;
   }
 }
 
