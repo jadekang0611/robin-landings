@@ -1,0 +1,134 @@
+.newsContainer {
+    margin-bottom: 125px;
+}
+
+.newsContainer h1 {
+    font-size: 48px;
+    letter-spacing: 0.01em;
+    line-height: 57px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.newsRow {
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.news-card1, .news-card2, .news-card3 {
+  background: #ffffff;
+  box-shadow: 0px 4px 16px rgba(22, 22, 40, 0.12);
+  border-radius: 10px;
+  padding: 24px;
+}
+
+.news-card1 {
+    height: 584px ;
+    padding-top: 40px;
+    width: 510px;
+}
+
+.news-card2, .news-card3 {
+    display: flex;
+    height: 280px;
+    padding: 0;
+    width: 658px;
+}
+
+.news-card2 {
+    margin-bottom: 20px;
+}
+
+.news-card2 .news-content, .news-card3 .news-content {
+    padding-top: 35px;
+    padding-left: 25px;
+}
+
+.news-title {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 38px;
+}
+
+.news-description {
+    font-size: 18px;
+    line-height: 24px;
+    opacity: 0.8;
+}
+
+.news-card1 a, .news-card2 a, .news-card3 a {
+    color: #FF725E !important;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.news-image-col {
+    padding: 0 0 0 47px;
+}
+
+.news-card1 img {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.news-card2 img, .news-card3 img {
+    /* height: 280px;
+    width: 282px; */
+    border-radius: 0 10px 10px 0;
+    height: 100%;
+}
+
+
+/* ///////////////////// */
+/* RESPONSIVE */
+/* ///////////////////// */
+
+
+@media screen and (max-width: 600px) {
+
+    .newsContainer {
+        padding: 0 20px;
+        margin-bottom: 280px;
+    }
+
+    .newsContainer h1 {
+        font-size: 40px;
+    }
+
+    .news-content h2 {
+        font-size: 30px;
+    }
+
+    .news-card1 {
+        height: 480px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .news-card2 {
+        display: inline-block;
+        margin-bottom: 20px;
+        padding: 0;
+        height: 630px;
+        width: 100%;
+    }
+
+    .news-card3 {
+        display: inline-block;
+        padding: 0;
+        /* height: 500px; */
+        width: 100%;
+    }
+
+    .news-card2 img, .news-card3 img {
+        border-radius: 0 0 10px 10px;
+        /* height: 100%; */
+        width: 100%;
+    }
+
+    .news-image-col {
+        padding: 0;
+    }
+
+
+}

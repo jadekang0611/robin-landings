@@ -5,13 +5,13 @@ import { AboutUs, LastMessage, NewsBlog, RobinTeam, Footer } from '../../../comp
 
 const About = () => {
     return (
-        <>
+        <div className='about-us-body'>
             <AboutUs />
             <LastMessage />
             <RobinTeam />
             <NewsBlog/>
             <Footer />
-        </>
+        </div>
     );
 };
 
