@@ -1,3 +1,7 @@
+.screen-one-row {
+  justify-content: center;
+}
+
 #screen-one .screen-one-section h4 {
   font-style: normal;
   font-weight: 500;

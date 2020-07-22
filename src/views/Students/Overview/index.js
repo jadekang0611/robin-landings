@@ -26,7 +26,7 @@ const Overview = () => {
       {/* StudentOverview Last Message */}
       {/* <LastMessage /> */}
       {/* Footer Component */}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
