@@ -36,6 +36,38 @@ export default {
     cta:
       'Want to be confident with what you have done when applying to top companies?',
   },
+  outcome: {
+    main: 'Centralize your outcome work. Bring it all to one place - Robin.',
+    sub:
+      'Regardless of the size of your classes, we are here to streamline the outcome process through communication and tracking.',
+    our_features:
+      "All-in-one Outcome Task Management Software enhances students' outcome experience.",
+    feature_1_title: 'Outcome Tracking',
+    feature_1_sub:
+      'Based on students outcome activities, Robin will track and evaluate the process for you.',
+    feature_2_title: 'Student Performance',
+    feature_2_sub:
+      'Quick access to see students’ progress in certain tasks and job hunting activities.',
+    feature_3_title: 'Student Portfolio',
+    feature_3_sub:
+      'See technical skills in a snapshot so you can easily support your students.',
+    benefits_main:
+      'Making sure that all of your students complete your tasks and apply for jobs while following up is challenging and time consuming.',
+    benefit_1_title: 'Centralized Workplace',
+    benefits_1_desc:
+      "Utilize the outcome team's time efficiently and effectively.",
+    benefit_2_title: 'Student Insights',
+    benefits_2_desc:
+      'Have more time to guide students to a successful interview with real-time data.',
+    benefit_3_title: 'Technical Snapshots',
+    benefits_3_desc:
+      'Easily support bootcamp students in finding their first jobs based on their proven skills.',
+    benefit_4_title: 'Scalability',
+    benefits_4_desc:
+      'From 1 cohort to 10+ cohorts per program, you can grow with positive outcomes.',
+    cta:
+      'Ready to give your bootcamp students a positive and confident outcome more efficiently?',
+  },
   //   {
   //     id: uuidv4(),
   //     avatarUrl: '/images/table/wendy.png',
