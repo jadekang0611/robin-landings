@@ -1,7 +1,7 @@
 export default {
   student: {
-    main:
-      'The #1 way for bootcamp students to apply their learning to outcomes.',
+    mini: 'For bootcamp students',
+    main: 'The #1 way for bootcamp students to apply learning to outcomes.',
     sub:
       'You can easily demonstrate what you know and what you have done at bootcamp during and post outcomes.',
     our_features:
@@ -41,6 +41,7 @@ export default {
     get_started: 'https://app.myrobin.io/signup',
   },
   outcome: {
+    mini: 'For efficient outcomes',
     main: 'Centralize your outcome work. Bring it all to one place - Robin.',
     sub:
       'Regardless of the size of your classes, we are here to streamline the outcome process through communication and tracking.',
@@ -64,15 +65,15 @@ export default {
     benefits_1_desc:
       "Utilize the outcome team's time efficiently and effectively.",
     benefits_1_icon: '/images/benefits/benefits-central-location.svg',
-    benefit_2_title: 'Student Insights',
+    benefits_2_title: 'Student Insights',
     benefits_2_desc:
       'Have more time to guide students to a successful interview with real-time data.',
     benefits_2_icon: '/images/benefits/benefits-insight.svg',
-    benefit_3_title: 'Technical Snapshots',
+    benefits_3_title: 'Technical Snapshots',
     benefits_3_desc:
       'Easily support bootcamp students in finding their first jobs based on their proven skills.',
     benefits_3_icon: '/images/benefits/benefits-technical.svg',
-    benefit_4_title: 'Scalability',
+    benefits_4_title: 'Scalability',
     benefits_4_desc:
       'From 1 cohort to 10+ cohorts per program, you can grow with positive outcomes.',
     benefits_4_icon: '/images/benefits/benefits-scalable.svg',

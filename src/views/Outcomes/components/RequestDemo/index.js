@@ -11,6 +11,8 @@ const initialFormData = {
 };
 
 const RequestDemo = () => {
+  document.title = 'Request Demo | Robin';
+
   const [formData, updateFormData] = useState(initialFormData);
   const [submit, setSubmit] = useState(false);
   const [notLoading, setNotLoading] = useState(true);

@@ -15,25 +15,38 @@ const Benefits = (props) => {
         </Row>
         <Row className='benefitRight' md={12}>
           <Col className='benefitCol' md={6}>
-            <img className='benefitImage' src={benefitIcon} alt='benefit' />
+            <img
+              className='benefitImage'
+              src={props.content.benefits_1_icon}
+              alt='benefit'
+            />
             <h5>{props.content.benefits_1_title}</h5>
             <p>{props.content.benefits_1_desc}</p>
           </Col>
           <Col className='benefitCol' md={6}>
-            <img className='benefitImage' src={benefitIcon} alt='benefit' />
-            <img className='benefitImage' src={benefitIcon} alt='benefit' />
+            <img
+              className='benefitImage'
+              src={props.content.benefits_2_icon}
+              alt='benefit'
+            />
             <h5>{props.content.benefits_2_title}</h5>
             <p>{props.content.benefits_2_desc}</p>
           </Col>
           <Col className='benefitCol' md={6}>
-            <img className='benefitImage' src={benefitIcon} alt='benefit' />
-            <img className='benefitImage' src={benefitIcon} alt='benefit' />
+            <img
+              className='benefitImage'
+              src={props.content.benefits_3_icon}
+              alt='benefit'
+            />
             <h5>{props.content.benefits_3_title}</h5>
             <p>{props.content.benefits_3_desc}</p>
           </Col>
           <Col className='benefitCol' md={6}>
-            <img className='benefitImage' src={benefitIcon} alt='benefit' />
-            <img className='benefitImage' src={benefitIcon} alt='benefit' />
+            <img
+              className='benefitImage'
+              src={props.content.benefits_4_icon}
+              alt='benefit'
+            />
             <h5>{props.content.benefits_4_title}</h5>
             <p>{props.content.benefits_4_desc}</p>
           </Col>

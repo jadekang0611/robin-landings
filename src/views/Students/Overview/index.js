@@ -15,6 +15,7 @@ import content from '../../../content.js';
 console.log(content);
 
 const Overview = () => {
+  document.title = 'Students | Robin';
   return (
     <div id='student-body'>
       {/* StudentOverview Main Message */}

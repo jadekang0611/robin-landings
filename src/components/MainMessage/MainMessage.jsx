@@ -26,7 +26,7 @@ const MainMessage = (props) => {
           <Row className='screen-one-row'>
             <Col md={6} lg={6} className='screen-one-message screen-one-row'>
               <div>
-                <h4>Proident sunt mollit Lorem</h4>
+                <h4>{props.content.mini}</h4>
                 <h2>{props.content.main}</h2>
                 <p>{props.content.sub}</p>
                 <Button onClick={buttonClick} className='action-button'>

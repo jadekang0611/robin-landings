@@ -10,25 +10,25 @@ const Steps = [
   {
     title: 'Create an account',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper leo volutpat eu sit tellus integer cursus enim condimentum.',
+      'Robin is the place bootcamp students can build their portfolio and work with outcome team.',
     image: '/images/steps/Step1.svg',
   },
   {
     title: 'Build technical portfolio',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper leo volutpat eu sit tellus integer cursus enim condimentum.',
+      'Robin saves your activities and turns them into a recruitment-ready portfolio.',
     image: '/images/steps/Step2.svg',
   },
   {
     title: 'Collaborate with outcome team',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper leo volutpat eu sit tellus integer cursus enim condimentum.',
+      'Robin streamlines your job-search related activities and generates data so you can receive more personalized outcome support.',
     image: '/images/steps/Step3.svg',
   },
   {
     title: 'Get contacted by employers',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper leo volutpat eu sit tellus integer cursus enim condimentum.',
+      'There are many employers out there who would like to hire qualified bootcamp graduates. Robin gives them access to your portfolio and challenge results so you can show off your real technical abilities.',
     image: '/images/steps/Step4.svg',
   },
 ];

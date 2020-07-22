@@ -3,6 +3,7 @@ import './HowWorks.css';
 import { HowItWorks, Footer } from '../../../components';
 
 const HowWorks = () => {
+  document.title = 'How It Works | Robin';
   return (
     <>
       <HowItWorks />

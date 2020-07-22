@@ -17,6 +17,8 @@ import { questions } from '../data';
 import { HelpResults } from '../../Help';
 
 const Help = (props) => {
+  document.title = 'Help Center | Robin';
+
   const [searchQuestion, setSearchQuestion] = useState(questions);
   const [question, setQuestion] = useState([true]);
 
@@ -51,7 +53,7 @@ const Help = (props) => {
     });
   };
 
-  console.log(questions)
+  console.log(questions);
   console.log(searchQuestion);
   return (
     <div className='helpRoot'>
@@ -74,7 +76,8 @@ const Help = (props) => {
                     <Button
                       className='searchButton'
                       type='button'
-                      onClick={handleSubmit}>
+                      onClick={handleSubmit}
+                    >
                       <i class='fas fa-search'></i>
                     </Button>
                   </InputGroup.Append>

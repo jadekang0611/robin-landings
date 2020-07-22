@@ -8,6 +8,7 @@ const DEMO2 = '/images/application/StudentApp2.png';
 const DEMO4 = '/images/application/StudentApp4.png';
 
 const AboutUs = () => {
+  document.title = 'About Us | Robin';
   return (
     <div className='aboutusContainer'>
       <Row className='aboutus1'>
