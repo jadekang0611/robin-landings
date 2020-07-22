@@ -59,6 +59,8 @@ const NewsBlog = () => {
                 </p>
                 <a
                   href='https://calendly.com/melvinsalvador/ck-ama-jade-kang/?month=2020-07'
+                  target='_blank'
+                  rel='noopener noreferrer'
                   alt='example title'>
                   Read More <i class='fas fa-long-arrow-alt-right'></i>
                 </a>
@@ -72,12 +74,13 @@ const NewsBlog = () => {
               <Col md={6} className='news-content'>
                 <h2 className='news-title'>Welcome onboard</h2>
                 <p className='news-description'>
-                  Robin team is welcoming our team member no.3! We are excited
-                  to work with our new front-end engineer, Daisy Yau.
+                  Robin team is welcoming our team member no. 3! We are excited
+                  to work with our new Front-end eEgineer, Daisy Yau.
                 </p>
                 <a
                   href='https://www.linkedin.com/feed/update/urn:li:activity:6673225475286011904/'
-                  alt='example title'>
+                  target='_blank'
+                  rel='noopener noreferrer' alt='example title'>
                   Read More <i class='fas fa-long-arrow-alt-right'></i>
                 </a>
               </Col>

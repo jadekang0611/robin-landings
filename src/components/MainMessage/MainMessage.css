@@ -70,7 +70,7 @@
   line-height: 28px;
   /* identical to box height, or 140% */
 
-  display: flex;
+  /* display: flex; */
   align-items: center;
   letter-spacing: 0.01em;
   margin-bottom: 16px;
@@ -132,7 +132,7 @@
     .action-button{
         font-size: 18px !important;
         padding: 20px !important;
-        margin: 20px 100px 30px !important;
+        margin: 20px 120px 30px !important;
         width: 200px !important;
     }
 }

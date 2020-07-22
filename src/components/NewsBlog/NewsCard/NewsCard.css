@@ -1,3 +1,7 @@
+.newsContainer {
+    margin-bottom: 125px;
+}
+
 .newsContainer h1 {
     font-size: 48px;
     letter-spacing: 0.01em;
@@ -20,6 +24,7 @@
 
 .news-card1 {
     height: 584px ;
+    padding-top: 40px;
     width: 510px;
 }
 
@@ -32,6 +37,11 @@
 
 .news-card2 {
     margin-bottom: 20px;
+}
+
+.news-card2 .news-content, .news-card3 .news-content {
+    padding-top: 35px;
+    padding-left: 25px;
 }
 
 .news-title {
@@ -53,15 +63,17 @@
 }
 
 .news-image-col {
-    padding: 0;
+    padding: 0 0 0 47px;
 }
 
 .news-card1 img {
+    margin-top: 20px;
     width: 100%;
 }
 
 .news-card2 img, .news-card3 img {
     /* height: 280px;
     width: 282px; */
+    border-radius: 0 10px 10px 0;
     height: 100%;
 }
