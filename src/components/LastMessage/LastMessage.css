@@ -21,22 +21,22 @@
   margin-bottom: 40px;
 }
 
+.CTA-button-container {
+  align-items: center;
+}
 
 /* ///////////////////// */
 /* RESPONSIVE */
 /* ///////////////////// */
 
-
 @media screen and (max-width: 600px) {
-
   .screen-six-section {
     padding: 30px;
   }
 
   .screen-six-section h2 {
-      font-size: 30px;
-      margin: 40px auto;
-      padding: 0;
+    font-size: 30px;
+    margin: 40px auto;
+    padding: 0;
   }
-
 }
