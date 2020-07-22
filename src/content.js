@@ -9,12 +9,15 @@ export default {
     feature_1_title: 'Daily Practice',
     feature_1_sub:
       'Keep coding skills sharp and build your knowledge with practical coding challenges.',
+    feature_1_icon: '/images/features/student-daily-practice.svg',
     feature_2_title: 'Project Simulation',
     feature_2_sub:
       'Demonstrate your mastery in various technologies that you mastered at bootcamp.',
+    feature_2_icon: '/images/features/student-challenge.svg',
     feature_3_title: 'Outcome collaboration',
     feature_3_sub:
       'Update, Track, and Share your job search journey for yourself and outcome team.',
+    feature_3_icon: '/images/features/student-collaboration.svg',
     app_1_title: 'Personalized Dashboard',
     app_1_sub:
       'Personalized dashboard tracks your progress in all of your active areas on Robin.',
@@ -45,26 +48,33 @@ export default {
     feature_1_title: 'Outcome Tracking',
     feature_1_sub:
       'Based on students outcome activities, Robin will track and evaluate the process for you.',
+    feature_1_icon: '/images/features/outcomes-tracking.svg',
     feature_2_title: 'Student Performance',
     feature_2_sub:
       'Quick access to see students’ progress in certain tasks and job hunting activities.',
+    feature_2_icon: '/images/features/outcomes-performance.svg',
     feature_3_title: 'Student Portfolio',
     feature_3_sub:
       'See technical skills in a snapshot so you can easily support your students.',
+    feature_3_icon: '/images/features/outcomes-portfolio.svg',
     benefits_main:
       'Making sure that all of your students complete your tasks and apply for jobs while following up is challenging and time consuming.',
     benefit_1_title: 'Centralized Workplace',
     benefits_1_desc:
       "Utilize the outcome team's time efficiently and effectively.",
+    benefits_1_icon: '/images/benefits/benefits-central-location.svg',
     benefit_2_title: 'Student Insights',
     benefits_2_desc:
       'Have more time to guide students to a successful interview with real-time data.',
+    benefits_2_icon: '/images/benefits/benefits-insight.svg',
     benefit_3_title: 'Technical Snapshots',
     benefits_3_desc:
       'Easily support bootcamp students in finding their first jobs based on their proven skills.',
+    benefits_3_icon: '/images/benefits/benefits-technical.svg',
     benefit_4_title: 'Scalability',
     benefits_4_desc:
       'From 1 cohort to 10+ cohorts per program, you can grow with positive outcomes.',
+    benefits_4_icon: '/images/benefits/benefits-scalable.svg',
     cta:
       'Ready to give your bootcamp students a positive and confident outcome more efficiently?',
   },

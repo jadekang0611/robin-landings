@@ -67,6 +67,15 @@
 /* RESPONSIVE */
 /* ///////////////////// */
 
+@media screen and (max-width: 991px) {
+
+  .screen-four-row2 {
+    flex-direction: column-reverse;
+  }
+
+}
+
+
 @media screen and (max-width: 600px) {
   #screen-four {
     margin: 0 auto;
@@ -82,5 +91,8 @@
     height: 50px;
   }
 
+  .screen-four-row2 {
+    flex-direction: column-reverse;
+  }
 
 }
