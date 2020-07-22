@@ -13,8 +13,7 @@
 
 .feature-message-title h2 {
   font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
+
   /* identical to box height */
   text-align: center;
 
@@ -38,8 +37,6 @@
   max-width: 588px;
   word-wrap: break-word;
   font-weight: 500;
-  font-size: 32px;
-  line-height: 42px;
   letter-spacing: 0.01em;
   color: #2e384d;
   padding: 0px 14px;
@@ -68,24 +65,19 @@
 /* RESPONSIVE */
 /* ///////////////////// */
 
-
 @media screen and (max-width: 600px) {
+  #screen-two {
+    margin: 80px auto;
+    padding: 0 25px;
+  }
 
-    #screen-two {
-      margin: 80px auto;
-      padding: 0 25px;
-    }
+  .screen-two-row {
+    flex-direction: column-reverse;
+  }
 
-    .screen-two-row {
-        flex-direction: column-reverse;
-    }
-
-    .feature-message p {
-        font-size: 30px;
-        margin: 40px auto;
-    }
-
-    .feature-container, .feature-container2, .feature-container3 {
-      margin: 40px;;
-    }
+  .feature-container,
+  .feature-container2,
+  .feature-container3 {
+    margin: 40px;
+  }
 }

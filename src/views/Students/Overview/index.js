@@ -16,17 +16,17 @@ const Overview = () => {
       {/* StudentOverview Main Message */}
       <MainMessage />
       {/* StudentOverview Feature Message */}
-      {/* <FeatureMessage /> */}
+      <FeatureMessage />
       {/* StudentOverview Testimonials Message */}
-      {/* <Testimonials /> */}
+      <Testimonials />
       {/* StudentOverview Demo Message */}
-      {/* <DemoMessage /> */}
+      <DemoMessage />
       {/* StudentOverview Companies Message */}
-      {/* <Companies /> */}
+      <Companies />
       {/* StudentOverview Last Message */}
-      {/* <LastMessage /> */}
+      <LastMessage />
       {/* Footer Component */}
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };

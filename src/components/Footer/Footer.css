@@ -2,6 +2,16 @@
   background-color: white;
 }
 
+.footerTerms {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footerLogo {
+  text-align: center;
+}
+
 .footer-row {
   text-align: justify;
 }
@@ -12,7 +22,7 @@
 }
 
 .robinLogo {
-  max-width: 180px;
+  max-width: 120px;
 }
 
 .footerCol h6 {
@@ -58,10 +68,6 @@
   max-width: 140px !important;
 }
 
-#social {
-  text-align: right !important;
-}
-
 #social a {
   margin: 0 8px;
 }
@@ -69,20 +75,3 @@
 /* ///////////////////// */
 /* RESPONSIVE */
 /* ///////////////////// */
-
-@media screen and (max-width: 1200px) {
-  .footerCol {
-    margin-top: 20px;
-  }
-
-  .footerContainer hr {
-    margin: 65px 0 36px;
-    width: 100%;
-  }
-
-  #privacy,
-  #terms,
-  #social {
-    margin-top: 15px;
-  }
-}

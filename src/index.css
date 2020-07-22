@@ -2,10 +2,12 @@
 
 html {
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 body {
   font-family: 'Rubik', sans-serif;
+  overflow-x: hidden;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -15,7 +17,7 @@ body {
     line-height: 40px;
   }
   #screen-one .screen-one-section h4 {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 14px;
   }
   #screen-one .screen-one-section p {
@@ -32,6 +34,73 @@ body {
   }
   #footer-section {
     padding: 72px 60px;
+  }
+  .screen-six-section {
+    padding: 40px 10px;
+  }
+  .screen-six-section h2 {
+    font-size: 20px;
+    line-height: 34px;
+  }
+  .feature-message-title h2 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .feature-message p {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .sneak-peek-container h2 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .sneak-peek-container h3 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .sneak-peek-container p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .company-section h2 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .company-section h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .company-section h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .feature-title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .feature-description {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .benefitCol h3 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .benefitCol h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  #privacy {
+    margin-top: 16px;
+  }
+  #terms {
+    margin-top: 16px;
+  }
+  #social {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 16px;
   }
 }
 
@@ -60,6 +129,68 @@ body {
   #footer-section {
     padding: 72px 80px;
   }
+  .screen-six-section {
+    padding: 80px 20px;
+  }
+  .screen-six-section h2 {
+    font-size: 24px;
+    line-height: 40px;
+  }
+  .feature-message-title h2 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .feature-message p {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .sneak-peek-container h2 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .sneak-peek-container h3 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .sneak-peek-container p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .company-section h2 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .company-section h3 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .feature-title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .feature-description {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .benefitCol h3 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .benefitCol h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  #privacy {
+    margin-top: 0px;
+  }
+  #terms {
+    margin-top: 0px;
+  }
+  #social {
+    display: flex;
+    justify-content: flex-start;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -69,7 +200,7 @@ body {
     line-height: 48px;
   }
   #screen-one .screen-one-section h4 {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 14px;
   }
 
@@ -87,6 +218,62 @@ body {
   }
   #footer-section {
     padding: 72px 100px;
+  }
+  .screen-six-section {
+    padding: 100px 120px;
+  }
+  .screen-six-section h2 {
+    font-size: 32px;
+    line-height: 48px;
+  }
+  .feature-message-title h2 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .feature-message p {
+    font-size: 32px;
+    line-height: 42px;
+  }
+  .sneak-peek-container h2 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .sneak-peek-container h3 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .sneak-peek-container p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .company-section h2 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .company-section h3 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .feature-title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .feature-description {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .benefitCol h3 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .benefitCol h2 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  #social {
+    display: flex;
+    justify-content: flex-end;
   }
 }
 
@@ -115,5 +302,62 @@ body {
   }
   #footer-section {
     padding: 72px 120px;
+  }
+  .screen-six-section {
+    padding: 122px 200px;
+  }
+  .screen-six-section h2 {
+    font-size: 40px;
+    line-height: 56px;
+  }
+  .feature-message-title h2 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .feature-message p {
+    font-size: 32px;
+    line-height: 42px;
+  }
+  .sneak-peek-container h2 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .sneak-peek-container h3 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .sneak-peek-container p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .company-section h2 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .company-section h3 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+  .feature-title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .feature-description {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .benefitCol h3 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .benefitCol h2 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+  #social {
+    display: flex;
+    justify-content: flex-end;
   }
 }

@@ -10,14 +10,14 @@ const Footer = () => {
   return (
     <div id="footer-section">
       <Row className="footer-row">
-        <Col className="footerLogo" xs={12} sm={6} md={3} lg={3}>
+        <Col className="footerLogo" xs={6} sm={6} md={3} lg={3}>
           <img
             className="robinLogo"
             src="/images/logos/Robin.png"
             alt="Robin Logo"
           />
         </Col>
-        <Col className="footerCol" xs={12} sm={6} md={3} lg={3}>
+        <Col className="footerCol" xs={6} sm={6} md={3} lg={3}>
           <ul>
             <h6>Student</h6>
             <li>
@@ -34,7 +34,7 @@ const Footer = () => {
             </li>
           </ul>
         </Col>
-        <Col className="footerCol" xs={12} sm={6} md={3} lg={3}>
+        <Col className="footerCol" xs={6} sm={6} md={3} lg={3}>
           <ul>
             <h6>Outcome Team</h6>
             <li>
@@ -59,7 +59,7 @@ const Footer = () => {
                   </li>
                 </ul>
               </Col> */}
-        <Col className="footerCol" xs={12} sm={6} md={3} lg={3}>
+        <Col className="footerCol" xs={6} sm={6} md={3} lg={3}>
           <ul>
             <h6>Company</h6>
             <li>
@@ -73,16 +73,16 @@ const Footer = () => {
       </Row>
       <hr></hr>
       <Row className="footerTerms">
-        <Col xs={12} md={3} id="copyright">
+        <Col sm={6} md={4} id="copyright">
           ©2020 Robin. All rights reserved
         </Col>
-        <Col xs={3} md={2} id="privacy">
+        <Col sm={6} md={3} id="privacy">
           Privacy policy
         </Col>
-        <Col xs={4} md={2} id="terms">
+        <Col sm={6} md={3} id="terms">
           Terms of service
         </Col>
-        <Col xs={5} md={5} id="social">
+        <Col xs={12} sm={6} md={2} id="social">
           <a
             href="https://www.facebook.com/getmyrobin/"
             target="_blank"

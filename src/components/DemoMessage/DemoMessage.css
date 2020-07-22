@@ -12,8 +12,7 @@
 
 .sneak-peek-container h2 {
   font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
+
   /* identical to box height */
 
   display: flex;
@@ -28,8 +27,6 @@
 
 .sneak-peek-container h3 {
   font-weight: 500;
-  font-size: 32px;
-  line-height: 38px;
   display: flex;
   align-items: center;
   letter-spacing: 0.01em;
@@ -40,10 +37,6 @@
 }
 
 .sneak-peek-container p {
-  font-size: 16px;
-  line-height: 24px;
-  /* or 150% */
-
   display: flex;
   align-items: center;
   letter-spacing: 0.01em;
@@ -67,32 +60,27 @@
 }
 
 .vertical-gap {
-  height: 200px;
+  height: 1vw;
 }
-
 
 /* ///////////////////// */
 /* RESPONSIVE */
 /* ///////////////////// */
 
-
 @media screen and (max-width: 600px) {
+  #screen-four {
+    margin: 0 auto;
+    padding: 0 10px;
+  }
 
-    #screen-four {
-      margin: 0 auto;
-      padding: 0 10px;
-    }
+  .demo-container img {
+    margin: 0 auto !important;
+    width: 100%;
+  }
 
-    .demo-container img {
-      margin: 0 auto !important;
-      width: 100%;
-    }
+  .vertical-gap {
+    height: 50px;
+  }
 
-    .vertical-gap {
-      height: 50px;
-    }
 
-    .screen-four-row2 {
-      flex-direction: column-reverse;
-    }
 }

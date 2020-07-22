@@ -5,10 +5,8 @@ import {
   Route,
   Link,
   Redirect,
-  useParams,
   useRouteMatch,
 } from 'react-router-dom';
-import * as ROUTES from './Routes';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Nav, NavDropdown, Navbar } from 'react-bootstrap';
 // import StudentMain from './views/Students/StudentMain';
@@ -91,9 +89,9 @@ export default function App() {
             {/* <li className='desktop-nav-item'>
               <Link to='/employers'>Employers</Link>
             </li> */}
-            <li className="desktop-nav-item">
+            {/* <li className="desktop-nav-item">
               <Link to="/about-us">Company</Link>
-            </li>
+            </li> */}
           </ul>
 
           <ul className="desktop-nav-main">
