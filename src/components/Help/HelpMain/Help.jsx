@@ -52,36 +52,36 @@ const Help = (props) => {
   };
 
   return (
-    <div className="helpRoot">
+    <div className='helpRoot'>
       <Router>
-        <div className="helpContainer">
-          <Row className="helpRow">
+        <div className='helpContainer'>
+          <Row className='helpRow'>
             {searchQuestion.length >= 0 && question && (
-              <Col md={6} lg={6}>
+              <Col xl={6} lg={12}>
                 <h5>Help Center</h5>
                 <h1>How can we help you?</h1>
-                <InputGroup className="searchInput">
+                <InputGroup className='searchInput'>
                   <FormControl
-                    className="searchForm"
-                    placeholder="Describe your issue"
-                    aria-label="issue"
-                    aria-describedby="basic-addon2"
+                    className='searchForm'
+                    placeholder='Describe your issue'
+                    aria-label='issue'
+                    aria-describedby='basic-addon2'
                     onChange={handleChange}
                   />
                   <InputGroup.Append>
                     <Button
-                      className="searchButton"
-                      type="button"
+                      className='searchButton'
+                      type='button'
                       onClick={handleSubmit}
                     >
-                      <i class="fas fa-search"></i>
+                      <i class='fas fa-search'></i>
                     </Button>
                   </InputGroup.Append>
                 </InputGroup>
-                <ul className="questionList">
+                <ul className='questionList'>
                   {searchQuestion.map((search, index) => (
                     <li key={index} onClick={handleClick}>
-                      <Link to="/outcomes/help-results" data={index}>
+                      <Link to='/outcomes/help-results' data={index}>
                         {search.question}
                       </Link>
                     </li>
@@ -90,12 +90,12 @@ const Help = (props) => {
               </Col>
             )}
 
-            <ul className="questionList">
+            <ul className='questionList'>
               {searchQuestion.length >= 0 &&
                 !question &&
                 searchQuestion.map((search, index) => (
                   <li key={index} onClick={handleClick}>
-                    <Link to="/outcomes/help-results" data={index}>
+                    <Link to='/outcomes/help-results' data={index}>
                       {search.question}
                     </Link>
                   </li>
@@ -103,14 +103,14 @@ const Help = (props) => {
             </ul>
 
             {searchQuestion.length === 0 && !question && (
-              <h4 className="noResults">
+              <h4 className='noResults'>
                 No results were found for your search, please try changing the
                 search request
               </h4>
             )}
 
-            <Col md={6} lg={6}>
-              <img className="helpImage" src={helpImage} alt="Help Center" />
+            <Col xl={6} lg={12}>
+              <img className='helpImage' src={helpImage} alt='Help Center' />
             </Col>
           </Row>
         </div>

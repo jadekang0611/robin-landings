@@ -89,6 +89,10 @@
   .aboutus3 p {
     margin-top: 40px;
   }
+
+  .teamContainer {
+    margin: 120px 0px 120px 0px !important;
+  }
 }
 
 @media screen and (max-width: 600px) {
