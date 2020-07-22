@@ -16,6 +16,9 @@ const bgStyle = {
 };
 
 const MainMessage = (props) => {
+  const buttonClick = () => {
+    window.location.href = props.content.get_started;
+  };
   return (
     <>
       <div id='screen-one' style={bgStyle}>
@@ -26,7 +29,9 @@ const MainMessage = (props) => {
                 <h4>Proident sunt mollit Lorem</h4>
                 <h2>{props.content.main}</h2>
                 <p>{props.content.sub}</p>
-                <Button className='action-button'>Get started</Button>
+                <Button onClick={buttonClick} className='action-button'>
+                  Get started
+                </Button>
               </div>
             </Col>
             <Col md={6} lg={6}>

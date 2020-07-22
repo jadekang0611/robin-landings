@@ -35,6 +35,7 @@ export default {
       'From startups to Fortune 500, our students hear good news from the best companies.',
     cta:
       'Want to be confident with what you have done when applying to top companies?',
+    get_started: 'https://app.myrobin.io/signup',
   },
   outcome: {
     main: 'Centralize your outcome work. Bring it all to one place - Robin.',
@@ -53,20 +54,26 @@ export default {
       'See technical skills in a snapshot so you can easily support your students.',
     benefits_main:
       'Making sure that all of your students complete your tasks and apply for jobs while following up is challenging and time consuming.',
-    benefit_1_title: 'Centralized Workplace',
+    benefits_1_title: 'Centralized Workplace',
     benefits_1_desc:
       "Utilize the outcome team's time efficiently and effectively.",
-    benefit_2_title: 'Student Insights',
+    benefits_2_title: 'Student Insights',
     benefits_2_desc:
       'Have more time to guide students to a successful interview with real-time data.',
-    benefit_3_title: 'Technical Snapshots',
+    benefits_3_title: 'Technical Snapshots',
     benefits_3_desc:
       'Easily support bootcamp students in finding their first jobs based on their proven skills.',
-    benefit_4_title: 'Scalability',
+    benefits_4_title: 'Scalability',
     benefits_4_desc:
       'From 1 cohort to 10+ cohorts per program, you can grow with positive outcomes.',
     cta:
-      'Ready to give your bootcamp students a positive and confident outcome more efficiently?',
+      'Ready to give your bootcamp students a positive and confident outcome experience?',
+    get_started: 'http://localhost:3000/outcomes/request-demo',
+  },
+  how: {
+    cta:
+      'Want to be confident with what you have done when applying to top companies?',
+    get_started: 'https://app.myrobin.io/signup',
   },
   //   {
   //     id: uuidv4(),

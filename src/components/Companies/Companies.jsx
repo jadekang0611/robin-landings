@@ -15,23 +15,21 @@ const Hiring = [
   { name: 'Glidewell', logo: '/images/logos/Glidewell.png' },
 ];
 
-const Companies = () => {
+const Companies = (props) => {
   return (
     <>
-      <div id="screen-five">
+      <div id='screen-five'>
         <section>
-          <Row className="screen-five-row1">
+          <Row className='screen-five-row1'>
             <Col lg={6}>
-              <div className="company-section">
-                <h2>Companies we are working with</h2>
-                <h3>
-                  Our students receive the best vacancies in the best companies.
-                </h3>
+              <div className='company-section'>
+                <h2>{props.content.bottom_title}</h2>
+                <h3>{props.content.bottom_main}</h3>
               </div>
             </Col>
 
-            <Col lg={6} className="company-logo-container">
-              <div className="companies-section-logos">
+            <Col lg={6} className='company-logo-container'>
+              <div className='companies-section-logos'>
                 <Row>
                   {Hiring.map((company, index) => (
                     <Col
@@ -40,7 +38,7 @@ const Companies = () => {
                       sm={4}
                       md={4}
                       lg={4}
-                      className="logo-container"
+                      className='logo-container'
                     >
                       <img src={company.logo} alt={company.name} />
                     </Col>

@@ -29,37 +29,40 @@ export default function App() {
     <Router>
       <div>
         {/* MOBILE NAV BAR */}
-        <Navbar bg="light" expand="md" className="mobile-nav">
-          <Navbar.Brand as={Link} to="/">
-            <img src={robinLogo} className="mobile-nav-logo" alt="robin-logo" />
+        <Navbar bg='light' expand='md' className='mobile-nav'>
+          <Navbar.Brand as={Link} to='/'>
+            <img src={robinLogo} className='mobile-nav-logo' alt='robin-logo' />
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="mr-auto">
-              <NavDropdown title="Students" id="students-nav-dropdown">
-                <NavDropdown.Item as={Link} to="/students/overview">
+          <Navbar.Toggle aria-controls='basic-navbar-nav' />
+          <Navbar.Collapse id='basic-navbar-nav'>
+            <Nav className='mr-auto'>
+              <NavDropdown title='Students' id='students-nav-dropdown'>
+                <NavDropdown.Item as={Link} to='/students/overview'>
                   Overview
                 </NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/students/how-it-works">
+                <NavDropdown.Item as={Link} to='/students/how-it-works'>
                   How It Works
                 </NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/students/help-center">
+                <NavDropdown.Item as={Link} to='/students/help-center'>
                   Help Center
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item as={Link} to="/students/signup">
+                <NavDropdown.Item href='https://app.myrobin.io/signup'>
                   Sign Up
                 </NavDropdown.Item>
+                <NavDropdown.Item href='https://app.myrobin.io/signin'>
+                  Sign In
+                </NavDropdown.Item>
               </NavDropdown>
-              <NavDropdown title="Outcomes" id="outcomes-nav-dropdown">
-                <NavDropdown.Item as={Link} to="/outcomes/overview">
+              <NavDropdown title='Outcomes' id='outcomes-nav-dropdown'>
+                <NavDropdown.Item as={Link} to='/outcomes/overview'>
                   Overview
                 </NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/outcomes/help-center">
+                <NavDropdown.Item as={Link} to='/outcomes/help-center'>
                   Help Center
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item as={Link} to="/outcomes/request-demo">
+                <NavDropdown.Item as={Link} to='/outcomes/request-demo'>
                   Request for Demo
                 </NavDropdown.Item>
               </NavDropdown>
@@ -67,8 +70,8 @@ export default function App() {
                 <NavDropdown.Item as={Link} to='/employers/overview'>Overview</NavDropdown.Item>
                 <NavDropdown.Item as={Link} to='/employers/search-candidates'>Search Candidates</NavDropdown.Item>
               </NavDropdown> */}
-              <NavDropdown title="Company" id="company-nav-dropdown">
-                <NavDropdown.Item as={Link} to="/about-us">
+              <NavDropdown title='Company' id='company-nav-dropdown'>
+                <NavDropdown.Item as={Link} to='/about-us'>
                   About Us
                 </NavDropdown.Item>
                 {/* <NavDropdown.Item as={Link} to='/about-us/blog'>Blog</NavDropdown.Item> */}
@@ -78,13 +81,13 @@ export default function App() {
         </Navbar>
 
         {/* DESKTOP NAV BAR */}
-        <div id="desktop-nav-container">
-          <ul className="desktop-nav-main">
-            <li className="desktop-nav-item">
-              <Link to="/students">Students</Link>
+        <div id='desktop-nav-container'>
+          <ul className='desktop-nav-main'>
+            <li className='desktop-nav-item'>
+              <Link to='/students'>Students</Link>
             </li>
-            <li className="desktop-nav-item">
-              <Link to="/outcomes">Outcomes</Link>
+            <li className='desktop-nav-item'>
+              <Link to='/outcomes'>Outcomes</Link>
             </li>
             {/* <li className='desktop-nav-item'>
               <Link to='/employers'>Employers</Link>
@@ -94,31 +97,31 @@ export default function App() {
             </li> */}
           </ul>
 
-          <ul className="desktop-nav-main">
-            <li className="desktop-nav-item desktop-nav-sign-in">
-              <Link to="/sign-in">Sign In</Link>
+          <ul className='desktop-nav-main'>
+            <li className='desktop-nav-item desktop-nav-sign-in'>
+              <a href='https://app.myrobin.io/signin'>Sign In</a>
             </li>
           </ul>
         </div>
 
         <Switch>
-          <Route exact path="/">
-            <Redirect to="/students" />
+          <Route exact path='/'>
+            <Redirect to='/students' />
             <StudentPage />
           </Route>
-          <Route path="/students">
+          <Route path='/students'>
             <StudentPage />
           </Route>
-          <Route path="/outcomes">
+          <Route path='/outcomes'>
             <OutcomesPage />
           </Route>
-          <Route path="/employers">
+          <Route path='/employers'>
             <EmployersPage />
           </Route>
-          <Route path="/about-us">
+          <Route path='/about-us'>
             <AboutUsPage />
           </Route>
-          <Route path="/sign-in">
+          <Route path='/sign-in'>
             <SignInPage />
           </Route>
         </Switch>
@@ -136,25 +139,25 @@ function StudentPage() {
 
   return (
     <div>
-      <div id="sub-nav-container">
-        <ul className="sub-nav-main">
-          <li className="logo-item">
-            <Link to="/students">
-              <img src={robinLogo} className="sub-nav-logo" alt="robin-logo" />
+      <div id='sub-nav-container'>
+        <ul className='sub-nav-main'>
+          <li className='logo-item'>
+            <Link to='/students'>
+              <img src={robinLogo} className='sub-nav-logo' alt='robin-logo' />
             </Link>
           </li>
         </ul>
-        <ul className="sub-nav-main">
-          <li className="sub-nav-item">
+        <ul className='sub-nav-main'>
+          <li className='sub-nav-item'>
             <Link to={`${url}/overview`}>Overview</Link>
           </li>
-          <li className="sub-nav-item">
+          <li className='sub-nav-item'>
             <Link to={`${url}/how-it-works`}>How It Works</Link>
           </li>
-          <li className="sub-nav-item">
+          <li className='sub-nav-item'>
             <Link to={`${url}/help-center`}>Help Center</Link>
           </li>
-          <li className="sign-up-button">
+          <li className='sign-up-button'>
             <Link to={`${url}/signup`}>Sign Up</Link>
           </li>
         </ul>
@@ -191,22 +194,22 @@ function OutcomesPage() {
 
   return (
     <div>
-      <div id="sub-nav-container">
-        <ul className="sub-nav-main">
-          <li className="logo-item">
-            <Link to="/outcomes">
-              <img src={robinLogo} className="sub-nav-logo" alt="robin-logo" />
+      <div id='sub-nav-container'>
+        <ul className='sub-nav-main'>
+          <li className='logo-item'>
+            <Link to='/outcomes'>
+              <img src={robinLogo} className='sub-nav-logo' alt='robin-logo' />
             </Link>
           </li>
         </ul>
-        <ul className="sub-nav-main">
-          <li className="sub-nav-item">
+        <ul className='sub-nav-main'>
+          <li className='sub-nav-item'>
             <Link to={`${url}/overview`}>Overview</Link>
           </li>
-          <li className="sub-nav-item">
+          <li className='sub-nav-item'>
             <Link to={`${url}/help-center`}>Help Center</Link>
           </li>
-          <li className="request-demo-button">
+          <li className='request-demo-button'>
             <Link to={`${url}/request-demo`}>Request for Demo</Link>
           </li>
         </ul>
@@ -242,16 +245,16 @@ function EmployersPage() {
 
   return (
     <div>
-      <div id="sub-nav-container">
-        <ul className="sub-nav-main">
-          <li className="logo-item">
-            <Link to="/employers">
-              <img src={robinLogo} className="sub-nav-logo" alt="robin-logo" />
+      <div id='sub-nav-container'>
+        <ul className='sub-nav-main'>
+          <li className='logo-item'>
+            <Link to='/employers'>
+              <img src={robinLogo} className='sub-nav-logo' alt='robin-logo' />
             </Link>
           </li>
         </ul>
-        <ul className="sub-nav-main">
-          <li className="sub-nav-item">
+        <ul className='sub-nav-main'>
+          <li className='sub-nav-item'>
             <Link to={`${url}`}>Overview</Link>
           </li>
           {/* <li className='sub-nav-item'>
@@ -281,16 +284,16 @@ function AboutUsPage() {
 
   return (
     <div>
-      <div id="sub-nav-container">
-        <ul className="sub-nav-main">
-          <li className="logo-item">
-            <Link to="/outcomes">
-              <img src={robinLogo} className="sub-nav-logo" alt="robin-logo" />
+      <div id='sub-nav-container'>
+        <ul className='sub-nav-main'>
+          <li className='logo-item'>
+            <Link to='/outcomes'>
+              <img src={robinLogo} className='sub-nav-logo' alt='robin-logo' />
             </Link>
           </li>
         </ul>
-        <ul className="sub-nav-main">
-          <li className="sub-nav-item">
+        <ul className='sub-nav-main'>
+          <li className='sub-nav-item'>
             <Link to={`${url}`}>About Us</Link>
           </li>
           {/* <li className='sub-nav-item'>
@@ -320,16 +323,16 @@ function SignInPage() {
 
   return (
     <div>
-      <div id="sub-nav-container">
-        <ul className="sub-nav-main">
-          <li className="logo-item">
-            <Link to="/sign-in">
-              <img src={robinLogo} className="sub-nav-logo" alt="robin-logo" />
+      <div id='sub-nav-container'>
+        <ul className='sub-nav-main'>
+          <li className='logo-item'>
+            <Link to='/sign-in'>
+              <img src={robinLogo} className='sub-nav-logo' alt='robin-logo' />
             </Link>
           </li>
         </ul>
-        <ul className="sub-nav-main">
-          <li className="sub-nav-item">
+        <ul className='sub-nav-main'>
+          <li className='sub-nav-item'>
             Don't have an account? <Link to={`/sign-up`}>Sign up</Link>
           </li>
           {/* <li className='sub-nav-item'>

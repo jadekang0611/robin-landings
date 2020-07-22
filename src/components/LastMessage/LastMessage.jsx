@@ -14,15 +14,18 @@ const bgStyle5 = {
 };
 
 const LastMessage = (props) => {
-  console.log(props)
+  const buttonClick = () => {
+    window.location.href = props.content.get_started;
+  };
+  console.log(props);
   return (
-    <div id="screen-six" style={bgStyle5}>
-      <div className="screen-six-section">
-        <h2>
-          {props.content.cta}
-        </h2>
+    <div id='screen-six' style={bgStyle5}>
+      <div className='screen-six-section'>
+        <h2>{props.content.cta}</h2>
 
-        <Button className="action-button">Get started</Button>
+        <Button onClick={buttonClick} className='action-button'>
+          Get started
+        </Button>
       </div>
     </div>
   );
