@@ -25,6 +25,7 @@ const FeatureMessage = (props) => {
           <Col lg={6}>
             <div className='feature-container'>
               <FeatureCard
+                icon={props.content.feature_1_icon}
                 title={props.content.feature_1_title}
                 sub={props.content.feature_1_sub}
                 className='feature1'
@@ -33,6 +34,7 @@ const FeatureMessage = (props) => {
 
             <div className='feature-container2'>
               <FeatureCard
+                icon={props.content.feature_2_icon}
                 title={props.content.feature_2_title}
                 sub={props.content.feature_2_sub}
                 className='feature2'
@@ -47,6 +49,7 @@ const FeatureMessage = (props) => {
 
             <div className='feature-container3'>
               <FeatureCard
+                icon={props.content.feature_3_icon}
                 title={props.content.feature_3_title}
                 sub={props.content.feature_3_sub}
                 className='feature3'
