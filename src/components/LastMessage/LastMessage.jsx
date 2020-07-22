@@ -13,13 +13,13 @@ const bgStyle5 = {
   backgroundColor: 'black',
 };
 
-const LastMessage = () => {
+const LastMessage = (props) => {
+  console.log(props)
   return (
     <div id="screen-six" style={bgStyle5}>
       <div className="screen-six-section">
         <h2>
-          Ready to improve your skills and get the opportunity to be hired in
-          top companies
+          {props.content.cta}
         </h2>
 
         <Button className="action-button">Get started</Button>
