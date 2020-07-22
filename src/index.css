@@ -30,6 +30,9 @@ body {
   #screen-one {
     padding: 24px 40px 20px 40px;
   }
+  #footer-section {
+    padding: 72px 60px;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -53,6 +56,9 @@ body {
   }
   #screen-one {
     padding: 44px 80px 140px 80px;
+  }
+  #footer-section {
+    padding: 72px 80px;
   }
 }
 
@@ -79,6 +85,9 @@ body {
   #screen-one {
     padding: 44px 100px 140px 100px;
   }
+  #footer-section {
+    padding: 72px 100px;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -103,5 +112,8 @@ body {
 
   #screen-one {
     padding: 44px 120px 140px 120px;
+  }
+  #footer-section {
+    padding: 72px 120px;
   }
 }

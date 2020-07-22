@@ -14,17 +14,17 @@ const Overview = () => {
   return (
     <div id="student-body">
       {/* StudentOverview Main Message */}
-      {/* <MainMessage /> */}
+      <MainMessage />
       {/* StudentOverview Feature Message */}
       {/* <FeatureMessage /> */}
       {/* StudentOverview Testimonials Message */}
-      <Testimonials />
+      {/* <Testimonials /> */}
       {/* StudentOverview Demo Message */}
-      <DemoMessage />
+      {/* <DemoMessage /> */}
       {/* StudentOverview Companies Message */}
-      <Companies />
+      {/* <Companies /> */}
       {/* StudentOverview Last Message */}
-      <LastMessage />
+      {/* <LastMessage /> */}
       {/* Footer Component */}
       <Footer />
     </div>
