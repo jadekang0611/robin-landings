@@ -2,6 +2,7 @@ import React from 'react';
 import './AboutUs.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import AboutusImage from '../../assets/aboutus.png';
+import FeatureMessage from '../FeatureMessage';
 
 const DEMO2 = '/images/application/StudentApp2.png';
 const DEMO4 = '/images/application/StudentApp4.png';
@@ -10,7 +11,7 @@ const AboutUs = () => {
   return (
     <div className='aboutusContainer'>
       <Row className='aboutus1'>
-        <Col lg={6} xl={6}>
+        <Col lg={12} xl={6}>
           <h1>About Us</h1>
           <h3>How Robin Began?</h3>
           <p>
@@ -32,13 +33,13 @@ const AboutUs = () => {
           </p>
         </Col>
         <Col lg={6} xl={6}>
-          <div className='demo-img'>
+          <div>
             <img src={AboutusImage} alt='about-us' className='aboutus-img' />
           </div>
         </Col>
       </Row>
       <Row className='aboutus2'>
-        <Col sm={6} md={6} lg={6} xl={6}>
+        <Col lg={12} xl={6}>
           <h3>What does Robin do?</h3>
           <p>
             <span className='uniqueColor'>As of today</span>, with Robin,
@@ -49,14 +50,14 @@ const AboutUs = () => {
             shareable unique technical portfolios are created and updated.
           </p>
         </Col>
-        <Col sm={6} md={6} lg={6} xl={6}>
+        <Col lg={12} xl={6}>
           <div className='demo-img'>
             <img src={DEMO2} alt='about-us' className='aboutus-demo2' />
           </div>
         </Col>
       </Row>
       <Row className='aboutus3'>
-        <Col sm={6} md={6} lg={6} xl={6}>
+        <Col lg={12} xl={6}>
           <p>
             <span className='uniqueColor'>On the other side</span>, with Robin,
             bootcamps can easily track and manage each and every students'
@@ -65,7 +66,7 @@ const AboutUs = () => {
             service to each student based on real-time data.
           </p>
         </Col>
-        <Col sm={6} md={6} lg={6} xl={6}>
+        <Col lg={12} xl={6}>
           <div className='demo-img'>
             <img src={DEMO4} alt='about-us' className='aboutus-demo3' />
           </div>

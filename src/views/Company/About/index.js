@@ -10,11 +10,11 @@ import {
 
 const About = () => {
   return (
-    <div className="about-us-body">
+    <div className='about-us-body'>
       <AboutUs />
-      {/* <LastMessage /> */}
+      <LastMessage />
       <RobinTeam />
-      {/* <NewsBlog /> */}
+      <NewsBlog />
       <Footer />
     </div>
   );

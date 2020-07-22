@@ -9,32 +9,32 @@ const Team4 = '/images/team/JoinUs.png';
 
 const RobinTeam = () => {
   return (
-    <div className="teamContainer">
+    <div className='teamContainer'>
       <h1>Robin Team</h1>
-      <Row className="teamRow">
-        <Col md={3} sm={6} xs={6} className="teamCol">
-          <img src={Team1} alt="team" className="team-img" />
-          <div className="teamTitle">
+      <Row className='teamRow'>
+        <Col md={3} sm={6} xs={6} className='teamCol'>
+          <img src={Team1} alt='team' className='team-img' />
+          <div className='teamTitle'>
             <h4>Taylor Kang</h4>
             <p>Co-founder</p>
           </div>
         </Col>
-        <Col md={3} sm={6} xs={6} className="teamCol">
-          <img src={Team2} alt="team" className="team-img" />
-          <div className="teamTitle">
+        <Col md={3} sm={6} xs={6} className='teamCol'>
+          <img src={Team2} alt='team' className='team-img' />
+          <div className='teamTitle'>
             <h4>Jade Kang</h4>
             <p>Co-founder</p>
           </div>
         </Col>
-        <Col md={3} sm={6} xs={6} className="teamCol">
-          <img src={Team3} alt="team" className="team-img" />
-          <div className="teamTitle">
+        <Col md={3} sm={6} xs={6} className='teamCol'>
+          <img src={Team3} alt='team' className='team-img' />
+          <div className='teamTitle'>
             <h4>Daisy Yau</h4>
             <p>Front-end Engineer</p>
           </div>
         </Col>
-        <Col md={3} sm={6} xs={6} className="teamCol">
-          <img src={Team4} alt="team" className="team-img" />
+        <Col md={3} sm={6} xs={6} className='teamCol'>
+          <img src={Team4} alt='team' className='team-img' />
         </Col>
       </Row>
     </div>

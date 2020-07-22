@@ -1,96 +1,120 @@
 .aboutusContainer {
-    align-items: center;
-    background-image: url('../../assets/screen-one.svg');
-    padding: 44px 120px 140px 120px;
+  align-items: center;
+  background-image: url('../../assets/screen-one.svg');
+  padding: 44px 120px 140px 120px;
 }
 
 .aboutus1 {
-    margin-bottom: 125px;
+  margin-bottom: 125px;
 }
 
 .aboutus1 h1 {
-    font-size: 52px;
-    font-weight: 500;
-    letter-spacing: 0.01em;
-    line-height: 64px;
-    margin-bottom: 40px;
+  font-size: 52px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  line-height: 64px;
+  margin-bottom: 40px;
 }
 
 .aboutusContainer h3 {
-    font-size: 28px;
-    font-weight: 500px;
-    letter-spacing: 0.01em;
-    line-height: 38px;
-    margin-bottom: 16px;
+  font-size: 28px;
+  font-weight: 500px;
+  letter-spacing: 0.01em;
+  line-height: 38px;
+  margin-bottom: 16px;
 }
 
 .aboutusContainer p {
-    font-size: 19px;
-    line-height: 32px;
-    margin-bottom: 40px;
+  font-size: 19px;
+  line-height: 32px;
+  margin-bottom: 40px;
 }
 
 .aboutus-img {
-    margin-left: 30px;
-    width: 580px;
+  margin-left: 30px;
+  width: 580px;
 }
 
 .uniqueColor {
-    color: #FF725E;
-    font-weight: bold;
-
+  color: #ff725e;
+  font-weight: bold;
 }
-.aboutus-demo2, .aboutus-demo3 {
-    width: 585px;
+.aboutus-demo2,
+.aboutus-demo3 {
+  width: 585px;
 }
 
-.aboutus2, .aboutus3 {
-    justify-content: space-between;
+.aboutus2,
+.aboutus3 {
+  justify-content: space-between;
 }
 
 .aboutus2 h3 {
-    margin-bottom: 63px;
+  margin-bottom: 63px;
 }
 
 .aboutus3 {
-    margin-top: 81px;
+  margin-top: 81px;
 }
 
 .aboutus3 p {
-    margin-top: 100px;
+  margin-top: 100px;
 }
 
+.demo-img {
+  text-align: center;
+}
 
 /* ///////////////////// */
 /* RESPONSIVE */
 /* ///////////////////// */
 
+@media screen and (max-width: 1200px) {
+  .aboutus-img {
+    display: none;
+  }
+
+  .aboutus1 {
+    margin-bottom: 40px;
+  }
+
+  .aboutus2 h3 {
+    margin-bottom: 16px;
+  }
+
+  .aboutus3 {
+    margin-top: 0px;
+  }
+
+  .aboutus3 p {
+    margin-top: 40px;
+  }
+}
 
 @media screen and (max-width: 600px) {
+  .aboutusContainer {
+    padding: 25px;
+  }
 
-    .aboutusContainer {
-        padding: 25px;
-    }
+  .aboutus1 h1 {
+    font-size: 40px;
+  }
 
-    .aboutus1 h1 {
-        font-size: 40px;
-    }
+  .aboutus1 {
+    flex-direction: column;
+  }
 
-    .aboutus1 {
-        flex-direction: column;
-    }
+  .aboutus-img {
+    margin: 0 auto;
+    width: 100%;
+  }
 
-    .aboutus-img {
-        margin: 0 auto;
-        width: 100%;
-    }
+  .aboutus-demo2,
+  .aboutus-demo3 {
+    width: 100%;
+  }
 
-    .aboutus-demo2, .aboutus-demo3 {
-        width: 100%;
-    }
-
-    .aboutus-demo3 {
-        margin-bottom: 80px;
-    }
-
+  .aboutus-demo3 {
+    margin-bottom: 80px;
+  }
 }
