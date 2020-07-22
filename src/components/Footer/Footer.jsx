@@ -17,8 +17,8 @@ const Footer = () => {
           />
         </Col>
         <Col className="footerCol" xs={12} sm={6} md={3} lg={3}>
-          <h6>Student</h6>
           <ul>
+            <h6>Student</h6>
             <li>
               <a href="/students">Overview</a>
             </li>
@@ -34,8 +34,8 @@ const Footer = () => {
           </ul>
         </Col>
         <Col className="footerCol" xs={12} sm={6} md={3} lg={3}>
-          <h6>Outcome Team</h6>
           <ul>
+            <h6>Outcome Team</h6>
             <li>
               <a href="/outcomes">Overview</a>
             </li>
@@ -59,8 +59,8 @@ const Footer = () => {
                 </ul>
               </Col> */}
         <Col className="footerCol" xs={12} sm={6} md={3} lg={3}>
-          <h6>Company</h6>
           <ul>
+            <h6>Company</h6>
             <li>
               <a href="/about-us">About Us</a>
             </li>
