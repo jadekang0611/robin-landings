@@ -38,17 +38,17 @@ const NewsBlog = () => {
               <NewsCard data={article} key={index}/>
             </div>
           ))} */}
-          <Col md={4} className='news-content'>
+          <Col xs={12} md={4} className='news-content'>
             <div className='news-card1'>
               <h2 className='news-title'>New Robin is coming!</h2>
               <p className='news-description'>
-                We heard needs and feedback from current and graduate bootcamp
+                We heard needs and feedbacks from current and graduate bootcamp
                 students and outcomes. Stay tuned for a new Robin!
               </p>
               <img src='/images/blogs/NewLook.png' alt='article-img'></img>
             </div>
           </Col>
-          <Col md={5}>
+          <Col xs={12} md={5}>
             <div className='news-card2'>
               <Col md={6} className='news-content'>
                 <h2 className='news-title'>Live Event</h2>
@@ -65,13 +65,13 @@ const NewsBlog = () => {
                   Read More <i class='fas fa-long-arrow-alt-right'></i>
                 </a>
               </Col>
-              <Col className='news-image-col'>
+              <Col xs={12} className='news-image-col'>
                 <img src='/images/blogs/AMA_Event.png' alt='article-img'></img>
               </Col>
             </div>
 
             <div className='news-card3'>
-              <Col md={6} className='news-content'>
+              <Col xs={12} md={6} className='news-content'>
                 <h2 className='news-title'>Welcome onboard</h2>
                 <p className='news-description'>
                   Robin team is welcoming our team member no. 3! We are excited
@@ -84,7 +84,7 @@ const NewsBlog = () => {
                   Read More <i class='fas fa-long-arrow-alt-right'></i>
                 </a>
               </Col>
-              <Col className='news-image-col'>
+              <Col xs={12} className='news-image-col'>
                 <img
                   src='/images/blogs/Welcome_Daisy.png'
                   alt='article-img'></img>

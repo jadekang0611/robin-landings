@@ -14,28 +14,28 @@ const RobinTeam = () => {
       <div className='teamContainer'>
         <h1>Robin Team</h1>
         <Row md={12} className='teamRow'>
-          <Col md={3}>
+          <Col md={3} className='teamCol'>
             <img src={Team1} alt='team' className='team-img' />
             <div className='teamTitle'>
               <h4>Taylor Kang</h4>
               <p>Co-founder</p>
             </div>
           </Col>
-          <Col md={3}>
+          <Col md={3} className='teamCol'>
             <img src={Team2} alt='team' className='team-img' />
             <div className='teamTitle'>
               <h4>Jade Kang</h4>
               <p>Co-founder</p>
             </div>
           </Col>
-          <Col md={3}>
+          <Col md={3} className='teamCol'>
             <img src={Team3} alt='team' className='team-img' />
             <div className='teamTitle'>
               <h4>Daisy Yau</h4>
               <p>Front-end Engineer</p>
             </div>
           </Col>
-          <Col md={3}>
+          <Col md={3} className='teamCol'>
             <img src={Team4} alt='team' className='team-img' />
           </Col>
         </Row>

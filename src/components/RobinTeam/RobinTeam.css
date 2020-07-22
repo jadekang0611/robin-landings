@@ -27,3 +27,16 @@
     letter-spacing: 0.01em;
     line-height: 21px;
 }
+
+/* ///////////////////// */
+/* RESPONSIVE */
+/* ///////////////////// */
+
+
+@media screen and (max-width: 600px) {
+
+    .teamCol {
+        margin-bottom: 40px;
+    }
+
+}

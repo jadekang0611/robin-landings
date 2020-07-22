@@ -59,3 +59,38 @@
 .aboutus3 p {
     margin-top: 100px;
 }
+
+
+/* ///////////////////// */
+/* RESPONSIVE */
+/* ///////////////////// */
+
+
+@media screen and (max-width: 600px) {
+
+    .aboutusContainer {
+        padding: 25px;
+    }
+
+    .aboutus1 h1 {
+        font-size: 40px;
+    }
+
+    .aboutus1 {
+        flex-direction: column;
+    }
+
+    .aboutus-img {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .aboutus-demo2, .aboutus-demo3 {
+        width: 100%;
+    }
+
+    .aboutus-demo3 {
+        margin-bottom: 80px;
+    }
+
+}
