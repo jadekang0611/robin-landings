@@ -1,14 +1,10 @@
-#screen-one {
-  padding: 44px 120px 140px 120px;
+.screen-one-row {
+  justify-content: center;
 }
 
 #screen-one .screen-one-section h4 {
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  /* identical to box height, or 114% */
-
   display: flex;
   align-items: center;
   letter-spacing: 0.01em;
@@ -23,17 +19,9 @@
 #screen-one .screen-one-section h2 {
   font-style: normal;
   font-weight: 500;
-  font-size: 56px;
-  /* equivalent to 56px */
-  line-height: 64px;
-  /* or 114% */
-
   display: flex;
   align-items: center;
   letter-spacing: 0.01em;
-
-  /* Text primal */
-
   color: #2e384d;
   margin-bottom: 16px;
 }
@@ -41,10 +29,6 @@
 #screen-one .screen-one-section p {
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 28px;
-  /* or 156% */
-
   display: flex;
   align-items: center;
   letter-spacing: 0.01em;
@@ -70,7 +54,6 @@
   line-height: 28px;
   /* identical to box height, or 140% */
 
-  display: flex;
   align-items: center;
   letter-spacing: 0.01em;
   margin-bottom: 16px;
@@ -106,33 +89,19 @@
   align-items: center;
 }
 
-
 /* ///////////////////// */
 /* RESPONSIVE */
 /* ///////////////////// */
 
-
 @media screen and (max-width: 600px) {
+  #screen-one {
+    margin: 50px auto;
+    padding: 0 25px;
+  }
 
-    #screen-one {
-      margin: 50px auto;
-      padding: 0 25px;
-    }
-
-    .screen-one-message h2 {
-        font-size: 40px !important;
-    }
-
-    .overview-message-img {
-        height: 405px;
-        margin-top: 30px;
-        width: 440px;
-    }
-
-    .action-button{
-        font-size: 18px !important;
-        padding: 20px !important;
-        margin: 20px 100px 30px !important;
-        width: 200px !important;
-    }
+  .overview-message-img {
+    height: 405px;
+    margin-top: 30px;
+    /* width: 440px; */
+  }
 }

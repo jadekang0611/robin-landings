@@ -1,91 +1,77 @@
-.footerContainer {
-    background-color: white;
-    margin: 85px 0 35px;
-}
-
-.robinLogo {
-    width: 180px;
-}
-
-.footerLogo, .footerCol:nth-child(1n+3), #copyright {
-    margin-right: 23px !important;
-}
-
-.footerCol h6 {
-    font-size: 18px;
-    line-height: 28px;
-}
-
-.footerCol ul {
-    list-style: none !important;
-    padding: 0 !important;
-}
-
-.footerCol li {
-    margin-bottom: 20px;
-}
-
-.footerCol a {
-    color: #2E384D;
-    font-size: 14px;
-    line-height: 17px;
-    opacity: .8;
-    text-decoration: none !important;
-}
-
-.footerCol a:hover {
-    color: #2E384D;
-    border-bottom: 2px solid #ff725e;
-}
-
-.footerContainer hr {
-    margin: 65px 0 36px;
-    width: 1200px;
+#footer-section {
+  background-color: white;
 }
 
 .footerTerms {
-    font-size: 14px;
-    line-height: 17px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-#privacy, #terms {
-    max-width: 140px !important;
+.footerLogo {
+  text-align: center;
 }
 
-#social {
-    text-align: right !important;
+.footer-row {
+  text-align: justify;
+}
+
+.footerCol {
+  display: flex;
+  justify-content: center;
+}
+
+.robinLogo {
+  max-width: 120px;
+}
+
+.footerCol h6 {
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 16px;
+}
+
+.footerCol ul {
+  list-style: none !important;
+  padding: 0 !important;
+}
+
+.footerCol li {
+  margin-bottom: 24px;
+}
+
+.footerCol a {
+  color: #2e384d;
+  font-size: 14px;
+  line-height: 17px;
+  opacity: 0.8;
+  text-decoration: none !important;
+}
+
+.footerCol a:hover {
+  color: #2e384d;
+  border-bottom: 2px solid #ff725e;
+}
+
+.footerContainer hr {
+  margin: 65px 0 36px;
+  width: 100%;
+}
+
+.footerTerms {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+#privacy,
+#terms {
+  max-width: 140px !important;
 }
 
 #social a {
-    margin: 0 8px;
-}
-
-#social a:nth-child(3) img {
-    width: 24px !important;
+  margin: 0 8px;
 }
 
 /* ///////////////////// */
 /* RESPONSIVE */
 /* ///////////////////// */
-
-
-@media screen and (max-width: 1200px) {
-
-    .footerCol {
-        margin-top: 20px;
-    }
-
-    .footerCol:nth-child(1n+3) {
-        margin: 20px 0 0 !important;
-    }
-
-    .footerContainer hr {
-    margin: 65px 0 36px;
-    width: 100%;
-    }
-
-    #privacy, #terms, #social {
-        margin-top: 15px;
-    }
-
-}

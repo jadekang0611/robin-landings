@@ -1,6 +1,12 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link, Redirect, useParams, useRouteMatch } from 'react-router-dom';
-import * as ROUTES from './Routes';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  Redirect,
+  useRouteMatch,
+} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Nav, NavDropdown, Navbar } from 'react-bootstrap';
 // import StudentMain from './views/Students/StudentMain';
@@ -17,9 +23,6 @@ import About from './views/Company/About';
 
 import './views/SubNav.css';
 
-
-
-
 export default function App() {
   return (
     //Top Nav//
@@ -27,80 +30,95 @@ export default function App() {
       <div>
         {/* MOBILE NAV BAR */}
         <Navbar bg="light" expand="md" className="mobile-nav">
-          <Navbar.Brand as={Link} to='/'>
-            <img src={robinLogo} className='mobile-nav-logo' alt='robin-logo' />
+          <Navbar.Brand as={Link} to="/">
+            <img src={robinLogo} className="mobile-nav-logo" alt="robin-logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
               <NavDropdown title="Students" id="students-nav-dropdown">
-                <NavDropdown.Item as={Link} to='/students/overview'>Overview</NavDropdown.Item>
-                <NavDropdown.Item as={Link} to='/students/how-it-works'>How It Works</NavDropdown.Item>
-                <NavDropdown.Item as={Link} to='/students/help-center'>Help Center</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/students/overview">
+                  Overview
+                </NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/students/how-it-works">
+                  How It Works
+                </NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/students/help-center">
+                  Help Center
+                </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item as={Link} to='/students/signup'>Sign Up</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/students/signup">
+                  Sign Up
+                </NavDropdown.Item>
               </NavDropdown>
               <NavDropdown title="Outcomes" id="outcomes-nav-dropdown">
-                <NavDropdown.Item as={Link} to='/outcomes/overview'>Overview</NavDropdown.Item>
-                <NavDropdown.Item as={Link} to='/outcomes/help-center'>Help Center</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/outcomes/overview">
+                  Overview
+                </NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/outcomes/help-center">
+                  Help Center
+                </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item as={Link} to='/outcomes/request-demo'>Request for Demo</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/outcomes/request-demo">
+                  Request for Demo
+                </NavDropdown.Item>
               </NavDropdown>
               {/* <NavDropdown title="Employers" id="employer-nav-dropdown">
                 <NavDropdown.Item as={Link} to='/employers/overview'>Overview</NavDropdown.Item>
                 <NavDropdown.Item as={Link} to='/employers/search-candidates'>Search Candidates</NavDropdown.Item>
               </NavDropdown> */}
               <NavDropdown title="Company" id="company-nav-dropdown">
-                <NavDropdown.Item as={Link} to='/about-us'>About Us</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/about-us">
+                  About Us
+                </NavDropdown.Item>
                 {/* <NavDropdown.Item as={Link} to='/about-us/blog'>Blog</NavDropdown.Item> */}
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
-        
 
         {/* DESKTOP NAV BAR */}
-        <div id='desktop-nav-container'>
-          <ul className='desktop-nav-main'>
-            <li className='desktop-nav-item'>
-              <Link to='/students'>Students</Link>
+        <div id="desktop-nav-container">
+          <ul className="desktop-nav-main">
+            <li className="desktop-nav-item">
+              <Link to="/students">Students</Link>
             </li>
-            <li className='desktop-nav-item'>
-              <Link to='/outcomes'>Outcomes</Link>
+            <li className="desktop-nav-item">
+              <Link to="/outcomes">Outcomes</Link>
             </li>
             {/* <li className='desktop-nav-item'>
               <Link to='/employers'>Employers</Link>
             </li> */}
-            <li className='desktop-nav-item'>
-              <Link to='/about-us'>Company</Link>
-            </li>
+            {/* <li className="desktop-nav-item">
+              <Link to="/about-us">Company</Link>
+            </li> */}
           </ul>
 
-          <ul className='desktop-nav-main'>
-            <li className='desktop-nav-item desktop-nav-sign-in'>
-              <Link to='/sign-in'>Sign In</Link>
+          <ul className="desktop-nav-main">
+            <li className="desktop-nav-item desktop-nav-sign-in">
+              <Link to="/sign-in">Sign In</Link>
             </li>
           </ul>
         </div>
 
         <Switch>
-          <Route exact path='/'>
-            <Redirect to='/students' />
+          <Route exact path="/">
+            <Redirect to="/students" />
             <StudentPage />
           </Route>
-          <Route path='/students'>
+          <Route path="/students">
             <StudentPage />
           </Route>
-          <Route path='/outcomes'>
+          <Route path="/outcomes">
             <OutcomesPage />
           </Route>
-          <Route path='/employers'>
+          <Route path="/employers">
             <EmployersPage />
           </Route>
-          <Route path='/about-us'>
+          <Route path="/about-us">
             <AboutUsPage />
           </Route>
-          <Route path='/sign-in'>
+          <Route path="/sign-in">
             <SignInPage />
           </Route>
         </Switch>
@@ -108,8 +126,6 @@ export default function App() {
     </Router>
   );
 }
-
-
 
 /////////////////////////////
 //Student section Sub Nav//
@@ -120,25 +136,25 @@ function StudentPage() {
 
   return (
     <div>
-      <div id='sub-nav-container'>
-        <ul className='sub-nav-main'>
-          <li className='logo-item'>
-            <Link to='/students'>
-              <img src={robinLogo} className='sub-nav-logo' alt='robin-logo' />
+      <div id="sub-nav-container">
+        <ul className="sub-nav-main">
+          <li className="logo-item">
+            <Link to="/students">
+              <img src={robinLogo} className="sub-nav-logo" alt="robin-logo" />
             </Link>
           </li>
         </ul>
-        <ul className='sub-nav-main'>
-          <li className='sub-nav-item'>
+        <ul className="sub-nav-main">
+          <li className="sub-nav-item">
             <Link to={`${url}/overview`}>Overview</Link>
           </li>
-          <li className='sub-nav-item'>
+          <li className="sub-nav-item">
             <Link to={`${url}/how-it-works`}>How It Works</Link>
           </li>
-          <li className='sub-nav-item'>
+          <li className="sub-nav-item">
             <Link to={`${url}/help-center`}>Help Center</Link>
           </li>
-          <li className='sign-up-button'>
+          <li className="sign-up-button">
             <Link to={`${url}/signup`}>Sign Up</Link>
           </li>
         </ul>
@@ -160,41 +176,37 @@ function StudentPage() {
         <Route path={`${path}/help-results`}>
           <HelpResults />
         </Route>
-        <Route path={`${path}/signup`}>
-          {/* Enter the component name */}
-        </Route>
-
+        <Route path={`${path}/signup`}>{/* Enter the component name */}</Route>
       </Switch>
     </div>
   );
 }
-
 
 /////////////////////////////
 //Outcomes section Sub Nav//
 /////////////////////////////
 
 function OutcomesPage() {
-  let {path, url} = useRouteMatch();
+  let { path, url } = useRouteMatch();
 
   return (
     <div>
-      <div id='sub-nav-container'>
-        <ul className='sub-nav-main'>
-          <li className='logo-item'>
-            <Link to='/outcomes'>
-              <img src={robinLogo} className='sub-nav-logo' alt='robin-logo' />
+      <div id="sub-nav-container">
+        <ul className="sub-nav-main">
+          <li className="logo-item">
+            <Link to="/outcomes">
+              <img src={robinLogo} className="sub-nav-logo" alt="robin-logo" />
             </Link>
           </li>
         </ul>
-        <ul className='sub-nav-main'>
-          <li className='sub-nav-item'>
+        <ul className="sub-nav-main">
+          <li className="sub-nav-item">
             <Link to={`${url}/overview`}>Overview</Link>
           </li>
-          <li className='sub-nav-item'>
+          <li className="sub-nav-item">
             <Link to={`${url}/help-center`}>Help Center</Link>
           </li>
-          <li className='request-demo-button'>
+          <li className="request-demo-button">
             <Link to={`${url}/request-demo`}>Request for Demo</Link>
           </li>
         </ul>
@@ -221,7 +233,6 @@ function OutcomesPage() {
   );
 }
 
-
 /////////////////////////////
 //Employers section Sub Nav//
 /////////////////////////////
@@ -231,16 +242,16 @@ function EmployersPage() {
 
   return (
     <div>
-      <div id='sub-nav-container'>
-        <ul className='sub-nav-main'>
-          <li className='logo-item'>
-            <Link to='/employers'>
-              <img src={robinLogo} className='sub-nav-logo' alt='robin-logo' />
+      <div id="sub-nav-container">
+        <ul className="sub-nav-main">
+          <li className="logo-item">
+            <Link to="/employers">
+              <img src={robinLogo} className="sub-nav-logo" alt="robin-logo" />
             </Link>
           </li>
         </ul>
-        <ul className='sub-nav-main'>
-          <li className='sub-nav-item'>
+        <ul className="sub-nav-main">
+          <li className="sub-nav-item">
             <Link to={`${url}`}>Overview</Link>
           </li>
           {/* <li className='sub-nav-item'>
@@ -261,7 +272,6 @@ function EmployersPage() {
   );
 }
 
-
 /////////////////////////////
 //About Us section Sub Nav//
 /////////////////////////////
@@ -271,16 +281,16 @@ function AboutUsPage() {
 
   return (
     <div>
-      <div id='sub-nav-container'>
-        <ul className='sub-nav-main'>
-          <li className='logo-item'>
-            <Link to='/outcomes'>
-              <img src={robinLogo} className='sub-nav-logo' alt='robin-logo' />
+      <div id="sub-nav-container">
+        <ul className="sub-nav-main">
+          <li className="logo-item">
+            <Link to="/outcomes">
+              <img src={robinLogo} className="sub-nav-logo" alt="robin-logo" />
             </Link>
           </li>
         </ul>
-        <ul className='sub-nav-main'>
-          <li className='sub-nav-item'>
+        <ul className="sub-nav-main">
+          <li className="sub-nav-item">
             <Link to={`${url}`}>About Us</Link>
           </li>
           {/* <li className='sub-nav-item'>
@@ -310,16 +320,16 @@ function SignInPage() {
 
   return (
     <div>
-      <div id='sub-nav-container'>
-        <ul className='sub-nav-main'>
-          <li className='logo-item'>
-            <Link to='/sign-in'>
-              <img src={robinLogo} className='sub-nav-logo' alt='robin-logo' />
+      <div id="sub-nav-container">
+        <ul className="sub-nav-main">
+          <li className="logo-item">
+            <Link to="/sign-in">
+              <img src={robinLogo} className="sub-nav-logo" alt="robin-logo" />
             </Link>
           </li>
         </ul>
-        <ul className='sub-nav-main'>
-          <li className='sub-nav-item'>
+        <ul className="sub-nav-main">
+          <li className="sub-nav-item">
             Don't have an account? <Link to={`/sign-up`}>Sign up</Link>
           </li>
           {/* <li className='sub-nav-item'>
@@ -378,4 +388,3 @@ function SignInPage() {
 //     </div>
 //   );
 // }
-

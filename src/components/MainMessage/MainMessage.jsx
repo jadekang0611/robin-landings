@@ -20,8 +20,8 @@ const MainMessage = (props) => {
     <>
       <div id='screen-one' style={bgStyle}>
         <section className='screen-one-section'>
-          <Row>
-            <Col md={6} className='screen-one-message'>
+          <Row className='screen-one-row'>
+            <Col md={6} lg={6} className='screen-one-message screen-one-row'>
               <div>
                 <h4>Proident sunt mollit Lorem</h4>
                 <h2>{props.content.main}</h2>
@@ -29,7 +29,7 @@ const MainMessage = (props) => {
                 <Button className='action-button'>Get started</Button>
               </div>
             </Col>
-            <Col md={6}>
+            <Col md={6} lg={6}>
               {' '}
               <div className='img-container'>
                 <img
