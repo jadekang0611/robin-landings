@@ -10,21 +10,25 @@ import {
   Footer,
 } from '../../../components';
 
+import content from '../../../content.js';
+
+console.log(content);
+
 const Overview = () => {
   return (
-    <div id="student-body">
+    <div id='student-body'>
       {/* StudentOverview Main Message */}
-      <MainMessage />
+      <MainMessage content={content.student} />
       {/* StudentOverview Feature Message */}
-      <FeatureMessage />
+      <FeatureMessage content={content.student} />
       {/* StudentOverview Testimonials Message */}
-      <Testimonials />
+      <Testimonials content={content.student} />
       {/* StudentOverview Demo Message */}
-      <DemoMessage />
+      <DemoMessage content={content.student} />
       {/* StudentOverview Companies Message */}
-      <Companies />
+      <Companies content={content.student} />
       {/* StudentOverview Last Message */}
-      <LastMessage />
+      <LastMessage content={content.student} />
       {/* Footer Component */}
       <Footer />
     </div>

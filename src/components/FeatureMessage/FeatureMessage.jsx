@@ -14,34 +14,43 @@ const bgStyle2 = {
   height: 'auto',
 };
 
-const FeatureMessage = () => {
+const FeatureMessage = (props) => {
   return (
-    <div id="screen-two" style={bgStyle2}>
-      <section className="screen-two-section">
-        <div className="feature-message-title">
+    <div id='screen-two' style={bgStyle2}>
+      <section className='screen-two-section'>
+        <div className='feature-message-title'>
           <h2>OUR FEATURES</h2>
         </div>
-        <Row className="screen-two-row">
+        <Row className='screen-two-row'>
           <Col lg={6}>
-            <div className="feature-container">
-              <FeatureCard className="feature1" />
+            <div className='feature-container'>
+              <FeatureCard
+                title={props.content.feature_1_title}
+                sub={props.content.feature_1_sub}
+                className='feature1'
+              />
             </div>
 
-            <div className="feature-container2">
-              <FeatureCard className="feature2" />
+            <div className='feature-container2'>
+              <FeatureCard
+                title={props.content.feature_2_title}
+                sub={props.content.feature_2_sub}
+                className='feature2'
+              />
             </div>
           </Col>
 
           <Col lg={6}>
-            <div className="feature-message">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius
-                vitae enim vestibulum tincidunt.
-              </p>
+            <div className='feature-message'>
+              <p>{props.content.our_features}</p>
             </div>
 
-            <div className="feature-container3">
-              <FeatureCard className="feature3" />
+            <div className='feature-container3'>
+              <FeatureCard
+                title={props.content.feature_3_title}
+                sub={props.content.feature_3_sub}
+                className='feature3'
+              />
             </div>
           </Col>
         </Row>

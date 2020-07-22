@@ -15,33 +15,28 @@ const bgStyle = {
   height: 'auto',
 };
 
-const MainMessage = () => {
+const MainMessage = (props) => {
   return (
     <>
-      <div id="screen-one" style={bgStyle}>
-        <section className="screen-one-section">
+      <div id='screen-one' style={bgStyle}>
+        <section className='screen-one-section'>
           <Row>
-            <Col md={6} className="screen-one-message">
+            <Col md={6} className='screen-one-message'>
               <div>
                 <h4>Proident sunt mollit Lorem</h4>
-                <h2>
-                  The main message should be like this in three lines 65 symbol
-                </h2>
-                <p>
-                  Culpa incididunt magna et tempor sit minim laborum voluptate.
-                  Aliquip aliquip occaecat esse amet consectetur.
-                </p>
-                <Button className="action-button">Get started</Button>
+                <h2>{props.content.main}</h2>
+                <p>{props.content.sub}</p>
+                <Button className='action-button'>Get started</Button>
               </div>
             </Col>
             <Col md={6}>
               {' '}
-              <div className="img-container">
+              <div className='img-container'>
                 <img
-                  role="presentation"
+                  role='presentation'
                   src={StudentMessage}
-                  alt="student-main-bg"
-                  className="overview-message-img"
+                  alt='student-main-bg'
+                  className='overview-message-img'
                 />
               </div>
             </Col>
