@@ -1,9 +1,10 @@
 import React from 'react';
 import './Footer.css';
 import { Container, Row, Col } from 'react-bootstrap';
-import linkedIn from '../../assets/linkedin.png';
-import twitter from '../../assets/twitter.png';
-import youtube from '../../assets/youtube.svg';
+
+const Facebook = '/images/logos/Facebook.png';
+const Twitter = '/images/logos/Twitter.png';
+const LinkedIn = '/images/logos/LinkedIn.png';
 
 const Footer = () => {
   return (
@@ -83,18 +84,25 @@ const Footer = () => {
         </Col>
         <Col xs={5} md={5} id="social">
           <a
+            href="https://www.facebook.com/getmyrobin/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={Facebook} alt="facebook" width="24px" height="24px" />
+          </a>
+          <a
             href="https://www.linkedin.com/company/joinrobin"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={linkedIn} alt="linkedin" />
+            <img src={LinkedIn} alt="linkedin" width="24px" height="24px" />
           </a>
           <a
             href="https://twitter.com/MyRobinTeam"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={twitter} alt="twitter" />
+            <img src={Twitter} alt="twitter" width="24px" height="24px" />
           </a>
           {/* <a
                   href='https://www.youtube.com/channel/UCZYNPt1qBnx8BrPytLc8E7w/featured'
