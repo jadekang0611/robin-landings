@@ -5,7 +5,6 @@ import { useHistory } from 'react-router';
 import '../Help.css';
 import helpImage from '../../../assets/help-center.png';
 import {
-  Container,
   Row,
   Col,
   InputGroup,

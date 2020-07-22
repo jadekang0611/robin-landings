@@ -2,7 +2,6 @@ import React from 'react';
 import './About.css';
 import {
   AboutUs,
-  LastMessage,
   NewsBlog,
   RobinTeam,
   Footer,

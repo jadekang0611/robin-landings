@@ -1,7 +1,7 @@
 import React from 'react';
 import './Benefits.css';
 import { Container, Row, Col } from 'react-bootstrap';
-import benefitIcon from '../../assets/vector.png';
+
 
 const Benefits = (props) => {
   return (

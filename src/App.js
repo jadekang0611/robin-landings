@@ -9,8 +9,6 @@ import {
 } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Nav, NavDropdown, Navbar } from 'react-bootstrap';
-// import StudentMain from './views/Students/StudentMain';
-// import OutcomesMain from './views/Outcomes/OutcomesMain';
 import Overview from './views/Students/Overview';
 import RequestDemo from './views/Outcomes/components/RequestDemo';
 import { Help, HelpResults } from './components/Help';
@@ -158,7 +156,7 @@ function StudentPage() {
             <Link to={`${url}/help-center`}>Help Center</Link>
           </li>
           <li className='sign-up-button'>
-            <Link to={`${url}/signup`}>Sign Up</Link>
+            <a href='https://app.myrobin.io/signup'>Sign Up</a>
           </li>
         </ul>
       </div>

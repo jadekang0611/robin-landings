@@ -1,8 +1,8 @@
 import React from 'react';
 import './AboutUs.css';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import AboutusImage from '../../assets/aboutus.png';
-import FeatureMessage from '../FeatureMessage';
+
 
 const DEMO2 = '/images/application/StudentApp2.png';
 const DEMO4 = '/images/application/StudentApp4.png';

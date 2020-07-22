@@ -79,7 +79,7 @@ export default {
     benefits_4_icon: '/images/benefits/benefits-scalable.svg',
     cta:
       'Ready to give your bootcamp students a positive and confident outcome experience?',
-    get_started: 'http://localhost:3000/outcomes/request-demo',
+    get_started: 'https://myrobin.io/outcomes/request-demo',
   },
   how: {
     cta:

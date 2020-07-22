@@ -5,8 +5,6 @@ import {
   Container,
   Row,
   Col,
-  InputGroup,
-  FormControl,
   Button,
 } from 'react-bootstrap';
 import { Footer } from '../..';

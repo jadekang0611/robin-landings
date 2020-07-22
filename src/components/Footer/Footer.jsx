@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 
 const Facebook = '/images/logos/Facebook.png';
 const Twitter = '/images/logos/Twitter.png';
@@ -30,7 +30,7 @@ const Footer = () => {
               <a href="/students/help-center">Help Center</a>
             </li>
             <li>
-              <a href="/signup">Sign Up</a>
+              <a href="https://app.myrobin.io/signup">Sign Up</a>
             </li>
           </ul>
         </Col>

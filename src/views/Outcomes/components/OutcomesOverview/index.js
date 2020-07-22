@@ -9,7 +9,7 @@ import {
 } from '../../../../components';
 
 import content from '../../../../content.js';
-import { propTypes } from 'react-bootstrap/esm/Image';
+
 
 const OutcomesOverview = () => {
   document.title = 'Outcomes | Robin';

@@ -76,6 +76,11 @@
   background-size: 100% 100% !important;
 }
 
+.action-button:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
 .overview-message-img {
   width: 100%;
 }

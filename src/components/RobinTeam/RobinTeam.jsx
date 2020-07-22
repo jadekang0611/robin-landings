@@ -1,6 +1,6 @@
 import React from 'react';
 import './RobinTeam.css';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 
 const Team1 = '/images/team/Team-Taylor.png';
 const Team2 = '/images/team/Team-Jade.png';

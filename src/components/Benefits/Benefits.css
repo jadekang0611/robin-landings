@@ -45,3 +45,7 @@
 .benefitCol {
   margin-bottom: 44px;
 }
+
+.benefitCol p {
+  margin-top: 7px;
+}
