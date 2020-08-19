@@ -8,43 +8,43 @@ const LinkedIn = '/images/logos/LinkedIn.png';
 
 const Footer = () => {
   return (
-    <div id="footer-section">
-      <Row className="footer-row">
-        <Col className="footerLogo" xs={6} sm={6} md={3} lg={3}>
+    <div id='footer-section'>
+      <Row className='footer-row'>
+        <Col className='footerLogo' xs={6} sm={6} md={3} lg={3}>
           <img
-            className="robinLogo"
-            src="/images/logos/Robin.png"
-            alt="Robin Logo"
+            className='robinLogo'
+            src='/images/logos/Robin.png'
+            alt='Robin Logo'
           />
         </Col>
-        <Col className="footerCol" xs={6} sm={6} md={3} lg={3}>
+        <Col className='footerCol' xs={6} sm={6} md={3} lg={3}>
           <ul>
             <h6>Student</h6>
             <li>
-              <a href="/students">Overview</a>
+              <a href='/students'>Overview</a>
             </li>
             <li>
-              <a href="/students/how-it-works">How it works</a>
+              <a href='/students/how-it-works'>How it works</a>
             </li>
             <li>
-              <a href="/students/help-center">Help Center</a>
+              <a href='/students/help-center'>Help Center</a>
             </li>
             <li>
-              <a href="https://app.myrobin.io/signup">Sign Up</a>
+              <a href='https://app.myrobin.io/signup'>Sign Up</a>
             </li>
           </ul>
         </Col>
-        <Col className="footerCol" xs={6} sm={6} md={3} lg={3}>
+        <Col className='footerCol' xs={6} sm={6} md={3} lg={3}>
           <ul>
             <h6>Outcome Team</h6>
             <li>
-              <a href="/outcomes">Overview</a>
+              <a href='/outcomes'>Overview</a>
             </li>
             <li>
-              <a href="/outcomes/help-center">Help Center</a>
+              <a href='/outcomes/help-center'>Help Center</a>
             </li>
             <li>
-              <a href="/outcomes/request-demo">Request for Demo</a>
+              <a href='/outcomes/request-demo'>Request for Demo</a>
             </li>
           </ul>
         </Col>
@@ -59,11 +59,11 @@ const Footer = () => {
                   </li>
                 </ul>
               </Col> */}
-        <Col className="footerCol" xs={6} sm={6} md={3} lg={3}>
+        <Col className='footerCol' xs={6} sm={6} md={3} lg={3}>
           <ul>
             <h6>Company</h6>
             <li>
-              <a href="/about-us">About Us</a>
+              <a href='/about-us'>About Us</a>
             </li>
             {/* <li>
                     <a href='/'>Blog</a>
@@ -72,37 +72,34 @@ const Footer = () => {
         </Col>
       </Row>
       <hr></hr>
-      <Row className="footerTerms">
-        <Col sm={6} md={4} id="copyright">
+      <Row className='footerTerms'>
+        <Col sm={6} md={4} id='copyright'>
           ©2020 Robin. All rights reserved
         </Col>
-        <Col sm={6} md={3} id="privacy">
-          Privacy policy
+        <Col sm={6} md={3} id='privacy'>
+          <a href='/privacy-policy'>Privacy Policy</a>
         </Col>
-        <Col sm={6} md={3} id="terms">
-          Terms of service
+        <Col sm={6} md={3} id='terms'>
+          <a href='/terms-service'>Terms of Service</a>
         </Col>
-        <Col xs={12} sm={6} md={2} id="social">
+        <Col xs={12} sm={6} md={2} id='social'>
           <a
-            href="https://www.facebook.com/getmyrobin/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={Facebook} alt="facebook" width="24px" height="24px" />
+            href='https://www.facebook.com/getmyrobin/'
+            target='_blank'
+            rel='noopener noreferrer'>
+            <img src={Facebook} alt='facebook' width='24px' height='24px' />
           </a>
           <a
-            href="https://www.linkedin.com/company/joinrobin"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={LinkedIn} alt="linkedin" width="24px" height="24px" />
+            href='https://www.linkedin.com/company/joinrobin'
+            target='_blank'
+            rel='noopener noreferrer'>
+            <img src={LinkedIn} alt='linkedin' width='24px' height='24px' />
           </a>
           <a
-            href="https://twitter.com/MyRobinTeam"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={Twitter} alt="twitter" width="24px" height="24px" />
+            href='https://twitter.com/MyRobinTeam'
+            target='_blank'
+            rel='noopener noreferrer'>
+            <img src={Twitter} alt='twitter' width='24px' height='24px' />
           </a>
           {/* <a
                   href='https://www.youtube.com/channel/UCZYNPt1qBnx8BrPytLc8E7w/featured'

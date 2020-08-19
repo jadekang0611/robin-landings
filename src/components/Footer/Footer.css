@@ -63,6 +63,11 @@
   line-height: 17px;
 }
 
+.footerTerms a {
+  color: #2e384d;
+  text-decoration: none !important;
+}
+
 #privacy,
 #terms {
   max-width: 140px !important;
