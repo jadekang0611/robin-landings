@@ -30,7 +30,11 @@ const Footer = () => {
               <a href='/students/help-center'>Help Center</a>
             </li>
             <li>
+<<<<<<< HEAD
               <a href='https://app.myrobin.io/sign-up'>Sign Up</a>
+=======
+              <a href='https://app.myrobin.io/signup'>Sign Up</a>
+>>>>>>> origin/terms-privacy
             </li>
           </ul>
         </Col>
@@ -77,31 +81,50 @@ const Footer = () => {
           ©2020 Robin. All rights reserved
         </Col>
         <Col sm={6} md={3} id='privacy'>
+<<<<<<< HEAD
           Privacy policy
         </Col>
         <Col sm={6} md={3} id='terms'>
           Terms of service
+=======
+          <a href='/privacy-policy'>Privacy Policy</a>
+        </Col>
+        <Col sm={6} md={3} id='terms'>
+          <a href='/terms-service'>Terms of Service</a>
+>>>>>>> origin/terms-privacy
         </Col>
         <Col xs={12} sm={6} md={2} id='social'>
           <a
             href='https://www.facebook.com/getmyrobin/'
             target='_blank'
+<<<<<<< HEAD
             rel='noopener noreferrer'
           >
+=======
+            rel='noopener noreferrer'>
+>>>>>>> origin/terms-privacy
             <img src={Facebook} alt='facebook' width='24px' height='24px' />
           </a>
           <a
             href='https://www.linkedin.com/company/joinrobin'
             target='_blank'
+<<<<<<< HEAD
             rel='noopener noreferrer'
           >
+=======
+            rel='noopener noreferrer'>
+>>>>>>> origin/terms-privacy
             <img src={LinkedIn} alt='linkedin' width='24px' height='24px' />
           </a>
           <a
             href='https://twitter.com/MyRobinTeam'
             target='_blank'
+<<<<<<< HEAD
             rel='noopener noreferrer'
           >
+=======
+            rel='noopener noreferrer'>
+>>>>>>> origin/terms-privacy
             <img src={Twitter} alt='twitter' width='24px' height='24px' />
           </a>
           {/* <a

@@ -102,6 +102,10 @@ body {
     justify-content: flex-start;
     margin-top: 16px;
   }
+  .privacyContainer {
+    margin: 10% auto;
+    max-width: 75%;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

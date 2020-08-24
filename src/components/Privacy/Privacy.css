@@ -1,0 +1,23 @@
+.privacyContainer {
+    word-spacing: 1px;
+    line-height: 30px;
+    max-width: 900px;
+    margin: 5% auto;
+}
+
+h5 {
+    font-style: italic;
+}
+
+p {
+    margin: 10px 0;
+}
+
+@media only screen and (max-width: 992px) {
+
+.privacyContainer {
+    max-width: 75%;
+    margin: 5% auto;
+}
+
+}

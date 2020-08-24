@@ -18,6 +18,8 @@ import './Navigation.css';
 import './App.css';
 import HowWorks from './views/Students/HowWorks';
 import About from './views/Company/About';
+import Privacy from './components/Privacy';
+import Terms from './components/Terms';
 
 import './views/SubNav.css';
 
@@ -121,6 +123,12 @@ export default function App() {
           </Route>
           <Route path='/sign-in'>
             <SignInPage />
+          </Route>
+          <Route path='/privacy-policy'>
+            <PrivacyPage />
+          </Route>
+          <Route path='/terms-service'>
+            <TermsPage />
           </Route>
         </Switch>
       </div>
@@ -389,3 +397,66 @@ function SignInPage() {
 //     </div>
 //   );
 // }
+
+//////////////////////////////////
+//Privacy Policy section Footer//
+/////////////////////////////////
+
+function PrivacyPage() {
+  let { path, url } = useRouteMatch();
+
+  return (
+    <div>
+      {/* <div id='sub-nav-container'>
+        <ul className='sub-nav-main'>
+          <li className='logo-item'>
+            <Link to='/sign-in'>
+              <img src={robinLogo} className='sub-nav-logo' alt='robin-logo' />
+            </Link>
+          </li>
+        </ul>
+      </div> */}
+
+      <Switch>
+        <Route exact path={path}>
+          <Privacy />
+        </Route>
+        <Route path={`${path}/privacy-policy`}>
+          <Privacy />
+        </Route>
+      </Switch>
+    </div>
+  );
+}
+
+
+//////////////////////////////////
+//Terms of Service section Footer//
+/////////////////////////////////
+
+function TermsPage() {
+  let { path, url } = useRouteMatch();
+
+  return (
+    <div>
+      {/* <div id='sub-nav-container'>
+        <ul className='sub-nav-main'>
+          <li className='logo-item'>
+            <Link to='/sign-in'>
+              <img src={robinLogo} className='sub-nav-logo' alt='robin-logo' />
+            </Link>
+          </li>
+        </ul>
+      </div> */}
+
+      <Switch>
+        <Route exact path={path}>
+          <Terms />
+        </Route>
+        <Route path={`${path}/terms-service`}>
+          <Privacy />
+        </Route>
+      </Switch>
+    </div>
+  );
+}
