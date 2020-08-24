@@ -38,7 +38,7 @@ export default {
       'From startups to Fortune 500, our students hear good news from the best companies.',
     cta:
       'Want to be confident with what you have done when applying to top companies?',
-    get_started: 'https://app.myrobin.io/signup',
+    get_started: 'https://app.myrobin.io/sign-up',
   },
   outcome: {
     mini: 'For efficient outcomes',
@@ -84,7 +84,7 @@ export default {
   how: {
     cta:
       'Want to be confident with what you have done when applying to top companies?',
-    get_started: 'https://app.myrobin.io/signup',
+    get_started: 'https://app.myrobin.io/sign-up',
   },
   //   {
   //     id: uuidv4(),

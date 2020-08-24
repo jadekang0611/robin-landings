@@ -45,7 +45,7 @@ export default function App() {
                   Help Center
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href='https://app.myrobin.io/signup'>
+                <NavDropdown.Item href='https://app.myrobin.io/sign-up'>
                   Sign Up
                 </NavDropdown.Item>
                 <NavDropdown.Item href='https://app.myrobin.io/signin'>
@@ -156,7 +156,7 @@ function StudentPage() {
             <Link to={`${url}/help-center`}>Help Center</Link>
           </li>
           <li className='sign-up-button'>
-            <a href='https://app.myrobin.io/signup'>Sign Up</a>
+            <a href='https://app.myrobin.io/sign-up'>Sign Up</a>
           </li>
         </ul>
       </div>
