@@ -18,6 +18,7 @@ import './Navigation.css';
 import './App.css';
 import HowWorks from './views/Students/HowWorks';
 import About from './views/Company/About';
+import Projects from './components/Projects';
 import Privacy from './components/Privacy';
 import Terms from './components/Terms';
 
@@ -66,6 +67,9 @@ export default function App() {
                   Request for Demo
                 </NavDropdown.Item>
               </NavDropdown>
+              <NavDropdown title="Projects" id="project-nav-dropdown">
+                <NavDropdown.Item as={Link} to='/projects'>Current Challenge</NavDropdown.Item>
+              </NavDropdown>
               {/* <NavDropdown title="Employers" id="employer-nav-dropdown">
                 <NavDropdown.Item as={Link} to='/employers/overview'>Overview</NavDropdown.Item>
                 <NavDropdown.Item as={Link} to='/employers/search-candidates'>Search Candidates</NavDropdown.Item>
@@ -88,6 +92,9 @@ export default function App() {
             </li>
             <li className='desktop-nav-item'>
               <Link to='/outcomes'>Outcomes</Link>
+            </li>
+            <li className='desktop-nav-item'>
+              <Link to='/projects'>Projects</Link>
             </li>
             {/* <li className='desktop-nav-item'>
               <Link to='/employers'>Employers</Link>
@@ -114,6 +121,9 @@ export default function App() {
           </Route>
           <Route path='/outcomes'>
             <OutcomesPage />
+          </Route>
+          <Route path='/projects'>
+            <ProjectPage />
           </Route>
           <Route path='/employers'>
             <EmployersPage />
@@ -319,6 +329,28 @@ function AboutUsPage() {
     </div>
   );
 }
+
+/////////////////////////////
+//Projects Page Sub Nav//
+/////////////////////////////
+
+function ProjectPage() {
+  let { path, url } = useRouteMatch();
+
+  return (
+    <div>
+      <Switch>
+        <Route exact path={path}>
+          <Projects />
+        </Route>
+        <Route path={`${path}/projects`}>
+          <Projects />
+        </Route>
+      </Switch>
+    </div>
+  );
+}
+
 
 /////////////////////////////
 //Sign In Page section Sub Nav//
