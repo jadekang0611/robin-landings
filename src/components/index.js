@@ -16,3 +16,6 @@ export { default as NewsCard} from './NewsBlog/NewsCard';
 export { default as Projects } from '../views/Projects';
 export { default as Privacy } from './Privacy';
 export { default as Terms } from './Terms';
+export { default as ProjectHowTo } from './Projects/ProjectHowTo';
+export { default as ProjectResource } from './Projects/ProjectResource';
+export { default as ProjectSignUp } from './Projects/ProjectSignUp';
