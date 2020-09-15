@@ -18,7 +18,7 @@ import './Navigation.css';
 import './App.css';
 import HowWorks from './views/Students/HowWorks';
 import About from './views/Company/About';
-import Projects from './components/Projects';
+import Projects from './views/Projects';
 import Privacy from './components/Privacy';
 import Terms from './components/Terms';
 
@@ -339,6 +339,15 @@ function ProjectPage() {
 
   return (
     <div>
+      <div id='sub-nav-container'>
+        <ul className='sub-nav-main'>
+          <li className='logo-item'>
+            <Link to='/students'>
+              <img src={robinLogo} className='sub-nav-logo' alt='robin-logo' />
+            </Link>
+          </li>
+        </ul>
+      </div>
       <Switch>
         <Route exact path={path}>
           <Projects />

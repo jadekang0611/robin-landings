@@ -13,6 +13,6 @@ export { default as RobinTeam } from './RobinTeam';
 export { default as Benefits } from './Benefits';
 export { default as NewsBlog } from './NewsBlog';
 export { default as NewsCard} from './NewsBlog/NewsCard';
-export { default as Projects } from './Projects';
+export { default as Projects } from '../views/Projects';
 export { default as Privacy } from './Privacy';
 export { default as Terms } from './Terms';
