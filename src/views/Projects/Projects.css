@@ -1,18 +1,20 @@
-.card {
+.project-card {
+    border: 1px solid #f2f2f3;
+    border-radius: 15px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 50px;
     width: 85%;
 }
 
-.card-title {
- font-style: none;
+.project-card-title {
+ font-style: normal;
 }
 
-.card-text {
+.project-card-text {
     width: 75%;
 }
 
-.card hr {
+.project-card hr {
     margin: 10px auto 30px;
     width: 100%;
 }

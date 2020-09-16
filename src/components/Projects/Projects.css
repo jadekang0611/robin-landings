@@ -1,0 +1,17 @@
+.steps {
+    margin: 50px 0;
+}
+
+.number-container {
+    margin: 0 20px;
+    text-align: right;
+}
+
+.steps img {
+    width: 30px;
+}
+
+.steps-container p {
+    margin: 0;
+    justify-items: center;
+}

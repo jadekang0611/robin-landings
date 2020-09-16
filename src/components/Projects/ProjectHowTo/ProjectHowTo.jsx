@@ -14,26 +14,38 @@ const StepThree = '/images/step3.png';
 const ProjectHowTo = () => {
 
     return (
-      <div>
-        <Row>
-          <img src={StepOne} alt='step-one'></img>
-          <p>
-            Sign up by submitting your name and email before Project Challenge
-            start date!
-          </p>
+      <div className='steps-container'>
+        <Row className='steps' id='step-one'>
+          <Col className='number-container' xs={1}>
+            <img src={StepOne} alt='step-one'></img>
+          </Col>
+          <Col className='step-info-container' xs={9}>
+            <p>
+              Sign up by submitting your name and email before Project Challenge
+              start date!
+            </p>
+          </Col>
         </Row>
-        <Row>
-          <img src={StepTwo} alt='step-two'></img>
-          <p>
-            Submit your final Project Challenge before deadline from your Robin
-            account. Don't have a Robin account? Don't worry, you can create one
-            for free here! <br></br>*Project eligible submissions can be either
-            Github, CodePen or deployed URL.
-          </p>
+        <Row className='steps' id='step-two'>
+          <Col className='number-container' xs={1}>
+            <img src={StepTwo} alt='step-two'></img>
+          </Col>
+          <Col className='step-info-container' xs={9}>
+            <p>
+              Submit your final Project Challenge before deadline from your
+              Robin account. Don't have a Robin account? Don't worry, you can
+              create one for free here! <br></br>*Project eligible submissions
+              can be either Github, CodePen or deployed URL.
+            </p>
+          </Col>
         </Row>
-        <Row>
-          <img src={StepThree} alt='step-three'></img>
-          <p>Robin will announce winners on Robin and LinkedIn!</p>
+        <Row className='steps' id='step-three'>
+          <Col className='number-container' xs={1}>
+            <img src={StepThree} alt='step-three'></img>
+          </Col>
+          <Col className='step-info-container' xs={9}>
+            <p>Robin will announce winners on Robin and LinkedIn!</p>
+          </Col>
         </Row>
       </div>
     );
