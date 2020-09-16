@@ -15,3 +15,12 @@
     margin: 0;
     justify-items: center;
 }
+
+.step-info-container a {
+    color: #5cd9d8;
+    text-decoration-color: #5cd9d8;
+}
+
+#free-account {
+    font-style: italic;
+}

@@ -11,13 +11,40 @@ const TABS = {
     'resource': <ProjectResource />,
 }
 
+
 const Projects = () => {
     const [ selectedTab, setSelectedTab ] = useState('signUp');
+    const [ signStyle, setSignStyle ] = useState('nav-click');
+    const [ enterStyle, setEnterStyle ] = useState ('nav-item');
+    const [ resourceStyle, setResourceStyle ] = useState('nav-item');
 
-    const handleClick = (e) => {
+    const handleSignClick = (e) => {
+        e.preventDefault();
         console.log(e.target.id)
-        setSelectedTab(e.target.id)
+        setSelectedTab(e.target.id);
+        setSignStyle('nav-click');
+        setEnterStyle('nav-item');
+        setResourceStyle('nav-item');
     }
+
+    const handleEnterClick = (e) => {
+        e.preventDefault();
+        console.log(e.target.id);
+        setSelectedTab(e.target.id);
+        setEnterStyle('nav-click');
+        setSignStyle('nav-item');
+        setResourceStyle('nav-item');
+    };
+
+    const handleResourceClick = (e) => {
+        e.preventDefault();
+        console.log(e.target.id);
+        setSelectedTab(e.target.id);
+        setResourceStyle('nav-click');
+        setSignStyle('nav-item');
+        setEnterStyle('nav-item');
+
+    };
 
     return (
       <>
@@ -34,14 +61,14 @@ const Projects = () => {
             </p>
 
             <hr></hr>
-            <ul class='nav'>
-              <li class='nav-item' id='signUp' onClick={handleClick}>
+            <ul class='nav' id='project-nav'>
+              <li class={signStyle} id='signUp' onClick={handleSignClick}>
                 Sign Up
               </li>
-              <li class='nav-item' id='howTo' onClick={handleClick}>
+              <li class={enterStyle} id='howTo' onClick={handleEnterClick}>
                 How To Enter
               </li>
-              <li class='nav-item' id='resource' onClick={handleClick}>
+              <li class={resourceStyle} id='resource' onClick={handleResourceClick}>
                 Resources
               </li>
             </ul>

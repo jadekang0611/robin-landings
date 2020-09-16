@@ -20,5 +20,14 @@
 }
 
 .nav-item {
+    color: #6c757d;
+    cursor: pointer;
+    margin-right: 40px;
+} 
+
+.nav-click {
+    border-bottom: 2px solid #5cd9d8;
+    color: #5cd9d8;
+    cursor: pointer;
     margin-right: 40px;
 }
