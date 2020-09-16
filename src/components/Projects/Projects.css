@@ -1,3 +1,5 @@
+/* How To Enter*/
+
 .steps {
     margin: 50px 0;
 }
@@ -23,4 +25,18 @@
 
 #free-account {
     font-style: italic;
+}
+
+/* Project Resource */
+
+.resource-row {
+    margin-top: 35px;
+}
+
+.resource-card {
+    background: #f2f2f3;
+    border-radius: 15px;
+    margin: 20px auto;
+    padding: 40px;
+    width: 90%;
 }

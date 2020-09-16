@@ -34,10 +34,11 @@ const ProjectHowTo = () => {
             <p>
               Submit your final Project Challenge before deadline from your
               Robin account. Project eligible submissions can be either Github,
-              CodePen or deployed URL.{' '}
+              CodePen or deployed URL.
+              <br></br>
+              <br></br>
               <span id='free-account'>
-                Don't have a Robin account? Don't worry, you can create one for
-                free <a href='https://app.myrobin.io/sign-up'>here</a>!
+                Don't have a Robin account? Don't worry, you can create your free one <a href='https://app.myrobin.io/sign-up'>here</a>!
               </span>
             </p>
           </Col>
