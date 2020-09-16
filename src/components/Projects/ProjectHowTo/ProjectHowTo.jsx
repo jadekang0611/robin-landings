@@ -22,7 +22,7 @@ const ProjectHowTo = () => {
           <Col className='step-info-container' xs={9}>
             <p>
               Sign up by submitting your name and email before Project Challenge
-              start date!
+              start date.
             </p>
           </Col>
         </Row>

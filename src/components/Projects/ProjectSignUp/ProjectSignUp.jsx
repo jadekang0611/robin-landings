@@ -65,14 +65,14 @@ const ProjectSignUp = () => {
 
 
     return (
-      <Form>
+      <Form className='projectForm'>
         <Form.Group controlId='formName'>
           <Form.Control
             size='sm'
             type='text'
             name='name'
             placeholder='Full Name'
-            className='formInput'
+            className='projectFormInput'
             // onChange={handleChange}
             required
           />
@@ -83,24 +83,38 @@ const ProjectSignUp = () => {
             type='email'
             name='email'
             placeholder='Email'
-            className='formInput'
+            className='projectFormInput'
             // onChange={handleChange}
             required
           />
         </Form.Group>
-        <Form.Label>Is this your first Robin Project Challenge?</Form.Label>
-        <Row>
-          <Form.Group controlId='formBasicCheckbox'>
-            <Form.Check type='checkbox' label='Yes' />
-          </Form.Group>
-          <Form.Group controlId='formBasicCheckbox'>
-            <Form.Check type='checkbox' label='No' />
-          </Form.Group>
-        </Row>
-        <button 
-            type='submit' 
-            // onClick={handleSubmit}
-            className='submit-button'>
+
+        <Form.Group className='projectForm'>
+          <Form.Label>Is this your first Robin Project Challenge?</Form.Label>
+          <Col sm={10} className='projectRadio'>
+            <Form.Check
+              type='radio'
+              label='Yes'
+              inline
+              name='formHorizontalRadios'
+              id='formHorizontalRadios1'
+              // onChange={handleChange}
+            />
+            <Form.Check
+              type='radio'
+              label='No'
+              inline
+              name='formHorizontalRadios'
+              id='formHorizontalRadios2'
+              // onChange={handleChange}
+            />
+          </Col>
+        </Form.Group>
+
+        <button
+          type='submit'
+          // onClick={handleSubmit}
+          className='submit-button'>
           Sign me up!
         </button>
       </Form>
