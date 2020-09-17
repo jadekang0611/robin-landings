@@ -1,27 +1,11 @@
 /* Sign Up */
+.projectFormContainer {
+    display: flex;
+}
+
 .projectForm {
-    color: #5cd9d8;
-    text-align: center;
+    margin: 30px auto;
 }
-
-.projectFormInput {
-    background: #f2f2f3;
-    margin: 50px auto 20px;
-    width: 40%;
-}
-
-.projectFormInput:focus {
-    background: #f2f2f3;
-    border-color: #ced4da;
-    box-shadow: none !important;
-    outline: none !important;
-}
-
-.projectRadio {
-    margin: 0 auto;
-    text-align: center;
-}
-
 
 /* How To Enter*/
 

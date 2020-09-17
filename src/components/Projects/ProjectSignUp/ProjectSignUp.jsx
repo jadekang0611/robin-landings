@@ -5,7 +5,8 @@ import {
     Row,
     Col,
     Button,
-    Form
+    Form,
+    ToggleButton
 } from 'react-bootstrap';
 
 const initialFormData = {
@@ -15,6 +16,7 @@ const initialFormData = {
 };
 
 const ProjectSignUp = () => {
+  const [checked, setChecked] = useState(false);
     // document.title = 'Project Challenge Sign Up | Robin';
 
     // const [formData, updateFormData] = useState(initialFormData);
@@ -65,59 +67,49 @@ const ProjectSignUp = () => {
 
 
     return (
-      <Form className='projectForm'>
-        <Form.Group controlId='formName'>
-          <Form.Control
-            size='sm'
-            type='text'
-            name='name'
-            placeholder='Full Name'
-            className='projectFormInput'
-            // onChange={handleChange}
-            required
-          />
-        </Form.Group>
-        <Form.Group controlId='formEmail'>
-          <Form.Control
-            size='sm'
-            type='email'
-            name='email'
-            placeholder='Email'
-            className='projectFormInput'
-            // onChange={handleChange}
-            required
-          />
-        </Form.Group>
-
-        <Form.Group className='projectForm'>
-          <Form.Label>Is this your first Robin Project Challenge?</Form.Label>
-          <Col sm={10} className='projectRadio'>
-            <Form.Check
-              type='radio'
-              label='Yes'
-              inline
-              name='formHorizontalRadios'
-              id='formHorizontalRadios1'
+      <div className='projectFormContainer'>
+        <Form className='projectForm'>
+          <Form.Group controlId='formName'>
+            <Form.Label>Full name</Form.Label>
+            <Form.Control
+              size='sm'
+              type='text'
+              name='name'
+              placeholder='e.g. John Doe'
+              className='formInput'
               // onChange={handleChange}
+              required
             />
-            <Form.Check
-              type='radio'
-              label='No'
-              inline
-              name='formHorizontalRadios'
-              id='formHorizontalRadios2'
+          </Form.Group>
+          <Form.Group controlId='formEmail'>
+            <Form.Label>Email</Form.Label>
+            <Form.Control
+              size='sm'
+              type='email'
+              name='email'
+              placeholder='e.g. example@mail.com'
+              className='formInput'
               // onChange={handleChange}
+              required
             />
-          </Col>
-        </Form.Group>
-
-        <button
-          type='submit'
-          // onClick={handleSubmit}
-          className='submit-button'>
-          Sign me up!
-        </button>
-      </Form>
+          </Form.Group>
+          <Form.Group controlId='formPhone'>
+            <Form.Label>Is this your first Robin Project Challenge?</Form.Label>
+            <button>
+              Yes
+            </button>
+            <button>
+              No
+            </button>
+          </Form.Group>
+          <button
+            type='submit'
+            // onClick={handleSubmit}
+            className='submit-button'>
+            Submit
+          </button>
+        </Form>
+      </div>
     );
 };
 

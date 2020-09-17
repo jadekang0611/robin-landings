@@ -38,7 +38,15 @@ const ProjectHowTo = () => {
               <br></br>
               <br></br>
               <span id='free-account'>
-                Don't have a Robin account? Don't worry, you can create your free one <a href='https://app.myrobin.io/sign-up'>here</a>!
+                Don't have a Robin account? Don't worry, you can create your
+                free one{' '}
+                <a
+                  href='https://app.myrobin.io/sign-up'
+                  target='_blank'
+                  rel='noopener noreferrer'>
+                  here
+                </a>
+                !
               </span>
             </p>
           </Col>
@@ -48,7 +56,23 @@ const ProjectHowTo = () => {
             <img src={StepThree} alt='step-three'></img>
           </Col>
           <Col className='step-info-container' xs={9}>
-            <p>Robin will announce winners on Robin and LinkedIn!</p>
+            <p>
+              Robin will announce winners on{' '}
+              <a
+                href='https://myrobin.io/about-us'
+                target='_blank'
+                rel='noopener noreferrer'>
+                Robin
+              </a>{' '}
+              and{' '}
+              <a
+                href='https://www.linkedin.com/company/joinrobin'
+                target='_blank'
+                rel='noopener noreferrer'>
+                LinkedIn
+              </a>
+              !
+            </p>
           </Col>
         </Row>
       </Container>
