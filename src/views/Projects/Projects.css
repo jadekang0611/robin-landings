@@ -9,16 +9,37 @@
 }
 
 .project-card-title {
- font-style: normal;
+    color: #5cd9d8;
+    font-size: 24px;
+    font-style: normal;
+    margin-bottom: 30px;
 }
 
 .project-card-text {
+    margin: 30px 0;
     width: 75%;
 }
 
 .project-card hr {
     margin: 10px auto 30px;
     width: 100%;
+}
+
+.project-dates p {
+    background: #E7F9F9;
+    border-radius: 6px;
+    color: #5cd9d8;
+    font-size: 15px;
+    margin-right: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+.project-share-container {
+    width: 200px;
+    box-shadow: 5.14419px 5.14419px 10.2884px rgba(144, 146, 152, 0.2);
+    border-radius: 15px;
+    border: 1px solid #F1F3F4;
 }
 
 .nav-item {

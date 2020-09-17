@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import './Projects.css';
 import { Footer } from '../../components';
 import { ProjectHowTo, ProjectResource, ProjectSignUp } from '../../components/Projects';
-import { Row, Col, Card } from 'react-bootstrap';
+import { Container, Row, Col, Card } from 'react-bootstrap';
 
+import ShareIcon from './ShareIcon.svg';
 
 const TABS = {
     'signUp': <ProjectSignUp />,
@@ -50,16 +51,34 @@ const Projects = () => {
       <>
         <div class='project-card'>
           <div class='project-card-body'>
-            <h5 class='project-card-title'>User Authentication Project</h5>
-            <h6 class='project-card-subtitle mb-2 text-muted'>Description</h6>
+            <Row>
+              <Col sm={5} className='project-title'>
+                <h5 class='project-card-title'>User Authentication Project</h5>
+                <h6 class='project-card-subtitle mb-2 text-muted'>
+                  What you will be building...
+                </h6>
+              </Col>
+              <Col sm={3} className='project-dates'>
+                <p>10/5/20 - 10/9/20</p>
+              </Col>
+              <Col sm={3} className='project-share-container'>
+                <Row className='projects-share'>
+                  <img src={ShareIcon} alt='share' className='share' />
+                  <p>Share Profile</p>
+                </Row>
+                <Row className='projects-share'>
+                  <i class='fas fa-envelope'></i>
+                  <i class='fab fa-linkedin'></i>
+                </Row>
+              </Col>
+            </Row>
             <p class='project-card-text'>
               User Authentication might sound intimidating, but may be easier
               than you think. It's always the first page we see when we want to
               log into our favorite sites. Our challenge this week is to
-              recreate your favorite site login page with full CRUD operations.
+              recreate your favorite site sign up and login page with full CRUD operations.
               Don't forget to add a bit of your personality to it!
             </p>
-
             <hr></hr>
             <ul class='nav' id='project-nav'>
               <li class={signStyle} id='signUp' onClick={handleSignClick}>
@@ -68,7 +87,10 @@ const Projects = () => {
               <li class={enterStyle} id='howTo' onClick={handleEnterClick}>
                 How To Enter
               </li>
-              <li class={resourceStyle} id='resource' onClick={handleResourceClick}>
+              <li
+                class={resourceStyle}
+                id='resource'
+                onClick={handleResourceClick}>
                 Resources
               </li>
             </ul>
