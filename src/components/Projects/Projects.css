@@ -56,6 +56,10 @@
     margin: 0 auto;
     text-align: center;
 }
+
+.submittedMessage {
+    margin: 150px auto;
+}
 /* How To Enter*/
 
 .steps {

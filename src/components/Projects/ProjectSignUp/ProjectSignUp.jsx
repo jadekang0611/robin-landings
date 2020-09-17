@@ -18,7 +18,9 @@ const initialFormData = {
 const ProjectSignUp = () => {
   const [yesButton, setYesButton] = useState('inactiveButton');
   const [noButton, setNoButton] = useState('inactiveButton');
-
+  const [submit, setSubmit] = useState(false);
+  // const [formData, updateFormData] = useState(initialFormData);
+  // const [notLoading, setNotLoading] = useState(true);
 
   const handleYesClick = (e) => {
     e.preventDefault();
@@ -26,10 +28,10 @@ const ProjectSignUp = () => {
       setNoButton('inactiveButton');
       setYesButton('activeButton');
     } else {
-       setNoButton('inactiveButton');
-       setYesButton('inactiveButton');     
+      setNoButton('inactiveButton');
+      setYesButton('inactiveButton');
     }
-  }
+  };
 
   const handleNoClick = (e) => {
     e.preventDefault();
@@ -41,57 +43,55 @@ const ProjectSignUp = () => {
       setNoButton('inactiveButton');
     }
   };
-    // document.title = 'Project Challenge Sign Up | Robin';
+  // document.title = 'Project Challenge Sign Up | Robin';
 
-    // const [formData, updateFormData] = useState(initialFormData);
-    // const [submit, setSubmit] = useState(false);
-    // const [notLoading, setNotLoading] = useState(true);
+  // const handleChange = (e) => {
+  //   updateFormData({
+  //     ...formData,
+  //     [e.target.name]: e.target.value.trim(),
+  //   });
+  // };
 
-    // const handleChange = (e) => {
-    //   updateFormData({
-    //     ...formData,
-    //     [e.target.name]: e.target.value.trim(),
-    //   });
+  const handleSubmit = (e) => {
+    // setNotLoading(false);
+    e.preventDefault();
+    setSubmit(true);
+    console.log(submit)
+
+    // const msg = {
+    //   email: formData.email,
+    //   subject: `${formData.name} signed up for Project Challenge`,
+    //   sender: 'Robin <team@myrobin.io>',
+    //   to: 'Robin <team@myrobin.io>',
+    //   text: `${formData.name} signed up for Project Challenge. \n
+    //   Email: ${formData.email}. \n
+    //   firstProject: ${formData.firstProject}. \n`,
     // };
 
-    // const handleSubmit = (e) => {
-    //   setNotLoading(false);
-    //   e.preventDefault();
-
-    //   const msg = {
-    //     email: formData.email,
-    //     subject: `${formData.name} signed up for Project Challenge`,
-    //     sender: 'Robin <team@myrobin.io>',
-    //     to: 'Robin <team@myrobin.io>',
-    //     text: `${formData.name} signed up for Project Challenge. \n
-    //     Email: ${formData.email}. \n
-    //     firstProject: ${formData.firstProject}. \n`,
-    //   };
-
-    //   const options = {
-    //     headers: {
-    //       'Content-Type': 'application/json',
-    //     },
-    //     body: JSON.stringify(msg),
-    //     method: 'POST',
-    //   };
-    //   fetch(
-    //     //   NEED TAYLOR'S HELP //
-    //     // 'https://us-central1-myrobin-io.cloudfunctions.net/sendMail/api/newUser',
-    //     options
-    //   ).then((res) => {
-    //     //TODO: if res === true continue, else then throw an error
-    //     setNotLoading(true);
-    //     setSubmit(true);
-    //     console.log(res);
-    //     console.log(formData);
-    //     console.log(submit);
-    //   });
+    // const options = {
+    //   headers: {
+    //     'Content-Type': 'application/json',
+    //   },
+    //   body: JSON.stringify(msg),
+    //   method: 'POST',
     // };
+    // fetch(
+    //   //   NEED TAYLOR'S HELP //
+    //   // 'https://us-central1-myrobin-io.cloudfunctions.net/sendMail/api/newUser',
+    //   options
+    // ).then((res) => {
+    //   //TODO: if res === true continue, else then throw an error
+    //   setNotLoading(true);
+    //   setSubmit(true);
+    //   console.log(res);
+    //   console.log(formData);
+    //   console.log(submit);
+    // });
+  };
 
-
-    return (
-      <div className='projectFormContainer'>
+  return (
+    <div className='projectFormContainer'>
+      {!submit && (
         <Form className='projectForm'>
           <Form.Group controlId='formName'>
             <Form.Label>Full name</Form.Label>
@@ -135,14 +135,20 @@ const ProjectSignUp = () => {
           <div className='projectSubmitContainer'>
             <button
               type='submit'
-              // onClick={handleSubmit}
+              onClick={handleSubmit}
               className='submit-button'>
               Submit
             </button>
           </div>
         </Form>
-      </div>
-    );
+      )}
+      {submit && (
+        <div className='submittedMessage'>
+          <h5>Thanks for signing up. Don't forget to save the date on your calendar!</h5>
+        </div>
+      )}
+    </div>
+  );
 };
 
 export default ProjectSignUp;
