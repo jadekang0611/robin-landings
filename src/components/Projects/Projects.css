@@ -7,6 +7,55 @@
     margin: 30px auto;
 }
 
+.projectFormInput {
+    border: none !important;
+    border-radius: 0 !important;
+    border-bottom: 1px solid #2e384d !important ;
+    font-size: 16px !important;
+    line-height: 19px !important;
+    margin-bottom: 25px;
+    padding-left: 0 !important;
+    width: 100% !important;
+}
+
+.inactiveButton {
+    border: 1px solid black;
+    margin: 7px;
+    padding: 3px 10px;
+    min-width: 50px;
+    color: black;
+}
+
+.inactiveButton:hover {
+    background: #effbfb;
+    border: 1px solid #5CD9D8;
+    color: #5CD9D8;
+}
+
+.inactiveButton:focus, .activeButton:focus {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.activeButton {
+    background: #5CD9D8;
+    border: 1px solid #5CD9D8;
+    color: white;
+    margin: 7px;
+    padding: 3px 10px;
+    min-width: 50px;
+}
+
+.activeButton:hover {
+    background: #5CD9D8;
+    color: white;
+}
+
+.projectSubmitContainer {
+    margin: 0 auto;
+    text-align: center;
+}
 /* How To Enter*/
 
 .steps {

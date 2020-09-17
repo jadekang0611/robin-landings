@@ -74,10 +74,8 @@ const Projects = () => {
             </Row>
             <p className='project-card-text'>
               User Authentication might sound intimidating, but may be easier
-              than you think. It's always the first page we see when we want to
-              log into our favorite sites. Our challenge this week is to
-              recreate your favorite site sign up and login page with full CRUD operations.
-              Don't forget to add a bit of your personality to it!
+              than you think. It's always the first page we see when we want to sign up or log into our favorite sites. Our challenge this week is to
+              recreate your favorite site sign up and login page with full CRUD operations.Don't forget to add a bit of your personality to it!
             </p>
             <hr></hr>
             <ul className='nav' id='project-nav'>

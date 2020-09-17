@@ -16,7 +16,31 @@ const initialFormData = {
 };
 
 const ProjectSignUp = () => {
-  const [checked, setChecked] = useState(false);
+  const [yesButton, setYesButton] = useState('inactiveButton');
+  const [noButton, setNoButton] = useState('inactiveButton');
+
+
+  const handleYesClick = (e) => {
+    e.preventDefault();
+    if (yesButton === 'inactiveButton') {
+      setNoButton('inactiveButton');
+      setYesButton('activeButton');
+    } else {
+       setNoButton('inactiveButton');
+       setYesButton('inactiveButton');     
+    }
+  }
+
+  const handleNoClick = (e) => {
+    e.preventDefault();
+    if (noButton === 'inactiveButton') {
+      setYesButton('inactiveButton');
+      setNoButton('activeButton');
+    } else {
+      setYesButton('inactiveButton');
+      setNoButton('inactiveButton');
+    }
+  };
     // document.title = 'Project Challenge Sign Up | Robin';
 
     // const [formData, updateFormData] = useState(initialFormData);
@@ -76,7 +100,7 @@ const ProjectSignUp = () => {
               type='text'
               name='name'
               placeholder='e.g. John Doe'
-              className='formInput'
+              className='projectFormInput'
               // onChange={handleChange}
               required
             />
@@ -88,26 +112,34 @@ const ProjectSignUp = () => {
               type='email'
               name='email'
               placeholder='e.g. example@mail.com'
-              className='formInput'
+              className='projectFormInput'
               // onChange={handleChange}
               required
             />
           </Form.Group>
-          <Form.Group controlId='formPhone'>
+          <Form.Group controlId='formFirstProject'>
             <Form.Label>Is this your first Robin Project Challenge?</Form.Label>
-            <button>
+            <Button
+              variant='outlined'
+              className={yesButton}
+              onClick={handleYesClick}>
               Yes
-            </button>
-            <button>
+            </Button>
+            <Button
+              variant='outlined'
+              className={noButton}
+              onClick={handleNoClick}>
               No
-            </button>
+            </Button>
           </Form.Group>
-          <button
-            type='submit'
-            // onClick={handleSubmit}
-            className='submit-button'>
-            Submit
-          </button>
+          <div className='projectSubmitContainer'>
+            <button
+              type='submit'
+              // onClick={handleSubmit}
+              className='submit-button'>
+              Submit
+            </button>
+          </div>
         </Form>
       </div>
     );
