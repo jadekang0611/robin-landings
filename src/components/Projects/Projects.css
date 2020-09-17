@@ -44,8 +44,11 @@
 
 .resource-card {
     background: #f2f2f3;
+    box-shadow: 5.14419px 5.14419px 10.2884px rgba(144, 146, 152, 0.2);
+    border: 1px solid #F1F3F4;
     border-radius: 15px;
     margin: 20px auto;
     padding: 40px;
     width: 90%;
+
 }
