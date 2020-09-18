@@ -51,9 +51,11 @@ const Projects = () => {
       <div className='project-container'>
         <div className='project-card'>
           <div className='project-card-body'>
-            <Row>
+            <Row className='top-row'>
               <Col sm={5} className='project-title'>
-                <h5 className='project-card-title'>User Authentication Project</h5>
+                <h5 className='project-card-title'>
+                  User Authentication Project
+                </h5>
                 <h6 className='project-card-subtitle mb-2 text-muted'>
                   What you will be building...
                 </h6>
@@ -61,21 +63,28 @@ const Projects = () => {
               <Col sm={3} className='project-dates'>
                 <p>10/5/20 - 10/9/20</p>
               </Col>
-              <Col sm={3} className='project-share-container'>
+              <Col sm={2} className='project-share-container'>
                 <Row className='projects-share'>
-                  <img src={ShareIcon} alt='share' className='share' />
-                  <p>Share Profile</p>
+                  <Col xs={12}>
+                    <img src={ShareIcon} alt='share' className='share' />
+                    <p>Share Profile</p>
+                  </Col>
                 </Row>
                 <Row className='projects-share'>
-                  <i class='fas fa-envelope'></i>
-                  <i class='fab fa-linkedin'></i>
+                  <Col xs={12}>
+                    <i className='fas fa-envelope'></i>
+                    <i className='fab fa-linkedin'></i>
+                  </Col>
                 </Row>
               </Col>
             </Row>
             <p className='project-card-text'>
               User Authentication might sound intimidating, but may be easier
-              than you think. It's always the first page we see when we want to sign up or log into our favorite sites. Our challenge this week is to
-              recreate your favorite site sign up and login page with full CRUD operations.Don't forget to add a bit of your personality to it!
+              than you think. It's always the first page we see when we want to
+              sign up or log into our favorite sites. Our challenge this week is
+              to recreate your favorite site sign up and login page with full
+              CRUD operations. Don't forget to add a bit of your personality to
+              it!
             </p>
             <hr></hr>
             <ul className='nav' id='project-nav'>

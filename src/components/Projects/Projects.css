@@ -105,3 +105,11 @@
     width: 90%;
 
 }
+
+
+/* Medium & small devices (992px and down) */
+@media only screen and (max-width: 992px) {
+    .steps-container {
+        padding: 0;
+    }
+}
