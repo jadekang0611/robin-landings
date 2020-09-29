@@ -4,7 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 
-const StudentMessage = '/images/StudentMessage.svg';
+const StudentMessage = '/images/student_image.svg';
 const Type1 = '/images/background/SectionBackground1.svg';
 
 const bgStyle = {

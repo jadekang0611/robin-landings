@@ -18,6 +18,7 @@ const Projects = () => {
     const [ signStyle, setSignStyle ] = useState('nav-click');
     const [ enterStyle, setEnterStyle ] = useState ('nav-item');
     const [ resourceStyle, setResourceStyle ] = useState('nav-item');
+    const [copySuccess, setCopySuccess] = useState(false);
 
     const handleSignClick = (e) => {
         e.preventDefault();
@@ -44,7 +45,11 @@ const Projects = () => {
         setResourceStyle('nav-click');
         setSignStyle('nav-item');
         setEnterStyle('nav-item');
+    };
 
+    const copyToClipboard = () => {
+      let value = `https://myrobin.io/projects`;
+      setCopySuccess(true);
     };
 
     return (
@@ -65,7 +70,7 @@ const Projects = () => {
               </Col>
               <Col sm={2} className='project-share-container'>
                 <Row className='projects-share'>
-                  <Col xs={12}>
+                  <Col xs={12} onClick={copyToClipboard}>
                     <img src={ShareIcon} alt='share' className='share' />
                     <p>Share Profile</p>
                   </Col>
