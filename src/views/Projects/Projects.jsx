@@ -26,7 +26,7 @@ const Projects = () => {
 
   const handleSignClick = (e) => {
     e.preventDefault();
-    console.log(e.target.id);
+
     setSelectedTab(e.target.id);
     setSignStyle('nav-click');
     setEnterStyle('nav-item');
@@ -35,7 +35,7 @@ const Projects = () => {
 
   const handleEnterClick = (e) => {
     e.preventDefault();
-    console.log(e.target.id);
+
     setSelectedTab(e.target.id);
     setEnterStyle('nav-click');
     setSignStyle('nav-item');
@@ -44,7 +44,7 @@ const Projects = () => {
 
   const handleResourceClick = (e) => {
     e.preventDefault();
-    console.log(e.target.id);
+
     setSelectedTab(e.target.id);
     setResourceStyle('nav-click');
     setSignStyle('nav-item');

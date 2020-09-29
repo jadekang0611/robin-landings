@@ -17,7 +17,7 @@ const LastMessage = (props) => {
   const buttonClick = () => {
     window.location.href = props.content.get_started;
   };
-  console.log(props);
+
   return (
     <div id='screen-six' style={bgStyle5}>
       <div className='screen-six-section'>

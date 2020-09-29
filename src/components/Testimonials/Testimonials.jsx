@@ -40,7 +40,6 @@ const Feedback = [
 const Testimonials = () => {
   const [current, setCurrent] = useState(Feedback[0]);
   const [activeIndex, setActiveIndex] = useState(0);
-  console.log(current);
 
   const handleSetClick = (e) => {
     setCurrent(Feedback[e.target.getAttribute('data-message')]);
@@ -48,8 +47,8 @@ const Testimonials = () => {
   };
 
   return (
-    <Jumbotron id="screen-three" style={bgStyle3}>
-      <div className="testimonial-section">
+    <Jumbotron id='screen-three' style={bgStyle3}>
+      <div className='testimonial-section'>
         <h3>Testimonials</h3>
         <h2>What people say about us</h2>
         <div
@@ -60,43 +59,42 @@ const Testimonials = () => {
           `}
         >
           <p>"{current.message}"</p>
-          <div className="testimonial-user">
+          <div className='testimonial-user'>
             <img src={current.img} alt={current.name} />
             <p>{current.name}</p>
           </div>
         </div>
         <div
           className={css`
+            display: flex;
+
+            span {
+              height: 40px;
+              width: 40px;
+              margin: 40px 3px;
               display: flex;
+              align-items: center;
+              justify-content: left;
+              cursor: pointer;
+            }
 
-              span {
-                  
-                  height: 40px;
-                  width: 40px;
-                  margin: 40px 3px;
-                  display: flex;
-                  align-items: center;
-                  justify-content: left;
-                  cursor: pointer;
-              }
+            span::before {
+              content: '';
+              height: 20px;
+              width: 20px;
+              background-color: #ffffff;
+              border-radius: 50%;
+              transition: background-color 0.3s ease;
+            }
 
-              span::before {
-                  content: "";
-                  height: 20px;
-                  width: 20px;
-                  background-color: #ffffff;
-                  border-radius: 50%;
-                  transition: background-color 0.3s ease;
-              }
+            span:hover::before {
+              background-color: #2e384e;
+            }
 
-              span:hover::before {
-                  background-color: #2e384e;
-              }
-
-              span[data-message="${activeIndex}"]::before{
-                background-color: #2e384e;
-              }
-            `}
+            span[data-message='${activeIndex}']::before {
+              background-color: #2e384e;
+            }
+          `}
         >
           {Object.keys(Feedback).map((index) => (
             <span

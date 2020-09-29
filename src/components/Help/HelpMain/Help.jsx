@@ -4,13 +4,7 @@ import * as ROUTES from '../../../Routes';
 import { useHistory } from 'react-router';
 import '../Help.css';
 import helpImage from '../../../assets/help-center.png';
-import {
-  Row,
-  Col,
-  InputGroup,
-  FormControl,
-  Button,
-} from 'react-bootstrap';
+import { Row, Col, InputGroup, FormControl, Button } from 'react-bootstrap';
 import { Footer } from '../..';
 import { questions } from '../data';
 import { HelpResults } from '../../Help';
@@ -52,8 +46,6 @@ const Help = (props) => {
     });
   };
 
-  console.log(questions);
-  console.log(searchQuestion);
   return (
     <div className='helpRoot'>
       <Router>

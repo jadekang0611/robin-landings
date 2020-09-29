@@ -52,9 +52,6 @@ const RequestDemo = () => {
       //TODO: if res === true continue, else then throw an error
       setNotLoading(true);
       setSubmit(true);
-      console.log(res);
-      console.log(formData);
-      console.log(submit);
     });
   };
 
