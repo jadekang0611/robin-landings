@@ -94,10 +94,15 @@ const ProjectSignUp = () => {
         to: formData.email,
         text: `${formData.name}, you signed up for Robin's Project Challenge. \n First Project: ${firstProject}`,
         template_id: 'd-fe19ace7aeb44457a1f5f053d109e28d',
+        name: formData.name,
+        email: formData.email,
+        new: firstProject,
       };
 
       let res = await API.post('sendMail/api/welcome', msg);
+      let res2 = await API.post('sendMail/api/admin', msg);
       console.log(res);
+      console.log(res2);
       setSubmit(true);
       console.log(submit);
       setLoading(false);
