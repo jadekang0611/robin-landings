@@ -101,7 +101,8 @@ const ProjectSignUp = () => {
 
       let res = await API.post('sendMail/api/welcome', msg);
       let res2 = await API.post('sendMail/api/admin', msg);
-
+      console.log(res);
+      console.log(res2);
       setSubmit(true);
 
       setLoading(false);
