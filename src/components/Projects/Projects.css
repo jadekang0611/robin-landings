@@ -103,7 +103,15 @@
     margin: 20px auto;
     padding: 40px;
     width: 90%;
+}
 
+.resource-card-text a {
+    color:  #24b3b1;
+    text-decoration: none;
+}
+
+.resource-card-text a:hover {
+    border-bottom: 2px solid #ff725e;
 }
 
 
