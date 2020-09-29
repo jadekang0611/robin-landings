@@ -1,13 +1,8 @@
 import React, { useState } from 'react';
 import '../Projects.css';
-import {
-    Container,
-    Row,
-    Col,
-    Button,
-    Form,
-    ToggleButton
-} from 'react-bootstrap';
+import API from '../../../api';
+
+import { Container, Row, Col, Button, Form, Alert } from 'react-bootstrap';
 
 const initialFormData = {
   name: '',
@@ -19,7 +14,9 @@ const ProjectSignUp = () => {
   const [yesButton, setYesButton] = useState('inactiveButton');
   const [noButton, setNoButton] = useState('inactiveButton');
   const [submit, setSubmit] = useState(false);
-  // const [formData, updateFormData] = useState(initialFormData);
+  const [firstProject, setFirstProject] = useState('n/a');
+  const [formData, setFormData] = useState({});
+  const [show, setShow] = useState(false);
   // const [notLoading, setNotLoading] = useState(true);
 
   const handleYesClick = (e) => {
@@ -27,9 +24,11 @@ const ProjectSignUp = () => {
     if (yesButton === 'inactiveButton') {
       setNoButton('inactiveButton');
       setYesButton('activeButton');
+      setFirstProject('yes');
     } else {
       setNoButton('inactiveButton');
       setYesButton('inactiveButton');
+      setFirstProject('n/a');
     }
   };
 
@@ -38,55 +37,63 @@ const ProjectSignUp = () => {
     if (noButton === 'inactiveButton') {
       setYesButton('inactiveButton');
       setNoButton('activeButton');
+      setFirstProject('no');
     } else {
       setYesButton('inactiveButton');
       setNoButton('inactiveButton');
+      setFirstProject('n/a');
     }
   };
-  // document.title = 'Project Challenge Sign Up | Robin';
 
-  // const handleChange = (e) => {
-  //   updateFormData({
-  //     ...formData,
-  //     [e.target.name]: e.target.value.trim(),
-  //   });
-  // };
+  document.title = 'Project Challenge Sign Up | Robin';
 
-  const handleSubmit = (e) => {
+  const handleChange = (e) => {
+    setShow(false);
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value.trim(),
+    });
+  };
+
+  const isEmpty = (str) => {
+    return !str || 0 === str.length;
+  };
+
+  function AlertDismissibleExample() {
+    if (show) {
+      return (
+        <Alert variant='danger' onClose={() => setShow(false)} dismissible>
+          Please fill out every field and choice on the form.
+        </Alert>
+      );
+    }
+  }
+
+  const handleSubmit = async (e) => {
     // setNotLoading(false);
     e.preventDefault();
-    setSubmit(true);
-    console.log(submit)
+    setShow(false);
+    if (
+      !isEmpty(formData.name) &&
+      !isEmpty(formData.email) &&
+      firstProject !== 'n/a'
+    ) {
+      const msg = {
+        subject: `${formData.name}, you signed up for Robin's Project Challenge!`,
+        sender: 'Robin <team@myrobin.io>',
+        to: formData.email,
+        text: `${formData.name}, you signed up for Robin's Project Challenge. \n First Project: ${firstProject}`,
+        template_id: 'd-fe19ace7aeb44457a1f5f053d109e28d',
+      };
 
-    // const msg = {
-    //   email: formData.email,
-    //   subject: `${formData.name} signed up for Project Challenge`,
-    //   sender: 'Robin <team@myrobin.io>',
-    //   to: 'Robin <team@myrobin.io>',
-    //   text: `${formData.name} signed up for Project Challenge. \n
-    //   Email: ${formData.email}. \n
-    //   firstProject: ${formData.firstProject}. \n`,
-    // };
-
-    // const options = {
-    //   headers: {
-    //     'Content-Type': 'application/json',
-    //   },
-    //   body: JSON.stringify(msg),
-    //   method: 'POST',
-    // };
-    // fetch(
-    //   //   NEED TAYLOR'S HELP //
-    //   // 'https://us-central1-myrobin-io.cloudfunctions.net/sendMail/api/newUser',
-    //   options
-    // ).then((res) => {
-    //   //TODO: if res === true continue, else then throw an error
-    //   setNotLoading(true);
-    //   setSubmit(true);
-    //   console.log(res);
-    //   console.log(formData);
-    //   console.log(submit);
-    // });
+      let res = await API.post('sendMail/api/welcome', msg);
+      console.log(res);
+      setSubmit(true);
+      console.log(submit);
+    } else {
+      setShow(true);
+    }
+    // turn on/off loading
   };
 
   return (
@@ -101,7 +108,7 @@ const ProjectSignUp = () => {
               name='name'
               placeholder='e.g. John Doe'
               className='projectFormInput'
-              // onChange={handleChange}
+              onChange={handleChange}
               required
             />
           </Form.Group>
@@ -113,7 +120,7 @@ const ProjectSignUp = () => {
               name='email'
               placeholder='e.g. example@mail.com'
               className='projectFormInput'
-              // onChange={handleChange}
+              onChange={handleChange}
               required
             />
           </Form.Group>
@@ -122,21 +129,25 @@ const ProjectSignUp = () => {
             <Button
               variant='outlined'
               className={yesButton}
-              onClick={handleYesClick}>
+              onClick={handleYesClick}
+            >
               Yes
             </Button>
             <Button
               variant='outlined'
               className={noButton}
-              onClick={handleNoClick}>
+              onClick={handleNoClick}
+            >
               No
             </Button>
           </Form.Group>
+          {AlertDismissibleExample()}
           <div className='projectSubmitContainer'>
             <button
               type='submit'
               onClick={handleSubmit}
-              className='submit-button'>
+              className='submit-button'
+            >
               Submit
             </button>
           </div>
@@ -144,7 +155,10 @@ const ProjectSignUp = () => {
       )}
       {submit && (
         <div className='submittedMessage'>
-          <h5>Thanks for signing up. Don't forget to save the date on your calendar!</h5>
+          <h5>
+            Thanks for signing up. Don't forget to save the date on your
+            calendar!
+          </h5>
         </div>
       )}
     </div>
