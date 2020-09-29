@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../Projects.css';
 import API from '../../../api';
+import Spinner from 'react-bootstrap/Spinner';
 
 import { Container, Row, Col, Button, Form, Alert } from 'react-bootstrap';
 
@@ -17,7 +18,15 @@ const ProjectSignUp = () => {
   const [firstProject, setFirstProject] = useState('n/a');
   const [formData, setFormData] = useState({});
   const [show, setShow] = useState(false);
-  // const [notLoading, setNotLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
+
+  const loader = () => {
+    if (loading) {
+      return (
+        <Spinner className='spinner' animation='border' variant='primary' />
+      );
+    }
+  };
 
   const handleYesClick = (e) => {
     e.preventDefault();
@@ -72,6 +81,7 @@ const ProjectSignUp = () => {
   const handleSubmit = async (e) => {
     // setNotLoading(false);
     e.preventDefault();
+    setLoading(true);
     setShow(false);
     if (
       !isEmpty(formData.name) &&
@@ -90,8 +100,10 @@ const ProjectSignUp = () => {
       console.log(res);
       setSubmit(true);
       console.log(submit);
+      setLoading(false);
     } else {
       setShow(true);
+      setLoading(false);
     }
     // turn on/off loading
   };
@@ -148,7 +160,7 @@ const ProjectSignUp = () => {
               onClick={handleSubmit}
               className='submit-button'
             >
-              Submit
+              Submit {loader()}
             </button>
           </div>
         </Form>

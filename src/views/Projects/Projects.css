@@ -54,6 +54,10 @@
   cursor: pointer;
 }
 
+.spinner {
+  margin-left: 16px;
+}
+
 .projects-share img,
 .projects-share p {
   display: inline-block;
